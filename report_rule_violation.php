@@ -65,7 +65,7 @@ else {
 	preg_match_all("/\[([^\]]*)\]/", $tag, $matches);
 	//var_dump($matches[1]);
 	$tagShorthand = $matches[1][0];
-	$message = "Hello $moderator.\n\nRedditor $redditor (https://www.reddit.com/user/$redditor) reports a violation of the Reddit Awkward rule for the tag $tag\n\n.We at Reddit Awkward as well as $redditor asks that you look into the matter.\n\nTODO:\n\nPlease visit this page: http://www.redditawkward.com/p/mod_decision.php to validate or reject the report of tag misuse. For secure validation, please enter this hash:\n\nHash: $secret\n\nIn both cases, $redditor will be notified of the decision.\n\nThank you for your time.\n\nCheers!\n\nReddit Awkward";
+	$message = "Hello $moderator.\n\nRedditor $redditor (https://www.reddit.com/user/$redditor) reports a violation of the Reddit Awkward rule for the tag $tag\n\n.We at Reddit Awkward as well as $redditor asks that you look into the matter.\n\nTODO:\n\nPlease visit this page: http://www.redditawkward.com/mod_decision.php to validate or reject the report of tag misuse. For secure validation, please enter this hash:\n\nHash: $secret\n\nIn both cases, $redditor will be notified of the decision.\n\nThank you for your time.\n\nCheers!\n\nReddit Awkward";
 	if ($commentid and $commentid !== "") {
 		$response = $reddit->sendMessage($moderator, "Reddit Akward Rule Violation", $message);
 	}

@@ -390,7 +390,7 @@ $('#contactform #message').val('');
     <p class="textstyle3">Consultant</p>
     <ul class="team_info">
       <li><a href="#"><img src="images/icons/team-social-mail.png" width="16" height="16" alt="icon">Send mail</a></li>
-      <li><a href="#"><img src="images/icons/team-social-url.png" width="16" height="16" alt="icon">http://redditawkward.com</a></li>
+      <li><a href="#"><img src="images/icons/team-social-url.png" width="16" height="16" alt="icon">https://redditawkward.com</a></li>
       <li><a href="#"><img src="images/icons/team-social-linkedin.png" width="16" height="16" alt="icon">Linkedin</a></li>
     </ul>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -403,7 +403,7 @@ $('#contactform #message').val('');
     <p class="textstyle3">Programmer</p>
     <ul class="team_info">
       <li><a href="#"><img src="images/icons/team-social-mail.png" width="16" height="16" alt="icon">Send mail</a></li>
-      <li><a href="#"><img src="images/icons/team-social-url.png" width="16" height="16" alt="icon">http://redditawkward.com</a></li>
+      <li><a href="#"><img src="images/icons/team-social-url.png" width="16" height="16" alt="icon">https://redditawkward.com</a></li>
       <li><a href="#"><img src="images/icons/team-social-linkedin.png" width="16" height="16" alt="icon">Linkedin</a></li>
     </ul>
     <p>Hello and welcome. I live in Denmark with my family in the hills in the countryside. I like to read (novels and poetry) and ski (cross-country).</p>

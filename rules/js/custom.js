@@ -26,7 +26,7 @@ $('#chg_ab').on('click', function(event) {
 
 $('#ab_sub').on('click', function(event) {
 	var about = $("#ab_inp").val();
-	$.get( "http://redditawkward.com/p/workeedirkees/about.php", { about: about }, function( data ) {
+	$.get( "http://redditawkward.com/workeedirkees/about.php", { about: about }, function( data ) {
 		//alert( data );
 	});
 	$("#ab_div").hide();
@@ -39,7 +39,7 @@ $('#chg_em').on('click', function(event) {
 
 $('#em_sub').on('click', function(event) {
 	var email = $("#em_inp").val();
-	$.get( "http://redditawkward.com/p/workeedirkees/email.php", { email: email }, function( data ) {
+	$.get( "http://redditawkward.com/workeedirkees/email.php", { email: email }, function( data ) {
 		//alert( data );
 	});
 	$("#em_div").hide();
@@ -48,20 +48,20 @@ $('#em_sub').on('click', function(event) {
 
 $('#astronaut').on('click', function(event) {
 	$("#pro_image").attr("src","images/avatars/astronaut.png");
-	$.get( "http://redditawkward.com/p/workeedirkees/profileimage.php", { imgtype: "neutral", imgsrc: "" }, function( data ) {
+	$.get( "http://redditawkward.com/workeedirkees/profileimage.php", { imgtype: "neutral", imgsrc: "" }, function( data ) {
 		//alert( data );
 	});
 });
 
 $('#builderman').on('click', function(event) {
 	$("#pro_image").attr("src","images/avatars/builderman.png");
-	$.get( "http://redditawkward.com/p/workeedirkees/profileimage.php", { imgtype: "man", imgsrc: "" }, function( data ) {
+	$.get( "http://redditawkward.com/workeedirkees/profileimage.php", { imgtype: "man", imgsrc: "" }, function( data ) {
 	});
 });
 
 $('#builderwoman').on('click', function(event) {
 	$("#pro_image").attr("src","images/avatars/builderwoman.png");
-	$.get( "http://redditawkward.com/p/workeedirkees/profileimage.php", { imgtype: "woman", imgsrc: "" }, function( data ) {
+	$.get( "http://redditawkward.com/workeedirkees/profileimage.php", { imgtype: "woman", imgsrc: "" }, function( data ) {
 	});
 });
 
