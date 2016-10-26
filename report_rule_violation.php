@@ -171,7 +171,7 @@ function generateRandomString($length = 10) {
 		<div style="text-align: center; margin: auto;">
 			<h2>You already reported this to the moderators of /r/<? echo $subreddit; ?></h2>
 			<br>
-			<div class="button_wrapper"><a href="index.php" class="btn_yellow"><span>Continue</span></a></div>
+			<div class="button_wrapper"><a href="indx.php" class="btn_yellow"><span>Continue</span></a></div>
 			<br>
 		</div>
   </div>
@@ -182,7 +182,7 @@ function generateRandomString($length = 10) {
 		<div style="text-align: center; margin: auto;">
 			<h2>Your message to the moderators of /r/<? echo $subreddit; ?> has been delivered</h2>
 			<br>
-			<div class="button_wrapper"><a href="index.php" class="btn_yellow"><span>Continue</span></a></div>
+			<div class="button_wrapper"><a href="indx.php" class="btn_yellow"><span>Continue</span></a></div>
 			<br>
 		</div>
   </div>

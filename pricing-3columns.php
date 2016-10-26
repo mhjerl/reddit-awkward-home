@@ -181,11 +181,14 @@ $redditor = $_SESSION['redditor'];
 ?>
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 <input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="hosted_button_id" value="289EF2F2ANV7N">
-<input name="custom" value="<? echo $redditor; ?>" type="hidden">
-<input type="image" src="https://www.paypalobjects.com/en_US/DK/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+<input type="hidden" name="hosted_button_id" value="5DE6NHWBGFXF4">
+<input name="custom" value="<? echo $redditor; ?>" type="hidden"> <! -- mhh -->
+<INPUT TYPE="hidden" NAME="return" value="https://redditawkward.com/finish_checkout.php?accounttype=economy"> <! -- mhh -->
+<input type="hidden" name="cancel_return" value="https://redditawkward.com/cancel_checkout.php"> <! -- mhh -->
+<input type="image" src="https://www.paypalobjects.com/da_DK/DK/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal – den sikre og nemme måde at betale på nettet.">
+<img alt="" border="0" src="https://www.paypalobjects.com/da_DK/i/scr/pixel.gif" width="1" height="1">
 </form>
+
 <? } else { ?>
 
 <a href="activate.php?login=true" class="btn_greysmall"><span>Sign Up</span></a>
@@ -271,13 +274,14 @@ $redditor = $_SESSION['redditor'];
 <? if ($_SESSION['redditor'] !== null) {
 $redditor = $_SESSION['redditor'];
 ?>
-
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 <input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="hosted_button_id" value="Y8BL4DUVWMPZ8">
-<input name="custom" value="<? echo $redditor; ?>" type="hidden">
-<input type="image" src="https://www.paypalobjects.com/en_US/DK/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+<input type="hidden" name="hosted_button_id" value="8XXMYLBEMURNY">
+<input name="custom" value="<? echo $redditor; ?>" type="hidden"> <! -- mhh -->
+<INPUT TYPE="hidden" NAME="return" value="https://redditawkward.com/finish_checkout.php?accounttype=premium"> <! -- mhh -->
+<input type="hidden" name="cancel_return" value="https://redditawkward.com/cancel_checkout.php"> <! -- mhh -->
+<input type="image" src="https://www.paypalobjects.com/da_DK/DK/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal – den sikre og nemme måde at betale på nettet.">
+<img alt="" border="0" src="https://www.paypalobjects.com/da_DK/i/scr/pixel.gif" width="1" height="1">
 </form>
 <? } else { ?>
 
