@@ -56,7 +56,7 @@ session_destroy();
           <li><a href="#">Contact</a></li>
           <li><a href="#">More</a>
             <ul>
-              <li class="firstdroplink"><a href="pricing-3columns.html">Pricing - 3 columns</a></li>
+              <li class="firstdroplink"><a href="pricing.php">Pricing - 3 columns</a></li>
               <li><a href="pricing-4columns.html">Pricing - 4 columns</a></li>
               <li><a href="#">Team</a></li>
               <li><a href="#">Reviews</a> </li>

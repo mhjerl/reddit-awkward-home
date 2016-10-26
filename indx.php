@@ -183,7 +183,7 @@ $('#contactform #message').val('');
               <li class="lastdroplink"><a href="layout.html">Layout</a></li>
             </ul>
           </li>
-          <li><a href="pricing-3columns.html" class="coloredlink">Pricing</a></li>
+          <li><a href="pricing.php" class="coloredlink">Pricing</a></li>
         </ul>
       </div>
       <!--menu / navigation ends-->
