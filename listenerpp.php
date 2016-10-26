@@ -19,7 +19,6 @@ $ipn = new PayPalIPN();
 
 
 
-
 //sendMail("2");
 $verified = $ipn->verifyIPN();
 //sendMail("3");
