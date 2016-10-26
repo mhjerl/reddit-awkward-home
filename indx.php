@@ -8,12 +8,7 @@ $dt2=date("Y-m-d H:i:s");
 
 
 
-$logInOrRedditor = '<a href="activate.php?login=true" class="nav-contact nav">log in</a>';
-$logOut = "";
-if ($_SESSION['redditor'] !== null) {
-	$logInOrRedditor = '<a class="nav-contact nav" href="adminpage.php">' . $_SESSION['redditor'] . '</a>';
-	$logOut = '<li><a class="nav-contact nav" href="logout.php">Log Out</a></li>';
-}
+
 
 
 
@@ -40,7 +35,7 @@ if ($_SESSION['redditor'] !== null) {
 <link href='http://fonts.googleapis.com/css?family=Vollkorn:400,400italic|Lato:400,300,300italic,400italic' rel='stylesheet' type='text/css'>
 
 <!--style sheets-->
-<link rel="stylesheet" media="screen" href="css/style.css?t=aer"/>
+<link rel="stylesheet" media="screen" href="css/style.css?t=aerf"/>
 <link rel="stylesheet" media="screen" href="css/skeleton.css"/>
 
 <!--jquery libraries / others are at the bottom-->
@@ -155,7 +150,14 @@ $('#contactform #message').val('');
 <!--header_wrapper starts-->
 <div id="header_wrapper" class="scroll-content">
   <div class="container clearfix">
-    
+<?
+$logInOrRedditor = '<a href="activate.php?login=true" class="nav-contact nav">log in</a>';
+$logOut = "";
+if ($_SESSION['redditor'] !== null) {
+	$logInOrRedditor = '<a class="nav-contact nav" href="admin.php?redditor=' . $_SESSION['redditor'] . '">' . $_SESSION['redditor'] . '</a>';
+	$logOut = '<li><a class="nav-contact nav" href="logout.php">Log Out</a></li>';
+}
+?>
     <!--header starts-->
     <div id="header">
       
@@ -170,17 +172,13 @@ $('#contactform #message').val('');
         <ul>
           <li><a href="#header_wrapper" class="nav-header_wrapper nav selected">Home</a></li>
           <li><a href="#features" class="nav-features nav">Features</a></li>
-          <li><a href="#screenshots" class="nav-screenshots nav">Screenshots</a></li>
           <li><a href="#download" class="nav-download nav">Download</a></li>
           <li><? echo $logInOrRedditor; ?></li>
 					<? echo $logOut; ?>
           <li><a href="#">More</a>
             <ul>
-              <li class="firstdroplink"><a href="pricing-3columns.php">Pricing - 3 columns</a></li>
-              <li><a href="pricing-4columns.html">Pricing - 4 columns</a></li>
-              <li><a href="#team" class="nav-team nav">Team</a></li>
-              <li><a href="#sub_footer" class="nav-sub_footer nav">Reviews</a> </li>
-              <li class="lastdroplink"><a href="layout.html">Layout</a></li>
+              <li class="lastdroplink"><a href="introduction.php">Introduction</a></li>
+			  <li class="lastdroplink"><a href="https://github.com/mhjerl" target=“_blank”>Open Source</a></li>
             </ul>
           </li>
           <li><a href="pricing.php" class="coloredlink">Pricing</a></li>
@@ -242,6 +240,7 @@ $('#contactform #message').val('');
         <li>
           <div class="eight columns">
 			<h2>Download <strong>Reddit Awkward Now</strong></h2>
+
             <p>And feel the awkwardness...</p>
 						<br>
             <p><center><a class="nav-download nav" href="#download"><img id="browser_icon" width=50 src="images/browsers/firefox.png" alt="image"/></a></center></p> </div>
@@ -265,7 +264,7 @@ $('#contactform #message').val('');
     <h1>New rules for Reddit</h1>
     <p class="textstyle1">A browser extension adding new social features to discussions on Reddit. <a href="#" class="coloredstrong">Checkout more!</a></p>
     <div class="centerline">
-      <div class="button_wrapper"> <a href="#" class="btn_yellow"><span>See Rules & Tags</span></a></div>
+      <div class="button_wrapper"> <a href="introduction.php" class="btn_yellow"><span>See Rules & Tags</span></a></div>
     </div>
   </div>
   
@@ -384,7 +383,7 @@ $('#contactform #message').val('');
       <div class="logo_grey"><img src="images/Logomakr_2ACvqw.png" alt="logo"></div>
       <h2>Don't wait.</h2>
       <ul class="textlist">
-        <li>Free</li>
+        <li>Free Trial</li>
         <li>| </li>
         <li> No credit card required </li>
       </ul>
@@ -424,7 +423,7 @@ $('#contactform #message').val('');
     <p class="textstyle2">Know more</p>
     <br class="clear"/>
     <img src="images/preview/the-studio.jpg" width="290" height="110" alt="image" class="image_border">
-    <p>Ten years ago a crack commando unit was sent to prison by a military court for a crime they didn't commit. These men promptly escaped from a maximum security stockade to the Los Angeles underground. Today, still wanted by the government, they survive as soldiers of fortune.</p>
+    <p></p>
   </div>
   <!--about ends--> 
   
@@ -434,8 +433,9 @@ $('#contactform #message').val('');
     <p class="textstyle2">People say</p>
     <br class="clear"/>
     <ul class="testimonial">
-      <li> <img src="images/preview/logo-img1.png" width="122" height="36" alt="image" class="image_noborder"> "Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum." <span>- John Anderson, somecompany.com</span></li>
-      <li> <img src="images/preview/logo-img2.png" width="122" height="36" alt="image" class="image_noborder"> "Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem." <span>- Jack Barnaby, somecompany.com</span></li>
+	  <li>None yet, as we've only recently launched. Please be so kind to post a review, using the contact form below.</li>
+      <!-- <li> <img src="images/preview/logo-img1.png" width="122" height="36" alt="image" class="image_noborder"> "Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum." <span>- John Anderson, somecompany.com</span></li>
+      <li> <img src="images/preview/logo-img2.png" width="122" height="36" alt="image" class="image_noborder"> "Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem." <span>- Jack Barnaby, somecompany.com</span></li> -->
     </ul>
   </div>
   <!--testimonial ends--> 
@@ -446,20 +446,12 @@ $('#contactform #message').val('');
     <p class="textstyle2">Upgrade to new features & fixes</p>
     <br class="clear"/>
     <ul class="updates">
-      <li> <span class="coloredstrong">Version 1.2.4</span> <span class="smallstrong"> ( Released on April 26, 2012 )</span>
+      <li> <span class="coloredstrong">Version 1.2.4</span> <span class="smallstrong"> ( Released on October 26, 2016 )</span>
         <div class="divider"></div>
         <h6>What's new in this version?</h6>
-        <a href="#" class="btn">Upgrade</a> <br class="clear"/>
-        . Enhancements in UI elements<br/>
-        . Added extra functionality </li>
-      <li> <span class="coloredstrong">Version 1.2.5</span> <span class="smallstrong"> ( Released on May 5, 2012 )</span>
-        <div class="divider"></div>
-        <h6>What's new in this version?</h6>
-        <a href="#" class="btn">Upgrade</a> <br class="clear"/>
-        . Enhancements in UI elements<br/>
-        . Lorem ipsum dolor sit amet<br/>
-        . Fiant sollemnes in futurum<br/>
-        . Added extra functionality </li>
+        <a href="#download" class="btn">Upgrade</a> <br class="clear"/>
+        . Open sourced everything :-)<br/>
+        . Finished coding tags and rules</li>
     </ul>
   </div>
   <!--updates ends--> 
@@ -517,12 +509,12 @@ $('#contactform #message').val('');
         <li><a href="#"><img src="images/icons/social-footer-facebook.png" width="46" height="46" alt="icon"></a></li>
         <li><a href="#"><img src="images/icons/social-footer-twitter.png" width="46" height="46" alt="icon"></a></li>
       </ul>
-      <div class="contact_info"> <a href="#" >support@redditawkward.com</a>
-        <p>+12 (0) 345 678 9012</p>
+      <div class="contact_info"> <a href="#" >redditawkward@redditawkward.com</a>
+        <p>+45 51 29 25 97</p>
       </div>
-      <p>Lorem ip do SIT<br/>
-        Ametconsecte5, Northbloc D<br/>
-        3456 ipsumcity, Country </p>
+      <p>Reddit Awkward Inc.<br/>
+        Stubberup Byvej 9<br/>
+        DK 4540 Faarevejle, Denmark</p>
     </div>
     <!--address / social ends--> 
     
@@ -532,7 +524,7 @@ $('#contactform #message').val('');
   <div id="footer">
     <p>REDDIT AKWARD © 2016. All Rights Reserved.</p>
     <ul>
-      <li><a href="#">Terms of use </a></li>
+      <li><a href="#">Terms of use</a></li>
       <li><a href="#">Privacy policy</a></li>
     </ul>
     <div class="clear"></div>

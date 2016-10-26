@@ -1,3 +1,19 @@
+<?
+session_start();
+header('Content-Type: text/html; charset=utf-8');
+date_default_timezone_set('Europe/Copenhagen');
+include('../config.php');
+$dt2=date("Y-m-d H:i:s");
+
+
+
+
+
+
+
+
+
+?>
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 <head>
@@ -96,7 +112,7 @@
 *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
 
 var disqus_config = function () {
-this.page.url = "http://redditawkward.com/rules/generalquestions.html";  // Replace PAGE_URL with your page's canonical URL variable
+this.page.url = "https://redditawkward.com/rules/generalquestions.php";  // Replace PAGE_URL with your page's canonical URL variable
 this.page.identifier = "reddit.awkward.generalquestions"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
 };
 

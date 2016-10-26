@@ -1,7 +1,27 @@
 /* mhh start */
 
 
-
+.my_image_container {
+    margin: 10px;
+    width: 256px;
+    height: 256px;
+    line-height: 256px;
+    text-align: center;
+    /* border: 1px solid red; */
+}
+.friend_image_container {
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    /* border: 1px solid red; */
+}
+.friend_image_resize_fit_center {
+    max-width:100%;
+    max-height:100%;
+    vertical-align: middle;
+}
 
 
 .csstricks blockquote {

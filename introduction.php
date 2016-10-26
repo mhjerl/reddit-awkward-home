@@ -31,40 +31,7 @@
 <div id="header_wrapper">
   <div class="container clearfix"> 
     
-    <!--header starts-->
-    <div id="header"> 
-      
-      <!--logo starts-->
-      <div class="four columns logo alpha"> <a href="#header_wrapper">
-        <h1><img src="images/logo.png" width="122" height="62" alt="logo"></h1>
-        </a> </div>
-      <!--logo ends--> 
-      
-      <!--menu / navigation starts-->
-      <div id="nav" class="twelve columns omega">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="#">Features</a></li>
-          <li><a href="#">Screenshots</a></li>
-          <li><a href="#">Download</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">More</a>
-            <ul>
-              <li class="firstdroplink"><a href="pricing.php">Pricing - 3 columns</a></li>
-              <li><a href="pricing-4columns.html">Pricing - 4 columns</a></li>
-              <li><a href="#">Team</a></li>
-              <li><a href="#">Reviews</a> </li>
-              <li class="lastdroplink"><a href="layout.html" class="selected">Layout</a></li>
-            </ul>
-          </li>
-          <li><a href="pricing-4columns.html" class="coloredlink">Pricing</a></li>
-        </ul>
-      </div>
-      <!--menu / navigation ends-->
-      
-      <div class="clear"></div>
-    </div>
-    <!--header ends--> 
+    <? include('parts/header.php'); ?>
     
     <!--sub_header starts-->
     <div id="sub_header">
@@ -92,14 +59,20 @@
 
 <h3><span style="font-style: italic;">Just before</span> hitting the submit button you may realize that in this specific context you <a href="i.consider.this.comment.definitive.and.consider.any.reply.inappropriate">don't want</a> a reply from anybody, because you consider what you've written indebatable.</h3>
 
-<h3><span style="font-style: italic;">After</span> you have written your comment there may come a reaction comment. Did it make you feel <a href="#i.am.glad.you.said.that.to.me">good</a> inside? Do you feel offended? Do you expect an <a href="i.will.not.reply.and.expect.apology">apology</a> or at least a <a href="#guarded.apology">guarded apology</a>? What is the reason? Is it because the commenter is being <a href="#youre.being.overly.ironic.and.are.violating.the.rules">overly ironic</a> and steps beyond regular rules of conduct. You might also consider <a href="#doorslam">slamming</a> the door to clearly express your anger. Afterwards you can always <a href="#explanation.why.i.was.angry">explain</a> why you were angry. The other person might have been <a href="#i.was.being.careless">careless</a></h3>
+<h3><span style="font-style: italic;">After</span> you have written your comment there may come a reaction comment. Did it make you feel <a href="#i.am.glad.you.said.that.to.me">good</a> inside? Do you feel offended? Do you expect an <a href="i.will.not.reply.and.expect.apology">apology</a> or at least a <a href="#guarded.apology">guarded apology</a>? What is the reason? Is it because the commenter is being <a href="#youre.being.overly.ironic.and.are.violating.the.rules">overly ironic</a> and steps beyond regular rules of conduct. You might also consider <a href="#doorslam">slamming</a> the door to clearly express your anger. Afterwards you can always <a href="#explanation.why.i.was.angry">explain</a> why you were angry. The other person might have been <a href="#i.was.being.careless">careless</a> and is willing to admit it.</h3>
 
 <h3><span style="font-style: italic;">Conflicts</span> of this sort should be attempted to be resolved bilaterally, i.e. between two persons. You wait a bit and see if he/she <a href="#i.apologize">apoligizes</a>. Then you might say <a href="#no.problem">no problem!</a>, <a href="#dont.mind.its.ok.lets.move.on">"don't mind, it's ok, lets move on"</a> or even <a href="#its.fine.i.consider.the.case.closed">"It's fine, I consider the case closed!"</a></h3>
 
-<h3>You might also want to critize Reddit <a href="#fight.reddit.anonymity">anonymity</a> and take action and share a bit of personal information with other Awkwards... Please also consider to join the fight to improve Reddit <a href="#fight.the.reddit.karma.system"></a> and <a href="#fight.reddit.tyranny.of.the.masses">tyranny of the masses</a>...</h3>
+<h3>That's more or less what Reddit Awkward can do for you.</h3>
 
-<h3>After all, Reddit should be fun to use. Go ahead, say something <a href="#i.am.one.of.the.strangest.people.youll.ever.meet">silly</a> and be a little <a href="#er.hi.what.kind.of.strange.presentation.is.that">awkward</a>!</h3>
+<h3>By the way: You might also want to critize Reddit <a href="#fight.reddit.anonymity">anonymity</a> and take action and share a bit of personal information with other Awkwards... Please also consider to join the fight to improve Reddit <a href="#fight.the.reddit.karma.system"></a> and <a href="#fight.reddit.tyranny.of.the.masses">tyranny of the masses</a>...</h3>
 
+<h3>After all, Reddit should be fun to use. Go ahead, say something <a href="#i.am.one.of.the.strangest.people.youll.ever.meet">silly</a> and be a little <a href="#er.hi.what.kind.of.strange.presentation.is.that">awkward</a>! Just a little.</h3>
+
+<h3>Happy browsing!</h3>
+<br><br>
+<h3>Reddit Awkward</h3>
+<h4>PS: Usually people don't understand Reddit Awkward tags are all about because they're not familiar with them. A good place to start would be: reddit.awkward{your.comment.inspired.me}</h4>
   </div>
   <div class="divider sixteen columns"></div>
   <!--single column-->

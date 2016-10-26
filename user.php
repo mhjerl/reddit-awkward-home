@@ -1,9 +1,8 @@
 <?
-session_start();
 header('Content-Type: text/html; charset=utf-8');
 date_default_timezone_set('Europe/Copenhagen');
 include('config.php');
-include('../tagoverview.php');
+include('tagoverview.php');
 $dt2=date("Y-m-d H:i:s");
 $redditor = null;
 $whenfirstseen = null;
@@ -15,8 +14,9 @@ $rpoints = null;
 $imageType = null;
 $imageCustom = null;
 
-if ($_SESSION['redditor'] !== null) {
-	$redditor = $_SESSION['redditor'];
+
+if (isset($_GET['redditor'])) {
+	$redditor = $_GET['redditor'];
 }
 else {
 	die("Access denied");
@@ -83,7 +83,6 @@ if ($numrows > 0) {
 	$imageType = $row[7];
 	$imageCustom = $row[8];
 	$about = $row[9];
-	$_SESSION['redditor'] = $redditor;
 }
 else {
 	die("Unknown user: " + $redditor);
@@ -118,7 +117,7 @@ function generateRandomString($length = 10) {
 <link href='http://fonts.googleapis.com/css?family=Vollkorn:400,400italic|Lato:400,300,300italic,400italic' rel='stylesheet' type='text/css'>
 
 <!--style sheets-->
-<link rel="stylesheet" media="screen" href="css/style.css"/>
+<link rel="stylesheet" media="screen" href="css/style.css?v=r"/>
 <link rel="stylesheet" media="screen" href="css/skeleton.css"/>
 
 <!--jquery libraries / others are at the bottom-->
@@ -130,47 +129,13 @@ function generateRandomString($length = 10) {
 <!--header_wrapper starts-->
 <div id="header_wrapper">
   <div class="container clearfix"> 
-    
-    <!--header starts-->
-    <div id="header"> 
-      
-      <!--logo starts-->
-      <div class="four columns logo alpha"> <a href="#header_wrapper">
-        <h1><img src="images/logo.png" width="122" height="62" alt="logo"></h1>
-        </a> </div>
-      <!--logo ends--> 
-      
-      <!--menu / navigation starts-->
-      <div id="nav" class="twelve columns omega">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="#">Features</a></li>
-          <li><a href="#">Screenshots</a></li>
-          <li><a href="#">Download</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">More</a>
-            <ul>
-              <li class="firstdroplink"><a href="pricing.php">Pricing - 3 columns</a></li>
-              <li><a href="pricing-4columns.html">Pricing - 4 columns</a></li>
-              <li><a href="#">Team</a></li>
-              <li><a href="#">Reviews</a> </li>
-              <li class="lastdroplink"><a href="layout.html" class="selected">Layout</a></li>
-            </ul>
-          </li>
-          <li><a href="pricing-4columns.html" class="coloredlink">Pricing</a></li>
-        </ul>
-      </div>
-      <!--menu / navigation ends-->
-      
-      <div class="clear"></div>
-    </div>
-    <!--header ends--> 
+    <? include('parts/header.php'); ?>
     
     <!--sub_header starts-->
     <div id="sub_header">
       <div class="columns sixteen">
-        <h2>Admin Page</h2>
-        <p class="textstyle2">Manage your settings and view available tags</p>
+        <h2>User Page</h2>
+        <p class="textstyle2"></p>
       </div>
     </div>
     <!--sub_header ends--> 
@@ -187,46 +152,55 @@ function generateRandomString($length = 10) {
 	<div class="one-third column">
 		<h2><? echo $redditor ?></h2>
 		<h2>About me...</h2>
-		<p><span id="ab_val"><? echo $about ? $about : "Bla bla bla..."; ?></span></p>
-		<p><a href="#" id="chg_ab">Change...</a></p>
-		<div id="ab_div" style="display: none">
-			<textarea id="ab_inp" rows="10" cols="40"><? echo $about ? $about : ""; ?></textarea>
-			<a href="#" id="ab_sub">Save</a>
-		</div>
+		<p><? echo $about ? $about : "Bla bla bla..."; ?></p>
+		<br><br><br><h2>Friends</h2>
+<?
+foreach ($friends as $friend) {
+	$query = "SELECT imagetype, imagecustom FROM prima_user WHERE redditor='{$friend['friend']}' AND NOT(redditor='{$redditor}');";
+	$result = mysqli_query($GLOBALS["___mysqli_ston"], $query);
+	$numrows = mysqli_num_rows($result);
+	$row = mysqli_fetch_row($result);
+	$imageType2 = $row[0];
+	$imageCustom2 = $row[1];
+	echo "<br><br><h4>" . $friend['friend'] . ": " . $friend['total'] . " Social Karma</h4>";
+	$url = '<img class="friend_image_resize_fit_center" src="images/avatars/astronaut.png"/>';
+	if ($imageType2 == "man") $url = '<img class="friend_image_resize_fit_center" src="images/avatars/builderman.png"/>';
+	else if ($imageType2 == "woman") $url = '<img class="friend_image_resize_fit_center" src="images/avatars/builderwoman.png"/>';
+	else if ($imageType2 == "custom") $url = '<img class="friend_image_resize_fit_center" src="uplooood/' . $imageCustom2 . '"/>';
+	echo '<div class="friend_image_container">
+<a href="user.php?redditor=' . $friend["friend"] . '">'
+  . $url .
+'</a>
+</div>';
+	
+}
+
+
+
+
+
+?>
+
+
+
 	</div>
 	<div class="one-third column">
-		<h2>You</h2>
-	
 <?
 	
-	if ($imageType == "man") echo '<img id="pro_image" src="images/avatars/builderman.png" height=100/>';
-	else if ($imageType == "woman") echo '<img id="pro_image" src="images/avatars/builderwoman.png" height=100/>';
-	else if ($imageType == "custom") echo '<img id="pro_image" src="uplooood/' . $imageCustom . '" height=100/>';
-	else echo '<img id="pro_image" src="images/avatars/astronaut.png" height=100/>';
+	$url = '<img class="friend_image_resize_fit_center" src="images/avatars/astronaut.png"/>';
+	if ($imageType == "man") $url = '<img class="friend_image_resize_fit_center " src="images/avatars/builderman.png"/>';
+	else if ($imageType == "woman") $url = '<img class="friend_image_resize_fit_center" src="images/avatars/builderwoman.png"/>';
+	else if ($imageType == "custom") $url = '<img class="friend_image_resize_fit_center" src="uplooood/' . $imageCustom . '"/>';
+	echo '<div class="my_image_container">' . $url . '</div>';
 ?>
 <br>
 <br>
-<a class="pimselect" id="astronaut" href="#"><img src="images/avatars/astronaut.png" width="40"></a>
-<a class="pimselect" id="builderman" href="#"><img src="images/avatars/builderman.png" width="40"></a>
-<a class="pimselect" id="builderwoman" href="#"><img src="images/avatars/builderwoman.png" width="40"></a>
-<? if ($type === "premium") { ?>
-		<br>
-		<br>
-		<form name="myForm" action="admin.php" method="post" enctype="multipart/form-data">
-			<input type="file" name="my_file" />
-			<input type="submit" value="Upload"></input><br><br>
-		</form>
-<? } ?>
+
 	</div>
 	
 	<div class="one-third column">
 		<h2>Email</h2>
-		<p><span id="em_val"><? echo $email ? $email : "Unknown"; ?></span></p>
-		<p><a href="#" id="chg_em">Change...</a></p>
-		<div id="em_div" style="display: none">
-			<input class="hashinputlarge" type="text" id="em_inp" />
-			<a href="#" id="em_sub">Save</a>
-		</div>
+		<p><? echo $email ? $email : "Unknown"; ?></p>
 		<br>
 		<br>
 	</div>	
