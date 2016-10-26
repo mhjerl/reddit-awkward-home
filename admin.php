@@ -3,7 +3,7 @@ session_start();
 header('Content-Type: text/html; charset=utf-8');
 date_default_timezone_set('Europe/Copenhagen');
 include('config.php');
-include('../tagoverview.php');
+include('tagoverview.php');
 $dt2=date("Y-m-d H:i:s");
 $redditor = null;
 $whenfirstseen = null;
@@ -69,7 +69,7 @@ for ($c = 0; $c < sizeof($friendsTemp); $c++) {
 
 
 
-$FILE_EXTS = array('.png', '.gif', '.jpg');
+$FILE_EXTS = array('.png', '.gif', '.jpg', '.jpeg');
 
 /* Hvor mange kilobytes maa filerne fylde per styk? */
 $konfiguration["max_stoerrelse"] = "10000";

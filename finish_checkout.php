@@ -69,7 +69,7 @@
     <!--sub_header starts-->
     <div id="sub_header">
       <div class="columns sixteen">
-        <h2>Log In or Activate</h2>
+        <h2>Upgrade account</h2>
         <p class="textstyle2">Get Started</p>
       </div>
     </div>

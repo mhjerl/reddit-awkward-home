@@ -176,7 +176,7 @@ $('#contactform #message').val('');
 					<? echo $logOut; ?>
           <li><a href="#">More</a>
             <ul>
-              <li class="firstdroplink"><a href="pricing-3columns.html">Pricing - 3 columns</a></li>
+              <li class="firstdroplink"><a href="pricing-3columns.php">Pricing - 3 columns</a></li>
               <li><a href="pricing-4columns.html">Pricing - 4 columns</a></li>
               <li><a href="#team" class="nav-team nav">Team</a></li>
               <li><a href="#sub_footer" class="nav-sub_footer nav">Reviews</a> </li>
@@ -273,14 +273,14 @@ $('#contactform #message').val('');
   <div class="four columns">
     <div class="icon_bg"><img src="images/icons/traffic-light.png" width="92" height="92" alt="icon"></div>
     <h4>Rules</h4>
-    <p>Remedies common conversation halts.</p>
+    <p>Streamlines conversation parts. Remedies common conversation halts.</p>
   </div>
   <!--feature one ends--> 
   
   <!--feature two starts-->
   <div class="four columns">
     <div class="icon_bg"><img src="images/icons/bubble.png" width="92" height="92" alt="icon"></div>
-    <h4>Hashtags</h4>
+    <h4>Active Hashtags</h4>
     <p>A combination of Facebook-likes and ordinary hashtags, known from Twitter and Instagram.</p>
   </div>
   <!--feature two ends--> 
@@ -288,8 +288,8 @@ $('#contactform #message').val('');
   <!--feature three starts-->
   <div class="four columns">
     <div class="icon_bg"><img src="images/icons/reddit-logo.png" width="92" height="92" alt="icon"></div>
-    <h4>Awkward-Karma</h4>
-    <p></p>
+    <h4>Awkward	Karma</h4>
+    <p>An additional karma system.</p>
   </div>
   <!--feature three ends--> 
   
@@ -304,8 +304,8 @@ $('#contactform #message').val('');
   <!--feature five starts-->
   <div class="four columns">
     <div class="icon_bg"><img src="images/icons/icon-1.png" width="92" height="92" alt="icon"></div>
-    <h4>Browser Add-On</h4>
-    <p>Changes how Reddit looks, acts and feels.</p>
+    <h4>Quick Reply</h4>
+    <p>Quick access to tags from reddit comment pages</p>
   </div>
   <!--feature five ends--> 
 
@@ -320,8 +320,8 @@ $('#contactform #message').val('');
   <!--feature seven starts-->
   <div class="four columns">
     <div class="icon_bg"><img src="images/icons/icon-3.png" width="92" height="92" alt="icon"></div>
-    <h4>Customization</h4>
-    <p>Lets the user control which rules, tags and colors to use.</p>
+    <h4>Popup</h4>
+    <p>The latest news events in your Reddit Awkward cloud. Notifications, friends and more...</p>
   </div>
   <!--feature seven ends--> 
 
@@ -329,51 +329,13 @@ $('#contactform #message').val('');
   <div class="four columns">
     <div class="icon_bg"><img src="images/icons/icon-4.png" width="92" height="92" alt="icon"></div>
     <h4>Admin Page</h4>
-    <p>View notifications from the past + administrate payouts + edit your personal settings.</p>
+    <p></p>
   </div>
   <!--feature eight ends-->
 
 
 </div>
 <!--features section ends--> 
-
-<!--screenshots section starts-->
-<div class="row_color">
-  <div id="screenshots" class="container clearfix scroll-content">
-    <div class="columns sixteen"> 
-      
-      <!--heading (do not remove clear below heading)-->
-      <h2>Screenshots</h2>
-      <p class="textstyle2">What you see is what you get</p>
-      <br class="clear"/>
-      
-      <!--gallery / carousel starts-->
-      <ul id="mycarousel" class="jcarousel-skin-tango">
-        <li>
-          <div class="thumb"><a href="images/preview/large.jpg" data-rel="prettyPhoto[gallery1]" title="This is title of image"><img src="images/preview/thumb-1.jpg" alt="Image"/><span class="zoom zoom_icon"></span></a> </div>
-        </li>
-        <li>
-          <div class="thumb"><a href="images/preview/large.jpg" data-rel="prettyPhoto[gallery1]" title="This is title of image"><img src="images/preview/thumb-2.jpg" alt="Image"/><span class="zoom zoom_icon"></span></a> </div>
-        </li>
-        <li>
-          <div class="thumb"><a href="images/preview/large.jpg" data-rel="prettyPhoto[gallery1]" title="This is title of image"><img src="images/preview/thumb-3.jpg" alt="Image"/><span class="zoom zoom_icon"></span></a> </div>
-        </li>
-        <li>
-          <div class="thumb"><a href="images/preview/large.jpg" data-rel="prettyPhoto[gallery1]" title="This is title of image"><img src="images/preview/thumb-2.jpg" alt="Image"/><span class="zoom zoom_icon"></span></a> </div>
-        </li>
-        <li>
-          <div class="thumb"><a href="images/preview/large.jpg" data-rel="prettyPhoto[gallery1]" title="This is title of image"><img src="images/preview/thumb-1.jpg" alt="Image"/><span class="zoom zoom_icon"></span></a> </div>
-        </li>
-        <li>
-          <div class="thumb"><a href="images/preview/large.jpg" data-rel="prettyPhoto[gallery1]" title="This is title of image"><img src="images/preview/thumb-1.jpg" alt="Image"/><span class="zoom zoom_icon"></span></a> </div>
-        </li>
-      </ul>
-      <!--gallery / carousel ends--> 
-      
-    </div>
-  </div>
-</div>
-<!--screenshots section ends--> 
 
 <!--team section starts-->
 <div id="team" class="container clearfix scroll-content"> 
