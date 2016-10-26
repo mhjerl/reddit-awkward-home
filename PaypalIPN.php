@@ -95,12 +95,14 @@ class PaypalIPN
         $info = curl_getinfo($ch);
         $http_code = $info['http_code'];
         if ($http_code != 200) {
+			//sendMail2("PayPal responded with http code $http_code");
             throw new Exception("PayPal responded with http code $http_code");
         }
         if ( ! ($res)) {
             $errno = curl_errno($ch);
             $errstr = curl_error($ch);
             curl_close($ch);
+			//sendMail2("cURL error: [$errno] $errstr");
             throw new Exception("cURL error: [$errno] $errstr");
         }
         curl_close($ch);
@@ -111,5 +113,9 @@ class PaypalIPN
             return false;
         }
     }
+}
+
+function //sendMail2($text) {
+	mail("mortenhh@gmail.com","redditawkward.com",$text,"from:sales@redditawkward.com");
 }
 ?>

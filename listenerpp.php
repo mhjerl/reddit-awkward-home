@@ -12,7 +12,7 @@ $ipn = new PayPalIPN();
 
 
 
-$ipn->useSandbox();
+//$ipn->useSandbox();
 
 
 
@@ -38,7 +38,7 @@ if ($verified) {
     $receiver_email = $_POST['receiver_email'];
     $payer_email = $_POST['payer_email'];
 	$redditor = $_POST['custom'];
-
+	//sendMail("redditor: " . $redditor);
 	$dt2=date("Y-m-d H:i:s");
 	$sql = "INSERT INTO `prima_ipn` (
 	`id` ,
@@ -60,6 +60,7 @@ if ($verified) {
 	mysqli_query($GLOBALS["___mysqli_ston"], $sql);
 
 	$sql="UPDATE `prima_user` SET `type` = '$item_name', `email` = '$payer_email' WHERE `prima_user`.`redditor` = '$redditor';";
+	//sendMail($sql);
 	mysqli_query($GLOBALS["___mysqli_ston"], $sql);
 }
 else {
@@ -69,7 +70,7 @@ else {
 header("HTTP/1.1 200 OK");
 
 
-function sendMail($text) {
-	mail("mortenhh@gmail.com","redditawkward.com",$text,"from:sales@redditawkward.com");
+function //sendMail($text) {
+	mail("mortenhh@gmail.com","redditawkward.com",$text,"from:redditawkward@redditawkward.com");
 }
 ?>
