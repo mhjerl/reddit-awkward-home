@@ -92,9 +92,12 @@ if ($_SESSION['redditor'] !== null) { ?>
 <?
 }
 ?>
-  <div class="divider sixteen columns"></div>
 <h2>Tip: If you have a general question, please do visit our <a href="generalquestions.php">main discussions page</a>.</h2>
 	<div class="divider sixteen columns"></div>
+
+<div class="sixteen columns">
+
+
 <div id="disqus_thread"></div>
 <script>
 
@@ -115,7 +118,10 @@ s.setAttribute('data-timestamp', +new Date());
 })();
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-  
+
+
+
+</div>
 </div>
 <!--content ends--> 
 

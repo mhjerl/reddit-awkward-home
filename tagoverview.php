@@ -26,13 +26,7 @@ $awkwardKarmaNeeded = array(
     "er.hi.what.kind.of.strange.presentation.is.that" => 0,
     "youre.being.overly.ironic.and.are.violating.the.rules" => 0,
     "awkward" => 0,
-    "f**k.you" => 0,
-    "haha" => 0,
-    "wtf" => 0,
     "watch.me.playing.soccer.with.myself.in.this.video" => 0,
-    "how.are.things.old.chap" => 0,
-    "reading.lagerlof" => 0,
-    "reading.steinbeck" => 0,
 	"no.i.mean.it" => 0,
 	"that.pissed.me.off.but.please.dont.mind" => 0
 );
@@ -64,13 +58,7 @@ $awkwardKarmaRewards = array(
     "er.hi.what.kind.of.strange.presentation.is.that" => 0,
     "youre.being.overly.ironic.and.are.violating.the.rules" => 0,
     "awkward" => 0,
-    "f**k.you" => 0,
-    "haha" => 0,
-    "wtf" => 0,
     "watch.me.playing.soccer.with.myself.in.this.video" => 0,
-    "how.are.things.old.chap" => 0,
-    "reading.lagerlof" => 0,
-    "reading.steinbeck" => 0,
 	"no.i.mean.it" => 0,
 	"that.pissed.me.off.but.please.dont.mind" => 0
 );
@@ -78,39 +66,41 @@ $awkwardKarmaRewards = array(
 $tagCategories = array(
     "waits.for.anyone" => "Requests",
     "waits.for.your.reply.only" => "Requests",
+	 
+	"awkward" => "Awkward",
+
     "i.find.this.unworthy.for.discussion" => "Outrule",
     "i.find.the.subject.unworthy.for.discussion" => "Outrule",
+
     "i.will.not.reply.and.expect.apology" => "Anger",
+    "doorslam" => "Anger",
+	"that.pissed.me.off.but.please.dont.mind" => "Anger",
+
     "i.apologize" => "Apology",
     "no.problem" => "Apology",
-    "your.comment.inspired.me" => "Praise",
-	"thanks" => "Praise",
-	"youre.welcome" => "Praise",
-    "i.dont.think.the.original.post.has.been.addressed.yet" => "Meta",
-    "i.dont.think.the.original.post.has.been.taken.seriously.yet" => "Meta",
-    "i.dont.think.the.original.post.has.been.treated.respectfully" => "Meta",
     "guarded.apology" => "Apology",
     "explanation.why.i.was.angry" => "Apology",
     "dont.mind.its.ok.lets.move.on" => "Apology",
     "i.was.being.careless" => "Apology",
-    "doorslam" => "Anger",
+	 "its.fine.i.consider.the.case.closed" => "Apology" ,
+
+    "your.comment.inspired.me" => "Praise",
+	"thanks" => "Praise",
+	"youre.welcome" => "Praise",
     "i.am.glad.you.said.that.to.me" => "Praise",
-    "its.fine.i.consider.the.case.closed" => "Apology" ,
-    "i.consider.this.comment.definitive.and.consider.any.reply.inappropriate" => "Meta",
-    "interesting.will.write.more.in.a.few.days.time" => "Patience",
-    "i.am.one.of.the.strangest.people.youll.ever.meet" => "Funny",
-    "er.hi.what.kind.of.strange.presentation.is.that" => "Funny",
-    "youre.being.overly.ironic.and.are.violating.the.rules" => "Meta",
-    "awkward" => "Awkward",
-    "f**k.you" => "Kidding",
-    "haha" => "Kidding",
-    "wtf" => "Kidding",
-    "watch.me.playing.soccer.with.myself.in.this.video" => "Bodily",
-    "how.are.things.old.chap" => "Friendly",
-    "reading.lagerlof" => "Friendly",
-    "reading.steinbeck" => "Friendly",
 	"no.i.mean.it" => "Praise",
-	"that.pissed.me.off.but.please.dont.mind" => "Anger"
+
+    "i.dont.think.the.original.post.has.been.addressed.yet" => "Meta",
+    "i.dont.think.the.original.post.has.been.taken.seriously.yet" => "Meta",
+    "i.dont.think.the.original.post.has.been.treated.respectfully" => "Meta",
+    "i.consider.this.comment.definitive.and.consider.any.reply.inappropriate" => "Meta",
+    "youre.being.overly.ironic.and.are.violating.the.rules" => "Meta",
+
+    "interesting.will.write.more.in.a.few.days.time" => "Patience",
+
+    "watch.me.playing.soccer.with.myself.in.this.video" => "Funny",
+    "i.am.one.of.the.strangest.people.youll.ever.meet" => "Funny",
+    "er.hi.what.kind.of.strange.presentation.is.that" => "Funny"
 );
 
 $relationalKarmaNeeded = array(
@@ -132,12 +122,6 @@ $relationalKarmaNeeded = array(
     "i.am.one.of.the.strangest.people.youll.ever.meet" => 0,
     "er.hi.what.kind.of.strange.presentation.is.that" => 0,
     "awkward" => 0,
-    "f**k.you" => 100,
-    "haha" => 10,
-    "wtf" => 20,
-    "how.are.things.old.chap" => 50,
-    "reading.lagerlof" => 70,
-    "reading.steinbeck" => 60,
 	"no.i.mean.it" => 0,
 	"that.pissed.me.off.but.please.dont.mind" => 0
 );
@@ -176,13 +160,7 @@ $mustBeStandAloneTags = array(
     "er.hi.what.kind.of.strange.presentation.is.that" => "noStandAloneRule",
     "youre.being.overly.ironic.and.are.violating.the.rules" => "noStandAloneRule",
     "awkward" => "takenCareOfElsewhere",
-    "f**k.you" => "noStandAloneRule",
-    "haha" => "noStandAloneRule",
-    "wtf" => "noStandAloneRule",
     "watch.me.playing.soccer.with.myself.in.this.video" => "noStandAloneRule",
-    "how.are.things.old.chap" => "noStandAloneRule",
-    "reading.lagerlof" => "noStandAloneRule",
-    "reading.steinbeck" => "noStandAloneRule",
 	"no.i.mean.it" => "mustStandAlone",
 	"that.pissed.me.off.but.please.dont.mind" => "takenCareOfElsewhere"
 );
