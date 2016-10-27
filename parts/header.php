@@ -24,7 +24,7 @@ if ($_SESSION['redditor'] !== null) {
           <li><a href="#">More</a>
             <ul>
               <li class="lastdroplink"><a href="introduction.php">Introduction</a></li>
-			  <li class="lastdroplink"><a href="https://github.com/mhjerl" target=“_blank”>Open Source</a></li>
+			  <li class="lastdroplink"><a href="https://github.com/mhjerl" target=“_blank”>Source Code</a></li>
             </ul>
           </li>
           <li><a href="pricing.php" class="coloredlink">Pricing</a></li>
