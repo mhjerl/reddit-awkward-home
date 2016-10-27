@@ -10,7 +10,7 @@ if ($_SESSION['redditor'] !== null) {
     <div id="header">
       
       <!--logo starts-->
-      <div class="four columns logo alpha"> <a href="#header_wrapper">
+      <div class="four columns logo alpha"> <a href="indx.php">
         <h1><img src="images/Logomakr_2ACvqw.png" height="62" alt="logo"></h1>
         </a> </div>
       <!--logo ends--> 

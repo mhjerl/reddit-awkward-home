@@ -47,40 +47,7 @@ $dt2=date("Y-m-d H:i:s");
 <div id="header_wrapper">
   <div class="container clearfix"> 
     
-    <!--header starts-->
-    <div id="header"> 
-      
-      <!--logo starts-->
-      <div class="four columns logo alpha"> <a href="#header_wrapper">
-        <h1><img src="images/logo.png" width="122" height="62" alt="logo"></h1>
-        </a> </div>
-      <!--logo ends--> 
-      
-      <!--menu / navigation starts-->
-      <div id="nav" class="twelve columns omega">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="#">Features</a></li>
-          <li><a href="#">Screenshots</a></li>
-          <li><a href="#">Download</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">More</a>
-            <ul>
-              <li class="firstdroplink"><a href="pricing.php">Pricing - 3 columns</a></li>
-              <li><a href="pricing-4columns.html">Pricing - 4 columns</a></li>
-              <li><a href="#">Team</a></li>
-              <li><a href="#">Reviews</a> </li>
-              <li class="lastdroplink"><a href="layout.html" class="selected">Layout</a></li>
-            </ul>
-          </li>
-          <li><a href="pricing-4columns.html" class="coloredlink">Pricing</a></li>
-        </ul>
-      </div>
-      <!--menu / navigation ends-->
-      
-      <div class="clear"></div>
-    </div>
-    <!--header ends--> 
+    <? include('../parts/header.php'); ?>
     
     <!--sub_header starts-->
     <div id="sub_header">
@@ -104,6 +71,8 @@ $dt2=date("Y-m-d H:i:s");
   </div>
   
   <div class="divider sixteen columns"></div>
+
+<div class="sixteen columns">
 <div id="disqus_thread"></div>
 <script>
 
@@ -124,7 +93,8 @@ s.setAttribute('data-timestamp', +new Date());
 })();
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-  
+
+</div>  
 </div>
 <!--content ends--> 
 
