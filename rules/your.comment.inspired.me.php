@@ -84,6 +84,15 @@ $dt2=date("Y-m-d H:i:s");
 		<h3>§2 May not be used to support somebody in a discussion (Please report misuse -> Penalty: -100 Awkward Karma)</h3>
 	</div>
   <div class="divider sixteen columns"></div>
+<?
+if ($_SESSION['redditor'] !== null) { ?>
+  <h2><? echo $_SESSION['redditor']; ?>'s use of this tag:</h2>
+
+
+<?
+}
+?>
+  <div class="divider sixteen columns"></div>
 <h2>Tip: If you have a general question, please do visit our <a href="generalquestions.php">main discussions page</a>.</h2>
 	<div class="divider sixteen columns"></div>
 <div id="disqus_thread"></div>
