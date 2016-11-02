@@ -16,7 +16,7 @@ $commentid = $_GET['commentid'];
 //if (!isset($_GET['tag'])) { die("Forbidden...");}
 $tag = $_GET['tag'];
 
-
+$redditor = $_GET['redditor'];
 
 //$response = $reddit->sendMessage("mortenhh2", "Look at this message!", "Hey!\n\n**[search!](http://www.google.com/)**");
 
@@ -31,11 +31,32 @@ if ($count3 > 0) {
 }
 else {
 	$reddit = new reddit();
-	$userData = $reddit->getUser();
+	
+
+	
+
+
+
+	
+	//$userData = $reddit->getUser();
 	//var_dump($userData);
 	//echo "<br><br>{$userData->name}";
-	$redditor = $userData->name;
-	if (!$redditor or $redditor === "") {$reddit->revoke(); die("session timed out!");}
+	//$redditor = $userData->name;
+	
+	
+
+
+	
+	//if ((!$redditor) or $redditor === "") {$reddit->revoke(); die("session timed out!");}
+
+
+
+
+
+
+
+
+
 	$secret = generateRandomString();
 	$query = "INSERT INTO `redditawkward_com`.`prima_violation_reports` (
 	`id` ,

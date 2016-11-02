@@ -327,8 +327,8 @@ if ($_SESSION['redditor'] !== null) {
   <!--feature eight starts-->
   <div class="four columns">
     <div class="icon_bg"><img src="images/icons/icon-4.png" width="92" height="92" alt="icon"></div>
-    <h4>Admin Page</h4>
-    <p></p>
+    <h4>Friends</h4>
+    <p>Social Karma and more...</p>
   </div>
   <!--feature eight ends-->
 
@@ -450,7 +450,6 @@ if ($_SESSION['redditor'] !== null) {
         <div class="divider"></div>
         <h6>What's new in this version?</h6>
         <a href="#download" class="btn">Upgrade</a> <br class="clear"/>
-        . Open sourced everything :-)<br/>
         . Finished coding tags and rules</li>
     </ul>
   </div>
@@ -522,7 +521,7 @@ if ($_SESSION['redditor'] !== null) {
   
   <!--footer starts-->
   <div id="footer">
-    <p>REDDIT AKWARD © 2016. All Rights Reserved.</p>
+    <p>REDDIT AWKWARD © 2016. All Rights Reserved.</p>
     <ul>
       <li><a href="#">Terms of use</a></li>
       <li><a href="#">Privacy policy</a></li>
