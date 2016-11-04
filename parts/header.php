@@ -10,7 +10,7 @@ if ($_SESSION['redditor'] !== null) {
     <div id="header">
       
       <!--logo starts-->
-      <div class="four columns logo alpha"> <a href="indx.php">
+      <div class="four columns logo alpha"> <a href="https://redditawkward.com/indx.php">
         <h1><img src="images/Logomakr_2ACvqw.png" height="62" alt="logo"></h1>
         </a> </div>
       <!--logo ends--> 
@@ -18,13 +18,14 @@ if ($_SESSION['redditor'] !== null) {
       <!--menu / navigation starts-->
       <div id="nav" class="twelve columns omega">
         <ul>
-          <li><a href="#indx.php" class="nav-header_wrapper nav selected">Home</a></li>
+          <li><a href="https://redditawkward.com/indx.php" class="nav-header_wrapper nav selected">Home</a></li>
           <li><? echo $logInOrRedditor; ?></li>
 					<? echo $logOut; ?>
           <li><a href="#">More</a>
             <ul>
-              <li class="lastdroplink"><a href="introduction.php">Introduction</a></li>
+              <li class="lastdroplink"><a href="https://redditawkward.com/introduction.php">Introduction</a></li>
 			  <li class="lastdroplink"><a href="https://github.com/mhjerl" target=“_blank”>Source Code</a></li>
+			  <li class="lastdroplink"><a href="https://redditawkward.com/misc.php">Misc.</a></li>
             </ul>
           </li>
           <li><a href="pricing.php" class="coloredlink">Pricing</a></li>

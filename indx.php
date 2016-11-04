@@ -179,6 +179,7 @@ if ($_SESSION['redditor'] !== null) {
             <ul>
               <li class="lastdroplink"><a href="introduction.php">Introduction</a></li>
 			  <li class="lastdroplink"><a href="https://github.com/mhjerl" target=“_blank”>Source Code</a></li>
+			  <li class="lastdroplink"><a href="misc.php">Misc.</a></li>
             </ul>
           </li>
           <li><a href="pricing.php" class="coloredlink">Pricing</a></li>
