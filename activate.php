@@ -146,6 +146,7 @@ function generateRandomString($length = 10) {
 		  <h2>Welcome <?=$redditor?>!</h2>
 			<div style="text-align: center; margin: auto;">
 				<h2>You are now logged in.</h2>
+				<h2>Activation hash: <? echo $hash; ?></h2>
 				<br>
 				<div class="button_wrapper"><a href="indx.php" class="btn_yellow"><span>Continue</span></a></div>
 				<br>
@@ -155,6 +156,7 @@ function generateRandomString($length = 10) {
 				<h2>Welcome <?=$redditor?>!</h2>
 				<div style="text-align: center; margin: auto;">
 					<h2>You are now logged in.</h2>
+					<h2>Activation hash: <? echo $hash; ?></h2>
 					<br>
 					<div class="button_wrapper"><a href="indx.php" class="btn_yellow"><span>Continue</span></a></div>
 					<br>
@@ -185,7 +187,7 @@ function generateRandomString($length = 10) {
 				<h2>Activation Hash:</h2>
 				<center><input class="hashinputlarge" id="hash" name="hash" type="password" value="<? echo $hash; ?>"></center>
 				<br>
-				<div class="button_wrapper"><input class="submit" type="submit" value="Send"></div>
+				<div class="button_wrapper"><input class="submit" type="submit" value="Log In"></div>
 				<div class="button_wrapper"><a href="activate.php" class="btn_yellow"><span>Get a hash</span></a></div>
 				<br>
 			</div>

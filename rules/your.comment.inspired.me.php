@@ -52,8 +52,8 @@ $dt2=date("Y-m-d H:i:s");
     <!--sub_header starts-->
     <div id="sub_header">
       <div class="columns sixteen">
-        <h2>Tag Specification</h2>
-        <p class="textstyle2">reddit.awkward{your.comment.inspired.me}</p>
+        <h2>reddit.awkward{your.comment.inspired.me}</h2>
+        <p class="textstyle2">Rules</p>
       </div>
     </div>
     <!--sub_header ends--> 
@@ -65,13 +65,6 @@ $dt2=date("Y-m-d H:i:s");
 <!--content starts-->
 <div id="content" class="container clearfix">
 
-  <!--single column-->
-	<div class="sixteen columns">
-		<div class="csstricks">
-			<blockquote><h3>We aim to streamline and standardize certain <a href="https://en.wikipedia.org/wiki/Language-game_(philosophy)">language games</a> in conversations on the web. Otherwise we make things too complicated, suppress important feelings needlessly and restrain ourselves where body language and the sophisticated and multi-faceted elements of direct conversation are unavailable.</h3><p><h4>MORTEN HJERL-HANSEN</h4></p></blockquote>
-		</div>
-	</div>
-	<div class="divider sixteen columns"></div>
   <!--heading-->
   <div class="sixteen columns">
     <h2>reddit.awkward{your.comment.inspired.me}</h2>

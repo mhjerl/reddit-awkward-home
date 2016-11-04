@@ -10,7 +10,7 @@ session_start();
 <meta name="keywords" content="one page template, corporate, software, app, business, marketing, landing page, web marketing, internate marketing"/>
 <meta name="author" content="Tansh" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-<title>Reddit Akward</title>
+<title>Reddit Awkward</title>
 
 <!--Fav and touch icons-->
 <link rel="shortcut icon" href="images/icons/favicon.ico">
@@ -99,7 +99,7 @@ session_start();
           </tr>
 
           <tr>
-            <td><h6>Akward Karma</h6>
+            <td><h6>Awkward Karma</h6>
               <p>No</p></td>
           </tr>
           <tr>
@@ -195,7 +195,7 @@ $redditor = $_SESSION['redditor'];
           </tr>
 
           <tr>
-            <td><h6>Akward Karma</h6>
+            <td><h6>Awkward Karma</h6>
               <p>Yes</p></td>
           </tr>
           <tr>
@@ -303,7 +303,7 @@ $redditor = $_SESSION['redditor'];
   
   <!--footer starts-->
   <div id="footer">
-    <p>REDDIT AKWARD © 2016. All Rights Reserved.</p>
+    <p>REDDIT AWKWARD © 2016. All Rights Reserved.</p>
     <ul>
       <li><a href="#">Terms of use</a></li>
       <li><a href="#">Privacy policy</a></li>

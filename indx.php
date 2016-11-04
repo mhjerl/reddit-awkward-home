@@ -383,9 +383,9 @@ if ($_SESSION['redditor'] !== null) {
       <div class="logo_grey"><img src="images/Logomakr_2ACvqw.png" alt="logo"></div>
       <h2>Don't wait.</h2>
       <ul class="textlist">
-        <li>Free Trial</li>
+        <li>$9.95/yr</li>
         <li>| </li>
-        <li> No credit card required </li>
+        <li> Money-back guarantee</li>
       </ul>
       <!--center aligned button-->
       <div class="button_wrapper">

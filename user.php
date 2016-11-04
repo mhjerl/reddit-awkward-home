@@ -135,7 +135,7 @@ function generateRandomString($length = 10) {
     <div id="sub_header">
       <div class="columns sixteen">
         <h2>User Page</h2>
-        <p class="textstyle2"></p>
+        <p class="textstyle2">View details</p>
       </div>
     </div>
     <!--sub_header ends--> 
