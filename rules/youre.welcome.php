@@ -73,13 +73,14 @@ $dt2=date("Y-m-d H:i:s");
 <br>
   </div>
   
-   <? include("../parts/preamble.php"); ?>
+   <!-- section1234a -->
   <div class="sixteen columns">
 		<h2>Rules</h2>
 
 		<h3>§1 Both first person (agent) and second person (the one agent talks to) gets Awkward Karma</h3>
 	</div>
   <!-- section1234b -->
+<? include("../parts/preamble.php"); ?>
   <div class="sixteen columns">
 	<h4>Tip: If you have a general question, please do visit our <a href="generalquestions.php">main discussions page</a>.</h4>
   </div>

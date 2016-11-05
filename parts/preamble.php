@@ -1,4 +1,4 @@
-<div class="sixteen columns">
+<div class="sixteen columns" style="margin-top: 30px;">
 	<div style="border-style: solid; border-width: 5px; padding: 20px; margin-bottom: 50px;">
     <h2>General Introduction: How to use Reddit Awkward Tags</h2>
 	<p>To me, there are two aspects of using Reddit Awkward Tags and learning how to use them: There's a fight aspect and a comfortablenes aspect.</p>

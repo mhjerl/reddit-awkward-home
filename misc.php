@@ -160,9 +160,9 @@ $dt2=date("Y-m-d H:i:s");
 
 <p>A: They're designed with this purpose in mind, among many other purposes.</p>
 <br>
-<p>Q: Most people think of language as intangible, as something very mysterious, vivid and fluid. We can express very much by saying very little. We can express ourselves with just a single word in a given context.</p>
+<p>Q: Most people think of language as intangible, as something mysterious, vivid and fluid. We can express very much by saying very little. We can express ourselves with just a single word in a given context.</p>
 
-<p>A: True. But it's naive only to aknowledge this mysterious aspect of language. There's a technical aspect as well. It's wrong to say panta rei about language.</p>
+<p>A: True. But it's naive only to aknowledge this mysterious aspect of language. There's a technical aspect as well. It's wrong to say panta rei about everything and especially about language.</p>
 <br>
 <p>Q: Panta rei?</p>
 
@@ -178,7 +178,7 @@ $dt2=date("Y-m-d H:i:s");
 <br>
 <p>Q: Why are we not more aware of the technical side of language?</p>
 
-<p>A: To me, the technical side of language is the one most intellectually appealing.</p>
+<p>A: To me, the technical side of language is intellectually appealing.</p>
 <br>
 <p>Q: Bringing Wittgenstein to the general public?</p>
 
@@ -192,17 +192,8 @@ $dt2=date("Y-m-d H:i:s");
 
 <p>A: Ditto.</p>
 <br>
-<p>Q: Wait. What's all this b******t about Wittgenstein?</p>
-
-<p>A: You want your money back?</p>
-
-<p>A: Yes, please.</p>
 <br>
-<p> That was easy!</p>
 <br>
-<p>Cheers!</p>
-<br><br>
-<p>Morten</p>
 </div>
 	<!-- section1234c -->
 <div class="sixteen columns">

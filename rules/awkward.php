@@ -73,7 +73,7 @@ $dt2=date("Y-m-d H:i:s");
 <br>
   </div>
   
-   <? include("../parts/preamble.php"); ?>
+   <!-- section1234a -->
   <div class="sixteen columns">
 		<h2>Rules</h2>
 
@@ -83,6 +83,7 @@ $dt2=date("Y-m-d H:i:s");
 		<h3>§4 Definition: "An awkward text, low-key, honest, cautious, reticent, modest, unobstrusive, with exactly one low-key, non-provocative question and one typo" (Please report misuse -> Penalty: -100 Awkward Karma)</h3>
 	</div>
   <!-- section1234b -->
+<? include("../parts/preamble.php"); ?>
   <div class="sixteen columns">
 	<h4>Tip: If you have a general question, please do visit our <a href="generalquestions.php">main discussions page</a>.</h4>
   </div>

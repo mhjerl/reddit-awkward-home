@@ -175,9 +175,10 @@ if ($_SESSION['redditor'] !== null) {
           <li><a href="#download" class="nav-download nav">Download</a></li>
           <li><? echo $logInOrRedditor; ?></li>
 					<? echo $logOut; ?>
-          <li><a href="#">More</a>
+          <li><a href="#">About</a>
             <ul>
               <li class="lastdroplink"><a href="introduction.php">Introduction</a></li>
+			  <li class="lastdroplink"><a href="getstarted.php">Get Started</a></li>
 			  <li class="lastdroplink"><a href="https://github.com/mhjerl" target=“_blank”>Source Code</a></li>
 			  <li class="lastdroplink"><a href="misc.php">Misc.</a></li>
             </ul>

@@ -22,9 +22,10 @@ if ($_SESSION['redditor'] !== null) {
           <li><a href="https://redditawkward.com/indx.php" class="nav-header_wrapper nav selected">Home</a></li>
           <li><? echo $logInOrRedditor; ?></li>
 					<? echo $logOut; ?>
-          <li><a href="#">More</a>
+          <li><a href="#">About</a>
             <ul>
-              <li class="lastdroplink"><a href="https://redditawkward.com/introduction.php">Introduction</a></li>
+			  <li class="lastdroplink"><a href="https://redditawkward.com/introduction.php">Introduction</a></li>
+              <li class="lastdroplink"><a href="https://redditawkward.com/getstarted.php">Get Started</a></li>
 			  <li class="lastdroplink"><a href="https://github.com/mhjerl" target=“_blank”>Source Code</a></li>
 			  <li class="lastdroplink"><a href="https://redditawkward.com/misc.php">Misc.</a></li>
             </ul>
