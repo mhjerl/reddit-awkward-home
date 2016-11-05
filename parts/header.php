@@ -1,4 +1,5 @@
 <?
+session_start();
 $logInOrRedditor = '<a href="activate.php?login=true" class="nav-contact nav">log in</a>';
 $logOut = "";
 if ($_SESSION['redditor'] !== null) {
@@ -28,7 +29,7 @@ if ($_SESSION['redditor'] !== null) {
 			  <li class="lastdroplink"><a href="https://redditawkward.com/misc.php">Misc.</a></li>
             </ul>
           </li>
-          <li><a href="pricing.php" class="coloredlink">Pricing</a></li>
+          <li><a href="https://redditawkward.com/pricing.php" class="coloredlink">Pricing</a></li>
         </ul>
       </div>
       <!--menu / navigation ends-->

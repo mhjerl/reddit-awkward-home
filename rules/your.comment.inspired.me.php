@@ -53,7 +53,7 @@ $dt2=date("Y-m-d H:i:s");
     <div id="sub_header">
       <div class="columns sixteen">
         <h2>reddit.awkward{your.comment.inspired.me}</h2>
-        <p class="textstyle2">Rules</p>
+        <p class="textstyle2">Tag Rules for the Browser Add-on and the Reddit Awkward Cloud</p>
       </div>
     </div>
     <!--sub_header ends--> 
@@ -68,25 +68,21 @@ $dt2=date("Y-m-d H:i:s");
   <!--heading-->
   <div class="sixteen columns">
     <h2>reddit.awkward{your.comment.inspired.me}</h2>
-	<div class="divider sixteen columns"></div>
 	<h4>Inventor: Morten Hjerl-Hansen, 2016</h4>
-	<div class="divider sixteen columns"></div>
+<br>
+<br>
   </div>
   
-  <!-- section1234a -->
+  <? include("../parts/preamble.php"); ?>
   <div class="sixteen columns">
 		<h2>Rules</h2>
-		<div class="divider sixteen columns"></div>
 		<h3>§1 May not be used in response to a comment with less than 20 words. (Penalty: -20 Awkward Karma)</h3>
 		<h3>§2 May not be used to support somebody in a discussion (Please report misuse -> Penalty: -100 Awkward Karma)</h3>
-		<div class="divider sixteen columns"></div>
-	</div>
+  </div>
   <!-- section1234b -->
-  <div class="divider sixteen columns"></div>
   <div class="sixteen columns">
 	<h4>Tip: If you have a general question, please do visit our <a href="generalquestions.php">main discussions page</a>.</h4>
   </div>
-	<div class="divider sixteen columns"></div>
 	<!-- section1234c -->
 <div class="sixteen columns">
 

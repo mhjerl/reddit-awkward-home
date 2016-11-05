@@ -204,7 +204,6 @@ $dt2=date("Y-m-d H:i:s");
 <br><br>
 <p>Morten</p>
 </div>
-	<div class="divider sixteen columns"></div>
 	<!-- section1234c -->
 <div class="sixteen columns">
 

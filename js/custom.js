@@ -49,20 +49,22 @@ $('#em_sub').on('click', function(event) {
 $('#astronaut').on('click', function(event) {
 	$("#pro_image").attr("src","images/avatars/astronaut.png");
 	$.get( "https://redditawkward.com/workeedirkees/profileimage.php", { imgtype: "neutral", imgsrc: "" }, function( data ) {
-		//alert( data );
 	});
+	return false;
 });
 
 $('#builderman').on('click', function(event) {
 	$("#pro_image").attr("src","images/avatars/builderman.png");
 	$.get( "https://redditawkward.com/workeedirkees/profileimage.php", { imgtype: "man", imgsrc: "" }, function( data ) {
 	});
+	return false;
 });
 
 $('#builderwoman').on('click', function(event) {
 	$("#pro_image").attr("src","images/avatars/builderwoman.png");
 	$.get( "https://redditawkward.com/workeedirkees/profileimage.php", { imgtype: "woman", imgsrc: "" }, function( data ) {
 	});
+	return false;
 });
 
 

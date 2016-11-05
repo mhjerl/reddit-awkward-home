@@ -77,11 +77,9 @@ if ($_SESSION['redditor'] !== null) {
 
 <h3><span style="font-style: italic;">Conflicts</span> of this sort should be attempted to be resolved bilaterally, i.e. between two persons. You wait a bit and see if he/she <a href="https://redditawkward.com/rules/i.apologize.php">apoligizes</a>. Then you might say <a href="https://redditawkward.com/rules/no.problem.php">no problem!</a>, <a href="https://redditawkward.com/rules/dont.mind.its.ok.lets.move.on.php">"don't mind, it's ok, lets move on"</a> or even <a href="https://redditawkward.com/rules/its.fine.i.consider.the.case.closed.php">"It's fine, I consider the case closed!"</a></h3>
 
-<h3>That's more or less what Reddit Awkward can do for you.</h3>
+<h3>This is what Reddit Awkward can do for you.</h3>
 
-<h3>By the way: You might also want to critize Reddit <a href="https://redditawkward.com/rules/fight.reddit.anonymity.php">anonymity</a> and take action and share a bit of personal information with other Awkwards... Please also consider to join the fight to improve Reddit <a href="https://redditawkward.com/rules/fight.the.reddit.karma.system.php"></a> and <a href="https://redditawkward.com/rules/fight.reddit.tyranny.of.the.masses.php">tyranny of the masses</a>...</h3>
-
-<h3>After all, Reddit should be fun to use. Go ahead, say something <a href="https://redditawkward.com/rules/i.am.one.of.the.strangest.people.youll.ever.meet.php">silly</a> and be a little <a href="https://redditawkward.com/rules/er.hi.what.kind.of.strange.presentation.is.that.php">awkward</a>! Just a little.</h3>
+<h3>After all, Reddit should be even more fun to use. Go ahead, say something <a href="https://redditawkward.com/rules/i.am.one.of.the.strangest.people.youll.ever.meet.php">silly</a> and be a little <a href="https://redditawkward.com/rules/er.hi.what.kind.of.strange.presentation.is.that.php">awkward</a>! Just a little.</h3>
 
 <h3>Happy browsing!</h3>
 <br><br>
