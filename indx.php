@@ -264,9 +264,9 @@ if ($_SESSION['redditor'] !== null) {
   <!--text and button-->
   <div class="sixteen columns">
     <h1>New rules for Reddit</h1>
-    <p class="textstyle1">A browser extension adding new social features to discussions on Reddit. <a href="#" class="coloredstrong">Checkout more!</a></p>
+    <p class="textstyle1">A browser extension adding new social features to discussions on Reddit. <a href="introduction.php" class="coloredstrong">Checkout more!</a></p>
     <div class="centerline">
-      <div class="button_wrapper"> <a href="introduction.php" class="btn_yellow"><span>See Rules & Tags</span></a></div>
+      <div class="button_wrapper"> <a href="getstarted.php" class="btn_yellow"><span>See Rules & Tags</span></a></div>
     </div>
   </div>
   
