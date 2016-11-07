@@ -162,9 +162,20 @@ if ($_SESSION['redditor'] !== null) {
     <div id="header">
       
       <!--logo starts-->
-      <div class="four columns logo alpha"> <a href="#header_wrapper">
+      <!-- <div class="four columns logo alpha"> <a href="indx.php">
         <h1><img src="images/Logomakr_2ACvqw.png" height="62" alt="logo"></h1>
-        </a> </div>
+        </a></div> -->
+
+		<div class="four columns logo alpha">
+			<a href="indx.php">
+				<div class="logo_beta_elements">
+					<h1><img class="logo_image" src="images/Logomakr_2ACvqw.png" height="62" alt="logo"></h1>
+					<span class="logo_text">BETA</span>
+				</div>
+		    </a>
+		</div>
+
+
       <!--logo ends--> 
       
       <!--menu / navigation starts-->
@@ -183,7 +194,7 @@ if ($_SESSION['redditor'] !== null) {
 			  <li class="lastdroplink"><a href="misc.php">Misc.</a></li>
             </ul>
           </li>
-          <li><a href="pricing.php" class="coloredlink">Pricing</a></li>
+		  <li><a href="pricing.php" class="coloredlink">Pricing</a></li>
         </ul>
       </div>
       <!--menu / navigation ends-->
@@ -204,7 +215,7 @@ if ($_SESSION['redditor'] !== null) {
 						<br>
             <p><center><a class="nav-download nav" href="#download"></a></center></p>
 					</div>
-          <div class="eight columns"><img src="images/slideshow/slide1.png" alt="image"/></div>
+          <div class="eight columns"><img src="images/slideshow/slide1a.png" alt="image"/></div>
         </li>
         <!--first slide ends--> 
         
@@ -214,13 +225,13 @@ if ($_SESSION['redditor'] !== null) {
 			<h2><strong>Feel</strong> the change...</h2>
             <p></p>
             </div>
-          <div class="eight columns"><img src="images/slideshow/slide2.png" alt="image"/></div>
+          <div class="eight columns"><img src="images/slideshow/slide3a.png" alt="image"/></div>
         </li>
         <!--second slide ends--> 
         
         <!--third slide starts-->
         <li>
-          <div class="eight columns"><img src="images/slideshow/slide3.png" alt="image"/></div>
+          <div class="eight columns"><img src="images/slideshow/slide4a.png" alt="image"/></div>
           <div class="eight columns">
             <h2>Feel the <strong>Awkwardness</strong></h2>
             <p></p>
@@ -234,7 +245,7 @@ if ($_SESSION['redditor'] !== null) {
 			<h2><strong>Reddit</strong> like you've never experienced it before...</h2>
             <p></p>
            	</div>
-          <div class="eight columns"><img src="images/slideshow/slide4.png" alt="image"/></div>
+          <div class="eight columns"><img src="images/slideshow/slide2a.png" alt="image"/></div>
         </li>
         <!--fourth slide ends-->
 
@@ -243,12 +254,22 @@ if ($_SESSION['redditor'] !== null) {
           <div class="eight columns">
 			<h2>Download <strong>Reddit Awkward Now</strong></h2>
 
-            <p>And feel the awkwardness...</p>
+            <p>And feel the change...</p>
 						<br>
             <p><center><a class="nav-download nav" href="#download"><img id="browser_icon" width=50 src="images/browsers/firefox.png" alt="image"/></a></center></p> </div>
-          <div class="eight columns"><img src="images/slideshow/slide5.png" alt="image"/></div>
+          <div class="eight columns"><img src="images/slideshow/slide3.png" alt="image"/></div>
         </li>
         <!--fifth slide ends--> 
+
+		<!--sixth slide starts-->
+        <li>
+          <div class="eight columns"><img src="images/slideshow/slide5.png" alt="image"/></div>
+          <div class="eight columns">
+            <h2>Feel the <strong>Awkwardness</strong></h2>
+            <p>1 Month Free Trial</p>
+            </div>
+        </li>
+        <!--sixth slide ends-->
         
       </ul>
     </div>
@@ -281,7 +302,7 @@ if ($_SESSION['redditor'] !== null) {
   <!--feature two starts-->
   <div class="four columns">
     <div class="icon_bg"><img src="images/icons/bubble.png" width="92" height="92" alt="icon"></div>
-    <h4>Active Hashtags</h4>
+    <h4>Cloud-Connected Awkward Tags</h4>
     <p>A combination of Facebook-likes and ordinary hashtags, known from Twitter and Instagram.</p>
   </div>
   <!--feature two ends--> 
@@ -290,7 +311,7 @@ if ($_SESSION['redditor'] !== null) {
   <div class="four columns">
     <div class="icon_bg"><img src="images/icons/reddit-logo.png" width="92" height="92" alt="icon"></div>
     <h4>Awkward	Karma</h4>
-    <p>An additional karma system.</p>
+    <p>An additional Karma System.</p>
   </div>
   <!--feature three ends--> 
   
@@ -306,14 +327,14 @@ if ($_SESSION['redditor'] !== null) {
   <div class="four columns">
     <div class="icon_bg"><img src="images/icons/icon-1.png" width="92" height="92" alt="icon"></div>
     <h4>Quick Reply</h4>
-    <p>Quick access to tags from reddit comment pages</p>
+    <p>Drop-down box with Awkward Tags on every reddit Comment Page</p>
   </div>
   <!--feature five ends--> 
 
   <!--feature six starts-->
   <div class="four columns">
     <div class="icon_bg"><img src="images/icons/icon-2.png" width="92" height="92" alt="icon"></div>
-    <h4>Colors</h4>
+    <h4>GUI</h4>
     <p>Adds a discrete and intuitive overlay to the appearance of Reddit.</p>
   </div>
   <!--feature six ends--> 
@@ -322,7 +343,7 @@ if ($_SESSION['redditor'] !== null) {
   <div class="four columns">
     <div class="icon_bg"><img src="images/icons/icon-3.png" width="92" height="92" alt="icon"></div>
     <h4>Popup</h4>
-    <p>The latest news events in your Reddit Awkward cloud. Notifications, friends and more...</p>
+    <p>The latest events in your Reddit Awkward Cloud. Notifications and Friends.</p>
   </div>
   <!--feature seven ends--> 
 
@@ -385,9 +406,9 @@ if ($_SESSION['redditor'] !== null) {
       <div class="logo_grey"><img src="images/Logomakr_2ACvqw.png" alt="logo"></div>
       <h2>Don't wait.</h2>
       <ul class="textlist">
-        <li>$9.95/yr</li>
+        <li>1 Month Free Trial</li>
         <li>| </li>
-        <li> Money-back guarantee</li>
+        <li> No Credit Card Required</li>
       </ul>
       <!--center aligned button-->
       <div class="button_wrapper">
@@ -435,7 +456,7 @@ if ($_SESSION['redditor'] !== null) {
     <p class="textstyle2">People say</p>
     <br class="clear"/>
     <ul class="testimonial">
-	  <li>None yet, as we've only recently launched. Please be so kind to post a review, using the contact form below.</li>
+	  <li>None yet, as we've only recently launched. Please be so kind to post a review, using the contact form below. Cheers.</li>
       <!-- <li> <img src="images/preview/logo-img1.png" width="122" height="36" alt="image" class="image_noborder"> "Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum." <span>- John Anderson, somecompany.com</span></li>
       <li> <img src="images/preview/logo-img2.png" width="122" height="36" alt="image" class="image_noborder"> "Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem." <span>- Jack Barnaby, somecompany.com</span></li> -->
     </ul>
@@ -448,7 +469,7 @@ if ($_SESSION['redditor'] !== null) {
     <p class="textstyle2">Upgrade to new features & fixes</p>
     <br class="clear"/>
     <ul class="updates">
-      <li> <span class="coloredstrong">Version 1.2.4</span> <span class="smallstrong"> ( Released on October 26, 2016 )</span>
+      <li> <span class="coloredstrong">Version "dabuf" 1.3.4</span> <span class="smallstrong"> ( Released on November 6, 2016 )</span>
         <div class="divider"></div>
         <h6>What's new in this version?</h6>
         <a href="#download" class="btn">Upgrade</a> <br class="clear"/>

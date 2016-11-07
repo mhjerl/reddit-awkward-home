@@ -48,7 +48,7 @@ if (!$redditor && !isset($_GET['login'])) {
 	$result4 = mysqli_query($GLOBALS["___mysqli_ston"], $query4);
 	$num_rows2 = mysqli_num_rows($result4);
 	if ($num_rows2 === 0) {
-		if ($redditor !== "") {
+		if ($redditor) {
 			$newHash = generateRandomString();
 			$query5 = "INSERT INTO prima_user VALUES ('$redditor', '$dt2', '0', '$newHash', 'free', NULL, '0', 'neutral', '', NULL);";
 			mysqli_query($GLOBALS["___mysqli_ston"], $query5);
@@ -142,27 +142,20 @@ function generateRandomString($length = 10) {
 			<br>
 		</div>
   </div>
-<? } else if ($foundInDatabase) { ?>
-		  <h2>Welcome <?=$redditor?>!</h2>
+<? 	} else if ($foundInDatabase || $didRedditAuthentication) { ?>
+		  <h2>You're done! Thank you. Welcome to Reddit Awkward from Else and Morten!</h2>
 			<div style="text-align: center; margin: auto;">
-				<h2>You are now logged in.</h2>
-				<h2>Activation hash: <? echo $hash; ?></h2>
+				<h2>Welcome <?=$redditor?>!</h2>
+				<h3>Your Password is: <? echo $hash; ?></h3>
+				<h2 style="color=green;">You are now logged in.</h2>
+				<h3>Please activate the popup in the right side of the browser menu and use it here along with your reddit username!</h3>
+				<h3>Remember to save your password for later use.</h3>
 				<br>
 				<div class="button_wrapper"><a href="indx.php" class="btn_yellow"><span>Continue</span></a></div>
 				<br>
 			</div>
-	<? } 
-	else if ($didRedditAuthentication) { ?>
-				<h2>Welcome <?=$redditor?>!</h2>
-				<div style="text-align: center; margin: auto;">
-					<h2>You are now logged in.</h2>
-					<h2>Activation hash: <? echo $hash; ?></h2>
-					<br>
-					<div class="button_wrapper"><a href="indx.php" class="btn_yellow"><span>Continue</span></a></div>
-					<br>
-				</div>
-	<? }
-	else if ($redditor) {
+	<? 
+	} else if ($redditor) {
 		if ($correctHash) { ?>
 			<h2>Welcome <?=$redditor?>!</h2>
 			<div style="text-align: center; margin: auto;">
@@ -174,7 +167,7 @@ function generateRandomString($length = 10) {
 		<? } else { ?>
 			<h2>Something went wrong...</h2>
 			<div style="text-align: center; margin: auto;">
-				<h2>Wrong hash!</h2>
+				<h2>Wrong Password!</h2>
 				<br>
 				<div class="button_wrapper"><a href="activate.php" class="btn_yellow"><span>Try again</span></a></div>
 				<br>
@@ -184,27 +177,26 @@ function generateRandomString($length = 10) {
 		<!-- <h2>Activate</h2> -->
 		<form action="activate.php" method="post">
 			<div style="text-align: center; margin: auto;">
-				<h2>Activation Hash:</h2>
+				<h2>Activation Password</h2>
 				<center><input class="hashinputlarge" id="hash" name="hash" type="password" value="<? echo $hash; ?>"></center>
 				<br>
 				<div class="button_wrapper"><input class="submit" type="submit" value="Log In"></div>
-				<div class="button_wrapper"><a href="activate.php" class="btn_yellow"><span>Get a hash</span></a></div>
+				<div class="button_wrapper"><a href="activate.php" class="btn_yellow"><span>Get your password for free!</span></a></div>
 				<br>
 			</div>
 		</form>
-	<? }
+<? 	}
 
 ?>
 </div>
 <div class="divider sixteen columns"></div>
 
-        
+
 </div>
-<!--content ends--> 
+<!--content ends-->
 
 <!--footer starts-->
 <div id="footer">
-
   <p>REDDIT AKWARD © 2016. All Rights Reserved.</p>
   <ul>
     <li><a href="#">Terms of use </a></li>

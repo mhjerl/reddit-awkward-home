@@ -256,7 +256,7 @@ foreach ($friends as $friend) {
 <a class="pimselect" id="astronaut" href="#"><img src="images/avatars/astronaut.png" width="40"></a>
 <a class="pimselect" id="builderman" href="#"><img src="images/avatars/builderman.png" width="40"></a>
 <a class="pimselect" id="builderwoman" href="#"><img src="images/avatars/builderwoman.png" width="40"></a>
-<? if ($type === "premium") { ?>
+<? if (true/*$type === "premium"*/) { ?>
 		<br>
 		<br>
 		<form name="myForm" action="admin.php" method="post" enctype="multipart/form-data">

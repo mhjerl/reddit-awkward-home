@@ -65,19 +65,42 @@ session_start();
       <table border="0">
         <thead>
           <tr>
-            <th>Trial</th>
+            <th>Pro</th>
           </tr>
         </thead>
         <tfoot>
           <tr>
-            <td><div class="button_wrapper"><a href="activate.php?login=true" class="btn_greysmall"><span>Sign Up</span></a></div></td>
+            <td><div class="button_wrapper">
+
+
+<? if ($_SESSION['redditor'] !== null) {
+$redditor = $_SESSION['redditor'];
+?>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="8XXMYLBEMURNY">
+<input name="custom" value="<? echo $redditor; ?>" type="hidden"> <! -- mhh -->
+<INPUT TYPE="hidden" NAME="return" value="https://redditawkward.com/finish_checkout.php?accounttype=premium"> <! -- mhh -->
+<input type="hidden" name="cancel_return" value="https://redditawkward.com/cancel_checkout.php"> <! -- mhh -->
+<input type="image" src="https://www.paypalobjects.com/da_DK/DK/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal – den sikre og nemme måde at betale på nettet.">
+<img alt="" border="0" src="https://www.paypalobjects.com/da_DK/i/scr/pixel.gif" width="1" height="1">
+</form>
+<? } else { ?>
+
+<a href="activate.php?login=true" class="btn_greysmall"><span>Sign Up</span></a>
+
+<? } ?>
+
+
+
+</div></td>
           </tr>
         </tfoot>
         <tbody>
           <tr>
-            <td class="focus">$0.00 <span>one month</span></td>
+            <td class="focus">$4.99 <span>3 mo</span></td>
           </tr>
-          <tr>
+		  <tr>
           <td><h6>Browser Add-On</h6>
               <p>Yes</p></td>
           </tr>
@@ -86,42 +109,16 @@ session_start();
               <p>Yes</p></td>
           </tr>
           <tr>
-            <td><h6>Hashtags</h6>
+            <td><h6>Awkward Tags</h6>
               <p>Yes</p></td>
           </tr>
-          <tr>
-            <td><h6>Colors</h6>
-              <p>Yes</p></td>
-          </tr>
-          <tr>
-            <td><h6>Admin Page</h6>
-              <p>Yes</p></td>
-          </tr>
-
           <tr>
             <td><h6>Awkward Karma</h6>
-              <p>No</p></td>
+              <p>Yes</p></td>
           </tr>
           <tr>
-            <td><h6>Notifications</h6>
-              <p>No</p></td>
-          </tr>
-          <tr>
-            <td><h6>Customization</h6>
-              <p>No</p></td>
-          </tr>
-          <tr>
-            <td><h6>Watch subreddits</h6>
-              <p>No</p></td>
-          </tr>
-
-          <tr>
-            <td><h6>View Premium Users identity</h6>
-              <p>No</p></td>
-          </tr>
-          <tr>
-            <td><h6>Add picture</h6>
-              <p>No</p></td>
+            <td><h6>Social Karma</h6>
+              <p>Yes</p></td>
           </tr>
         </tbody>
       </table>
@@ -171,7 +168,7 @@ $redditor = $_SESSION['redditor'];
         </tfoot>
         <tbody>
           <tr>
-            <td class="focus">$4.99 <span>per 6 mo</span></td>
+            <td class="focus">$7.99 <span>6 mo</span></td>
           </tr>
 		  <tr>
           <td><h6>Browser Add-On</h6>
@@ -182,41 +179,15 @@ $redditor = $_SESSION['redditor'];
               <p>Yes</p></td>
           </tr>
           <tr>
-            <td><h6>Hashtags</h6>
+            <td><h6>Awkward Tags</h6>
               <p>Yes</p></td>
           </tr>
-          <tr>
-            <td><h6>Colors</h6>
-              <p>Yes</p></td>
-          </tr>
-          <tr>
-            <td><h6>Admin Page</h6>
-              <p>Yes</p></td>
-          </tr>
-
           <tr>
             <td><h6>Awkward Karma</h6>
               <p>Yes</p></td>
           </tr>
           <tr>
-            <td><h6>Notifications</h6>
-              <p>Yes</p></td>
-          </tr>
-          <tr>
-            <td><h6>Customization</h6>
-              <p>Yes</p></td>
-          </tr>
-          <tr>
-            <td><h6>Watch subreddits</h6>
-              <p>Yes</p></td>
-          </tr>
-
-          <tr>
-            <td><h6>View Premium Users identity</h6>
-              <p>Yes</p></td>
-          </tr>
-          <tr>
-            <td><h6>Add picture</h6>
+            <td><h6>Social Karma</h6>
               <p>Yes</p></td>
           </tr>
         </tbody>

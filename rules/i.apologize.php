@@ -77,7 +77,7 @@ $dt2=date("Y-m-d H:i:s");
   <div class="sixteen columns">
 		<h2>Rules</h2>
 
-		<h3>§1 Must be used right after the other user slams the door (reddit.awkward{doorslam}) or expects apology (reddit.awkward{i.will.not.reply.and.expect.apology})</h3>
+		<h3>§1 Must be used right after the other redditor has used reddit.awkward{i.will.not.reply.and.expect.apology}</h3>
 	</div>
   <!-- section1234b -->
 <? include("../parts/preamble.php"); ?>

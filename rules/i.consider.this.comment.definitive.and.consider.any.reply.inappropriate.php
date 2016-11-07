@@ -77,7 +77,7 @@ $dt2=date("Y-m-d H:i:s");
   <div class="sixteen columns">
 		<h2>Rules</h2>
 
-		<h3>§1 No-one should reply or participate in discussions following this tag.</h3>
+		<h3>§1 No-one should reply or participate in discussion following this tag.</h3>
 	</div>
   <!-- section1234b -->
 <? include("../parts/preamble.php"); ?>

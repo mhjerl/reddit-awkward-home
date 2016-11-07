@@ -66,7 +66,7 @@ if ($_SESSION['redditor'] !== null) {
   <div class="sixteen columns">
     <h2>Introduction</h2>
 	<h3>Reddit is a wonderful place; (Almost) total freedom of speech. Any subject that interests you; here you find other people passionate about the same things, virtually anything. Whether you want a good laugh or an in depth discussion of a subject, be it political, scientific or social, or just to see what is new. Reddit is the place.</h3>
-	<p><i>Then why try and fix something that is already working?</i></p>
+	<p style="font-style: italic; font-size: 16px; margin-bottom: 16px;">Then why try and fix something that is already working?</i></p>
 	<h3>First of all we’re not trying to fix anything, merely to improve it. And there is room for improvement!</h3>
 	<h3>Have you ever tried posting something, get an initial dislike, which then seems to open up to a virtual mudslide of dislikes?</h3>
 	<h3>1. There is an element of tyranny of the masses in the voting system on Reddit.</h3>

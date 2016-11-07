@@ -14,7 +14,7 @@ if ($_SESSION['redditor'] !== null) {
       <div class="four columns logo alpha"> <a href="https://redditawkward.com/indx.php">
         <h1><img src="images/Logomakr_2ACvqw.png" height="62" alt="logo"></h1>
         </a> </div>
-      <!--logo ends--> 
+      <!--logo ends-->
       
       <!--menu / navigation starts-->
       <div id="nav" class="twelve columns omega">
@@ -30,7 +30,7 @@ if ($_SESSION['redditor'] !== null) {
 			  <li class="lastdroplink"><a href="https://redditawkward.com/misc.php">Misc.</a></li>
             </ul>
           </li>
-          <li><a href="https://redditawkward.com/pricing.php" class="coloredlink">Pricing</a></li>
+		  <li><a href="https://redditawkward.com/pricing.php" class="coloredlink">Pricing</a></li>
         </ul>
       </div>
       <!--menu / navigation ends-->
