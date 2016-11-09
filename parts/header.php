@@ -11,9 +11,14 @@ if ($_SESSION['redditor'] !== null) {
     <div id="header">
       
       <!--logo starts-->
-      <div class="four columns logo alpha"> <a href="https://redditawkward.com/indx.php">
-        <h1><img src="images/Logomakr_2ACvqw.png" height="62" alt="logo"></h1>
-        </a> </div>
+      <div class="four columns logo alpha">
+			<a href="indx.php">
+				<div class="logo_beta_elements">
+					<h1><img class="logo_image" src="images/Logomakr_2ACvqw.png" height="62" alt="logo"></h1>
+					<span class="logo_text">BETA</span>
+				</div>
+		    </a>
+	  </div>
       <!--logo ends-->
       
       <!--menu / navigation starts-->
@@ -30,7 +35,6 @@ if ($_SESSION['redditor'] !== null) {
 			  <li class="lastdroplink"><a href="https://redditawkward.com/misc.php">Misc.</a></li>
             </ul>
           </li>
-		  <li><a href="https://redditawkward.com/pricing.php" class="coloredlink">Pricing</a></li>
         </ul>
       </div>
       <!--menu / navigation ends-->

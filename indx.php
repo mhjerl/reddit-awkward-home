@@ -194,7 +194,6 @@ if ($_SESSION['redditor'] !== null) {
 			  <li class="lastdroplink"><a href="misc.php">Misc.</a></li>
             </ul>
           </li>
-		  <li><a href="pricing.php" class="coloredlink">Pricing</a></li>
         </ul>
       </div>
       <!--menu / navigation ends-->
@@ -266,7 +265,7 @@ if ($_SESSION['redditor'] !== null) {
           <div class="eight columns"><img src="images/slideshow/slide5.png" alt="image"/></div>
           <div class="eight columns">
             <h2>Feel the <strong>Awkwardness</strong></h2>
-            <p>1 Month Free Trial</p>
+            <p></p>
             </div>
         </li>
         <!--sixth slide ends-->
@@ -406,7 +405,7 @@ if ($_SESSION['redditor'] !== null) {
       <div class="logo_grey"><img src="images/Logomakr_2ACvqw.png" alt="logo"></div>
       <h2>Don't wait.</h2>
       <ul class="textlist">
-        <li>1 Month Free Trial</li>
+        <li>Free</li>
         <li>| </li>
         <li> No Credit Card Required</li>
       </ul>

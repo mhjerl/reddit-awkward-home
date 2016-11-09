@@ -51,7 +51,7 @@ if ($_SESSION['redditor'] !== null) {
     <div id="sub_header">
       <div class="columns sixteen">
         <h2>Introduction</h2>
-        <p class="textstyle2"></p>
+        <p class="textstyle2">Reddit and Reddit Awkward</p>
       </div>
     </div>
     <!--sub_header ends--> 

@@ -117,9 +117,11 @@ if ($_FILES['my_file']['name']) {
 	} else{
 		die( "Error uploading. Please try later.");
 	}
+
 	$sql = "UPDATE prima_user SET imagetype='custom', imagecustom='$file_new_name' WHERE redditor='$redditor';";
 	//echo "<br><br><br><br><br><br>$sql";
 	mysqli_query($GLOBALS["___mysqli_ston"], $sql);
+
 }
 
 

@@ -1,6 +1,6 @@
 <?php
 
-$host="redditawkward.com.mysql"; // Host name
+$host="http://72.5.73.201"; // Host name
 $username="redditawkward_com"; // mysql username
 $password="***"; // mysql password
 $db_name="redditawkward_com"; // Database name
@@ -11,13 +11,14 @@ $dbh=($GLOBALS["___mysqli_ston"] = mysqli_connect("$host",  "$username",  "$pass
 ((bool)mysqli_query($GLOBALS["___mysqli_ston"], "USE " . $db_name));
 
 mysqli_query($GLOBALS["___mysqli_ston"], "SET NAMES utf8");
-//mysql_query("SET character_set_results=’utf8′"); // See more at: http://meebox.net/da/support/artikel/87/Problemer+med+aeoeaa+i+din+mysql+database/#sthash.CsbFQtL5.dpuf
 
 
-// Connect to server and select databse.
-//mysql_connect("$host", "$username", "$password")or die("cannot connect");
-//mysql_select_db("$db_name")or die("cannot select DB");
-//mysql_set_charset("utf8");
-//
-$goldMembership = "4";
+
+
+
+$conn = mysql_connect("$host", "$dbuser", "$dbpass") or die(mysql_error());
+mysql_select_db($dbname, $conn) or die(mysql_error());
+
+
+
 ?>
