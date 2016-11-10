@@ -169,7 +169,7 @@ if ($_SESSION['redditor'] !== null) {
 		<div class="four columns logo alpha">
 			<a href="indx.php">
 				<div class="logo_beta_elements">
-					<h1><img class="logo_image" src="images/Logomakr_2ACvqw.png" height="62" alt="logo"></h1>
+					<h1><img class="logo_image" src="images/Logomakr_0BWqIN.png" height="62" alt="logo"></h1>
 					<span class="logo_text">BETA</span>
 				</div>
 		    </a>
@@ -402,7 +402,7 @@ if ($_SESSION['redditor'] !== null) {
     <div class="columns sixteen"> 
       
       <!--grey logo-->
-      <div class="logo_grey"><img src="images/Logomakr_2ACvqw.png" alt="logo"></div>
+      <div class="logo_grey"><img src="images/Logomakr_0BWqIN.png" alt="logo"></div>
       <h2>Don't wait.</h2>
       <ul class="textlist">
         <li>Free</li>
@@ -415,18 +415,18 @@ if ($_SESSION['redditor'] !== null) {
             <a href="https://chrome.google.com/webstore/detail/" data-browser="chrome">
                 <img title="Install in Chrome" src="images/browsers/Chrome.png">
             </a>
-            <a href="https://www.microsoft.com/store/apps/" data-browser="edge">
+            <a href="installation_edge.php" data-browser="edge">
                 <img title="Install in Edge" src="images/browsers/Edge.png">
             </a>
             <a href="https://addons.mozilla.org/en-US/firefox/addon/" data-browser="firefox">
                 <img title="Install in Firefox" src="images/browsers/Firefox.png">
             </a>
-            <a href="https://addons.opera.com/en-gb/extensions/details/" data-browser="opera">
+            <!-- <a href="https://addons.opera.com/en-gb/extensions/details/" data-browser="opera">
                 <img title="Install in Opera" src="images/browsers/Opera.png">
-            </a>
-            <a href="#" data-browser="safari">
+            </a> -->
+            <!-- <a href="#" data-browser="safari">
                 <img title="Install in Safari" src="images/browsers/Safari.png">
-            </a>
+            </a> -->
 				</div>
 			</div>
 

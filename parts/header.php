@@ -14,7 +14,7 @@ if ($_SESSION['redditor'] !== null) {
       <div class="four columns logo alpha">
 			<a href="indx.php">
 				<div class="logo_beta_elements">
-					<h1><img class="logo_image" src="images/Logomakr_2ACvqw.png" height="62" alt="logo"></h1>
+					<h1><img class="logo_image" src="images/Logomakr_0BWqIN.png" height="62" alt="logo"></h1>
 					<span class="logo_text">BETA</span>
 				</div>
 		    </a>

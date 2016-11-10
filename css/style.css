@@ -14,11 +14,11 @@
 }
 
 .logo_text {
-	position: absolute; top: 45px; right: 15px;
+	position: absolute; top: 40px; right: 15px;
 	font-weight: 100;
-	font-family: "Courier New", Courier, monospace;
+	font-family: "Courier New", Courier;
 	font-size: 9px;
-	color: #abd8e3;;
+	color: #ff00cb;
 }
 
 .my_image_container {
