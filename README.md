@@ -1,2 +1,2 @@
 # reddit-awkward-home
-Home page for redditawkward.com
+Home page for comment-tag.com

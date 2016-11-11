@@ -80,13 +80,13 @@ else {
 	echo "<br><br>Hello " . $redditor . "!";
 	echo "<br><br>This is your hash: " . $hash;
 	echo "<br><br>(Also sent to you reddit inbox)";
-	echo '<br><br>Use it when you log in at <a href="http://redditawkward.com">Reddit Awkward</a>';
+	echo '<br><br>Use it when you log in at <a href="http://comment-tag.com">Comment Tag</a>';
 	*/
 
 	preg_match_all("/\[([^\]]*)\]/", $tag, $matches);
 	//var_dump($matches[1]);
 	$tagShorthand = $matches[1][0];
-	$message = "Hello $moderator.\n\nRedditor $redditor (https://www.reddit.com/user/$redditor) reports a violation of the Reddit Awkward rule for the tag $tag\n\n.We at Reddit Awkward as well as $redditor asks that you look into the matter.\n\nTODO:\n\nPlease visit this page: http://www.redditawkward.com/mod_decision.php to validate or reject the report of tag misuse. For secure validation, please enter this hash:\n\nHash: $secret\n\nIn both cases, $redditor will be notified of the decision.\n\nThank you for your time.\n\nCheers!\n\nReddit Awkward";
+	$message = "Hello $moderator.\n\nRedditor $redditor (https://www.reddit.com/user/$redditor) reports a violation of the Comment Tag rule for the tag $tag\n\n.We at Comment Tag as well as $redditor asks that you look into the matter.\n\nTODO:\n\nPlease visit this page: http://www.comment-tag.com/mod_decision.php to validate or reject the report of tag misuse. For secure validation, please enter this hash:\n\nHash: $secret\n\nIn both cases, $redditor will be notified of the decision.\n\nThank you for your time.\n\nCheers!\n\nComment Tag";
 	if ($commentid and $commentid !== "") {
 		$response = $reddit->sendMessage($moderator, "Reddit Akward Rule Violation", $message);
 	}
@@ -109,7 +109,7 @@ function generateRandomString($length = 10) {
 <meta name="keywords" content="one page template, corporate, software, app, business, marketing, landing page, web marketing, internate marketing"/>
 <meta name="author" content="Tansh" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-<title>Reddit Awkward</title>
+<title>Comment Tag</title>
 
 <!--Fav and touch icons-->
 <link rel="shortcut icon" href="images/icons/favicon.ico">

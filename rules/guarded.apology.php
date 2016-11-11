@@ -22,7 +22,7 @@ $dt2=date("Y-m-d H:i:s");
 <meta name="keywords" content="one page template, corporate, software, app, business, marketing, landing page, web marketing, internate marketing"/>
 <meta name="author" content="Tansh" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-<title>Reddit Awkward</title>
+<title>Comment Tag</title>
 
 <!--Fav and touch icons-->
 <link rel="shortcut icon" href="../images/icons/favicon.ico">
@@ -52,8 +52,8 @@ $dt2=date("Y-m-d H:i:s");
     <!--sub_header starts-->
     <div id="sub_header">
       <div class="columns sixteen">
-        <h2>reddit.awkward{guarded.apology}</h2>
-        <p class="textstyle2">Tag Rules for the Browser Add-on and the Reddit Awkward Cloud</p>
+        <h2>comment-tag{guarded.apology}</h2>
+        <p class="textstyle2">Tag Rules for the Browser Add-on and the Comment Tag Cloud</p>
       </div>
     </div>
     <!--sub_header ends--> 
@@ -67,7 +67,7 @@ $dt2=date("Y-m-d H:i:s");
 
   <!--heading-->
   <div class="sixteen columns">
-    <h2>reddit.awkward{guarded.apology}</h2>
+    <h2>comment-tag{guarded.apology}</h2>
 	<h4>Inventor: Morten Hjerl-Hansen, 2016</h4>
 <br>
 <br>
@@ -77,7 +77,7 @@ $dt2=date("Y-m-d H:i:s");
   <div class="sixteen columns">
 		<h2>Rules</h2>
 
-		<h3>§1 Must be used right after the other redditor has used reddit.awkward{i.will.not.reply.and.expect.apology}</h3>
+		<h3>§1 Must be used right after the other redditor has used comment-tag{i.will.not.reply.and.expect.apology}</h3>
 	</div>
   <!-- section1234b -->
 <? include("../parts/preamble.php"); ?>
@@ -96,8 +96,8 @@ $dt2=date("Y-m-d H:i:s");
 *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
 
 var disqus_config = function () {
-this.page.url = "https://redditawkward.com/rules/guarded.apology.php";  // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = "reddit.awkward.guarded.apology"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+this.page.url = "https://comment-tag.com/rules/guarded.apology.php";  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = "comment-tag.guarded.apology"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
 };
 
 (function() { // DON'T EDIT BELOW THIS LINE

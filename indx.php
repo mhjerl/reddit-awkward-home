@@ -23,7 +23,7 @@ $dt2=date("Y-m-d H:i:s");
 <meta name="keywords" content="one page template, corporate, software, app, business, marketing, landing page, web marketing, internate marketing"/>
 <meta name="author" content="Tansh" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-<title>Reddit Awkward</title>
+<title>Comment Tag</title>
 
 <!--Fav and touch icons-->
 <link rel="shortcut icon" href="images/icons/favicon.ico">
@@ -35,7 +35,7 @@ $dt2=date("Y-m-d H:i:s");
 <link href='http://fonts.googleapis.com/css?family=Vollkorn:400,400italic|Lato:400,300,300italic,400italic' rel='stylesheet' type='text/css'>
 
 <!--style sheets-->
-<link rel="stylesheet" media="screen" href="css/style.css?t=aerf"/>
+<link rel="stylesheet" media="screen" href="css/style.css?t=aerff"/>
 <link rel="stylesheet" media="screen" href="css/skeleton.css"/>
 
 <!--jquery libraries / others are at the bottom-->
@@ -169,7 +169,7 @@ if ($_SESSION['redditor'] !== null) {
 		<div class="four columns logo alpha">
 			<a href="indx.php">
 				<div class="logo_beta_elements">
-					<h1><img class="logo_image" src="images/Logomakr_0BWqIN.png" height="62" alt="logo"></h1>
+					<h1><img class="logo_image" src="images/Logomakr_2zPQam.png" alt="logo"></h1>
 					<span class="logo_text">BETA</span>
 				</div>
 		    </a>
@@ -251,7 +251,7 @@ if ($_SESSION['redditor'] !== null) {
 		<!--fifth slide starts-->
         <li>
           <div class="eight columns">
-			<h2>Download <strong>Reddit Awkward Now</strong></h2>
+			<h2>Download <strong>Comment Tag Now</strong></h2>
 
             <p>And feel the change...</p>
 						<br>
@@ -301,7 +301,7 @@ if ($_SESSION['redditor'] !== null) {
   <!--feature two starts-->
   <div class="four columns">
     <div class="icon_bg"><img src="images/icons/bubble.png" width="92" height="92" alt="icon"></div>
-    <h4>Cloud-Connected Awkward Tags</h4>
+    <h4>Awkward Tags</h4>
     <p>A combination of Facebook-likes and ordinary hashtags, known from Twitter and Instagram.</p>
   </div>
   <!--feature two ends--> 
@@ -342,7 +342,7 @@ if ($_SESSION['redditor'] !== null) {
   <div class="four columns">
     <div class="icon_bg"><img src="images/icons/icon-3.png" width="92" height="92" alt="icon"></div>
     <h4>Popup</h4>
-    <p>The latest events in your Reddit Awkward Cloud. Notifications and Friends.</p>
+    <p>The latest events in your Comment Tag Cloud. Notifications and Friends.</p>
   </div>
   <!--feature seven ends--> 
 
@@ -373,7 +373,7 @@ if ($_SESSION['redditor'] !== null) {
     <p class="textstyle3">Consultant</p>
     <ul class="team_info">
       <li><a href="#"><img src="images/icons/team-social-mail.png" width="16" height="16" alt="icon">Send mail</a></li>
-      <li><a href="#"><img src="images/icons/team-social-url.png" width="16" height="16" alt="icon">https://redditawkward.com</a></li>
+      <li><a href="#"><img src="images/icons/team-social-url.png" width="16" height="16" alt="icon">https://comment-tag.com</a></li>
       <li><a href="#"><img src="images/icons/team-social-linkedin.png" width="16" height="16" alt="icon">Linkedin</a></li>
     </ul>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -386,7 +386,7 @@ if ($_SESSION['redditor'] !== null) {
     <p class="textstyle3">Programmer</p>
     <ul class="team_info">
       <li><a href="#"><img src="images/icons/team-social-mail.png" width="16" height="16" alt="icon">Send mail</a></li>
-      <li><a href="#"><img src="images/icons/team-social-url.png" width="16" height="16" alt="icon">https://redditawkward.com</a></li>
+      <li><a href="#"><img src="images/icons/team-social-url.png" width="16" height="16" alt="icon">https://comment-tag.com</a></li>
       <li><a href="#"><img src="images/icons/team-social-linkedin.png" width="16" height="16" alt="icon">Linkedin</a></li>
     </ul>
     <p>Hello and welcome. I live in Denmark with my family in the hills in the countryside. I like to read (novels and poetry) and ski (cross-country).</p>
@@ -402,8 +402,8 @@ if ($_SESSION['redditor'] !== null) {
     <div class="columns sixteen"> 
       
       <!--grey logo-->
-      <div class="logo_grey"><img src="images/Logomakr_0BWqIN.png" alt="logo"></div>
-      <h2>Don't wait.</h2>
+      <div class="logo_grey"><img src="images/Logomakr_2zPQam.png" alt="logo"></div>
+      <h2>Download.</h2>
       <ul class="textlist">
         <li>Free</li>
         <li>| </li>
@@ -530,10 +530,10 @@ if ($_SESSION['redditor'] !== null) {
         <li><a href="#"><img src="images/icons/social-footer-facebook.png" width="46" height="46" alt="icon"></a></li>
         <li><a href="#"><img src="images/icons/social-footer-twitter.png" width="46" height="46" alt="icon"></a></li>
       </ul>
-      <div class="contact_info"> <a href="#" >redditawkward@redditawkward.com</a>
+      <div class="contact_info"> <a href="#" >redditawkward@comment-tag.com</a>
         <p>+45 51 29 25 97</p>
       </div>
-      <p>Reddit Awkward Inc.<br/>
+      <p>Comment Tag Inc.<br/>
         Stubberup Byvej 9<br/>
         DK 4540 Faarevejle, Denmark</p>
     </div>

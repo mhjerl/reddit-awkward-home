@@ -22,7 +22,7 @@ $dt2=date("Y-m-d H:i:s");
 <meta name="keywords" content="one page template, corporate, software, app, business, marketing, landing page, web marketing, internate marketing"/>
 <meta name="author" content="Tansh" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-<title>Reddit Awkward</title>
+<title>Comment Tag</title>
 
 <!--Fav and touch icons-->
 <link rel="shortcut icon" href="../images/icons/favicon.ico">
@@ -104,7 +104,7 @@ $dt2=date("Y-m-d H:i:s");
 
 <p>A: Really?</p>
 <br>
-<p>Q: Why did you make Reddit Awkward?</p>
+<p>Q: Why did you make Comment Tag?</p>
 
 <p>A: Because the notions &quot;Courage to be awkward&quot; and &quot;courage to be vulnerable&quot; have no meaning on either reddit or Facebook.</p>
 <br>
@@ -112,9 +112,9 @@ $dt2=date("Y-m-d H:i:s");
 
 <p>A: Yes.</p>
 <br>
-<p>Q: Look, if all you're looking for is a moderate success with Reddit Awkward, why not simply say so.</p>
+<p>Q: Look, if all you're looking for is a moderate success with Comment Tag, why not simply say so.</p>
 
-<p>A: Because Reddit Awkward is controversial and meant to be visionary.</p>
+<p>A: Because Comment Tag is controversial and meant to be visionary.</p>
 <br>
 <p>Q: Why is that so?</p>
 
@@ -126,7 +126,7 @@ $dt2=date("Y-m-d H:i:s");
 <br>
 <p>Q: Why is it brave to throw people a tag instead of talking to them directly?</p>
 
-<p>A: The two can easily be combined now that Reddit Awkward is here.</p>
+<p>A: The two can easily be combined now that Comment Tag is here.</p>
 <br>
 <p>Q: Do you honestly believe that this will be a hit?</p>
 
@@ -188,7 +188,7 @@ $dt2=date("Y-m-d H:i:s");
 
 <p>A: &quot;If a lion could speak, we wouldn't understand it.&quot; </p>
 <br>
-<p>Q: I'll buy Reddit Awkward. I'll even use it.</p>
+<p>Q: I'll buy Comment Tag. I'll even use it.</p>
 
 <p>A: Ditto.</p>
 <br>
@@ -207,8 +207,8 @@ $dt2=date("Y-m-d H:i:s");
 *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
 
 var disqus_config = function () {
-this.page.url = "https://redditawkward.com/misc.php";  // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = "reddit.awkward.page.misc"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+this.page.url = "https://comment-tag.com/misc.php";  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = "comment-tag.page.misc"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
 };
 
 (function() { // DON'T EDIT BELOW THIS LINE

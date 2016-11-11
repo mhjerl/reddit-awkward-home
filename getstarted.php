@@ -20,7 +20,7 @@ if ($_SESSION['redditor'] !== null) {
 <meta name="keywords" content="one page template, corporate, software, app, business, marketing, landing page, web marketing, internate marketing"/>
 <meta name="author" content="Tansh" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-<title>Reddit Awkward</title>
+<title>Comment Tag</title>
 
 <!--Fav and touch icons-->
 <link rel="shortcut icon" href="images/icons/favicon.ico">
@@ -65,26 +65,26 @@ if ($_SESSION['redditor'] !== null) {
    <!--heading-->
   <div class="sixteen columns">
     <h2>Introduction</h2>
-		<h3>The <span style="font-style: italic;">first</span> thing you might want to do on the Reddit Comment Page is to study the main comment or link. Is the post worthy of <a href="https://redditawkward.com/rules/i.find.this.unworthy.for.discussion.php">dicussion</a>? How about the <a href="https://redditawkward.com/rules/i.find.the.subject.unworthy.for.discussion.php">subject</a>?</h3>
+		<h3>The <span style="font-style: italic;">first</span> thing you might want to do on the Reddit Comment Page is to study the main comment or link. Is the post worthy of <a href="https://comment-tag.com/rules/i.find.this.unworthy.for.discussion.php">dicussion</a>? How about the <a href="https://comment-tag.com/rules/i.find.the.subject.unworthy.for.discussion.php">subject</a>?</h3>
 
-<h3>Then you <span style="font-style: italic;">skim</span> the comment section. Has the original post been <a href="https://redditawkward.com/rules/i.dont.think.the.original.post.has.been.addressed.yet.php">addressed</a>? Has it been taken <a href="https://redditawkward.com/rules/i.dont.think.the.original.post.has.been.taken.seriously.yet.php">seriously</a>? Has it been treated <a href="https://redditawkward.com/rules/i.dont.think.the.original.post.has.been.treated.respectfully.php"> respectfully</a>? Do you find a comment which <a href="https://redditawkward.com/rules/your.comment.inspired.me.php">inspires</a> you?</h3>
+<h3>Then you <span style="font-style: italic;">skim</span> the comment section. Has the original post been <a href="https://comment-tag.com/rules/i.dont.think.the.original.post.has.been.addressed.yet.php">addressed</a>? Has it been taken <a href="https://comment-tag.com/rules/i.dont.think.the.original.post.has.been.taken.seriously.yet.php">seriously</a>? Has it been treated <a href="https://comment-tag.com/rules/i.dont.think.the.original.post.has.been.treated.respectfully.php"> respectfully</a>? Do you find a comment which <a href="https://comment-tag.com/rules/your.comment.inspired.me.php">inspires</a> you?</h3>
 
-<h3><span style="font-style: italic;">Before</span> you post you might want to consider what you expect from the redditor whose comment you are replying to. Do you want a reply from <a href="https://redditawkward.com/rules/waits.for.your.reply.only.php">only</a> him/her? Do you want <a href="https://redditawkward.com/rules/waits.for.anyone.php">anyone</a> to reply to your comment ASAP? Or maybe you find it difficult to reply at the moment, because you are certain that you will want to reply in a few <a href="https://redditawkward.com/rules/interesting.will.write.more.in.a.few.days.time.php">days</a> time, but you are uncertain of the content.</h3>
+<h3><span style="font-style: italic;">Before</span> you post you might want to consider what you expect from the redditor whose comment you are replying to. Do you want a reply from <a href="https://comment-tag.com/rules/waits.for.your.reply.only.php">only</a> him/her? Do you want <a href="https://comment-tag.com/rules/waits.for.anyone.php">anyone</a> to reply to your comment ASAP? Or maybe you find it difficult to reply at the moment, because you are certain that you will want to reply in a few <a href="https://comment-tag.com/rules/interesting.will.write.more.in.a.few.days.time.php">days</a> time, but you are uncertain of the content.</h3>
 
 <h3><span style="font-style: italic;">Just before</span> hitting the submit button you may realize that in this specific context you <a href="i.consider.this.comment.definitive.and.consider.any.reply.inappropriate.php">don't want</a> a reply from anybody, because you consider what you've written indebatable.</h3>
 
-<h3><span style="font-style: italic;">After</span> you have written your comment there may come a reaction comment. Did it make you feel <a href="https://redditawkward.com/rules/i.am.glad.you.said.that.to.me.php">good</a> inside? Do you feel offended? Do you expect an <a href="i.will.not.reply.and.expect.apology.php">apology</a> or at least a <a href="https://redditawkward.com/rules/guarded.apology.php">guarded apology</a>? What is the reason? Is it because the commenter is being <a href="https://redditawkward.com/rules/youre.being.overly.ironic.and.are.violating.the.rules.php">overly ironic</a> and steps beyond regular rules of conduct. Afterwards you can always <a href="https://redditawkward.com/rules/explanation.why.i.was.angry.php">explain</a> why you were angry. The other person might have been <a href="https://redditawkward.com/rules/i.was.being.careless.php">careless</a> and is willing to admit it.</h3>
+<h3><span style="font-style: italic;">After</span> you have written your comment there may come a reaction comment. Did it make you feel <a href="https://comment-tag.com/rules/i.am.glad.you.said.that.to.me.php">good</a> inside? Do you feel offended? Do you expect an <a href="i.will.not.reply.and.expect.apology.php">apology</a> or at least a <a href="https://comment-tag.com/rules/guarded.apology.php">guarded apology</a>? What is the reason? Is it because the commenter is being <a href="https://comment-tag.com/rules/youre.being.overly.ironic.and.are.violating.the.rules.php">overly ironic</a> and steps beyond regular rules of conduct. Afterwards you can always <a href="https://comment-tag.com/rules/explanation.why.i.was.angry.php">explain</a> why you were angry. The other person might have been <a href="https://comment-tag.com/rules/i.was.being.careless.php">careless</a> and is willing to admit it.</h3>
 
-<h3><span style="font-style: italic;">Conflicts</span> of this sort should be attempted to be resolved bilaterally, i.e. between two persons. You wait a bit and see if he/she <a href="https://redditawkward.com/rules/i.apologize.php">apoligizes</a>. Then you might say <a href="https://redditawkward.com/rules/no.problem.php">no problem!</a>, <a href="https://redditawkward.com/rules/dont.mind.its.ok.lets.move.on.php">"don't mind, it's ok, lets move on"</a> or even <a href="https://redditawkward.com/rules/its.fine.i.consider.the.case.closed.php">"It's fine, I consider the case closed!"</a></h3>
+<h3><span style="font-style: italic;">Conflicts</span> of this sort should be attempted to be resolved bilaterally, i.e. between two persons. You wait a bit and see if he/she <a href="https://comment-tag.com/rules/i.apologize.php">apoligizes</a>. Then you might say <a href="https://comment-tag.com/rules/no.problem.php">no problem!</a>, <a href="https://comment-tag.com/rules/dont.mind.its.ok.lets.move.on.php">"don't mind, it's ok, lets move on"</a> or even <a href="https://comment-tag.com/rules/its.fine.i.consider.the.case.closed.php">"It's fine, I consider the case closed!"</a></h3>
 
-<h3>This is what Reddit Awkward can do for you.</h3>
+<h3>This is what Comment Tag can do for you.</h3>
 
-<h3>After all, Reddit should be even more fun to use. Go ahead, say something <a href="https://redditawkward.com/rules/i.am.one.of.the.strangest.people.youll.ever.meet.php">silly</a> and be a little <a href="https://redditawkward.com/rules/er.hi.what.kind.of.strange.presentation.is.that.php">awkward</a>! Just a little.</h3>
+<h3>After all, Reddit should be even more fun to use. Go ahead, say something <a href="https://comment-tag.com/rules/i.am.one.of.the.strangest.people.youll.ever.meet.php">silly</a> and be a little <a href="https://comment-tag.com/rules/er.hi.what.kind.of.strange.presentation.is.that.php">awkward</a>! Just a little.</h3>
 
 <h3>Happy browsing!</h3>
 <br><br>
-<h3>Reddit Awkward</h3>
-<h4>PS: Usually people don't understand Reddit Awkward tags are all about because they're not familiar with them. A good place to start would therefore be: reddit.awkward{your.comment.inspired.me}</h4>
+<h3>Comment Tag</h3>
+<h4>PS: Usually people don't understand Comment Tag tags are all about because they're not familiar with them. A good place to start would therefore be: comment-tag{your.comment.inspired.me}</h4>
 </div>
   <div class="divider sixteen columns"></div>
   <!--single column-->
@@ -109,10 +109,10 @@ if ($_SESSION['redditor'] !== null) {
 				$firstTimeAround = false;
 			}
 			echo '<div class="sixteen columns"><br><br><br><h3>' . $tagCategory . '</h3><table class="zebra"><tr><th>Tag</th><th>Your Tag Use</th><th>Overall Tag Use</th></tr>';
-			echo '<tr><td><div style="width: 630px;"><a href="rules/' . $tagShortHand . '.php">reddit.awkward{' . $tagShortHand . '}</a></div></td><td><div style=" text-align: center; width: 100px;">' . $tagUse->me . '</div></td><td><div style=" text-align: center; width: 150px;">' . $tagUse->total . '</div></td></tr>';
+			echo '<tr><td><div style="width: 630px;"><a href="rules/' . $tagShortHand . '.php">comment-tag{' . $tagShortHand . '}</a></div></td><td><div style=" text-align: center; width: 100px;">' . $tagUse->me . '</div></td><td><div style=" text-align: center; width: 150px;">' . $tagUse->total . '</div></td></tr>';
 		}
 		else {
-			echo '<tr><td><div style="width: 630px;"><a href="rules/' . $tagShortHand . '.php">reddit.awkward{' . $tagShortHand . '}</a></div></td><td><div style=" text-align: center; width: 100px;">' . $tagUse->me . '</div></td><td><div style=" text-align: center; width: 150px;">' . $tagUse->total . '</div></td></tr>';
+			echo '<tr><td><div style="width: 630px;"><a href="rules/' . $tagShortHand . '.php">comment-tag{' . $tagShortHand . '}</a></div></td><td><div style=" text-align: center; width: 100px;">' . $tagUse->me . '</div></td><td><div style=" text-align: center; width: 150px;">' . $tagUse->total . '</div></td></tr>';
 		}
 	}
 ?>
@@ -125,8 +125,8 @@ if ($_SESSION['redditor'] !== null) {
 <div id="footer">
   <p>REDDIT AKWARD © 2016. All Rights Reserved.</p>
   <ul>
-    <li><a href="https://redditawkward.com/rules/">Terms of use </a></li>
-    <li><a href="https://redditawkward.com/rules/">Privacy policy</a></li>
+    <li><a href="https://comment-tag.com/rules/">Terms of use </a></li>
+    <li><a href="https://comment-tag.com/rules/">Privacy policy</a></li>
   </ul>
   <div class="clear"></div>
 </div>
@@ -144,11 +144,11 @@ if ($_SESSION['redditor'] !== null) {
 <?
 function getTagUse($tagShortHand, $redditor) {
 	$tagUse = new stdClass();
-	$sql = "SELECT * FROM prima_tag_use WHERE redditor='$redditor' AND tag='reddit.awkward{" . $tagShortHand . "}';";
+	$sql = "SELECT * FROM prima_tag_use WHERE redditor='$redditor' AND tag='comment-tag{" . $tagShortHand . "}';";
 	$result = mysqli_query($GLOBALS["___mysqli_ston"], $sql);
 	$count = mysqli_num_rows($result);
 	$tagUse->me = $count;
-	$sql = "SELECT * FROM prima_tag_use WHERE tag='reddit.awkward{" . $tagShortHand . "}';";
+	$sql = "SELECT * FROM prima_tag_use WHERE tag='comment-tag{" . $tagShortHand . "}';";
 	$result = mysqli_query($GLOBALS["___mysqli_ston"], $sql);
 	$count = mysqli_num_rows($result);
 	$tagUse->total = $count;

@@ -2,7 +2,7 @@
 
 
 .logo_beta_elements {
-	position: relative; left: 0; top: 0;
+	position: relative; left: 0; top: 11px;
     margin-left: 0px;
     float: left;
     display: inline-block;
@@ -10,15 +10,15 @@
 }
 
 .logo_image {
-	position: relative; top: 0; left: 0;
+	position: relative; top: 0; left: 0; height: 22px; display: block;
 }
 
 .logo_text {
-	position: absolute; top: 40px; right: 15px;
-	font-weight: 100;
-	font-family: "Courier New", Courier;
-	font-size: 9px;
-	color: #ff00cb;
+	position: absolute; top: 38px; left: 127px;
+	/*font-weight: 100;*/
+	/*font-family: "Courier New", Courier;*/
+	font-size: 10px;
+	color: gray;
 }
 
 .my_image_container {
@@ -831,8 +831,8 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 	margin-bottom: 8px;
 }
 .logo_grey {
-	width: 300px; /* mhh: originally 122px; */
-	height: 68px; /* mhh: originally 62px*/
+	width: 100px; /* mhh: originally 122px; */
+	/*height: 68px;*/ /* mhh: originally 62px*/
 	margin: 0 auto 30px auto;
 }
 .textlist {

@@ -22,7 +22,7 @@ $dt2=date("Y-m-d H:i:s");
 <meta name="keywords" content="one page template, corporate, software, app, business, marketing, landing page, web marketing, internate marketing"/>
 <meta name="author" content="Tansh" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-<title>Reddit Awkward</title>
+<title>Comment Tag</title>
 
 <!--Fav and touch icons-->
 <link rel="shortcut icon" href="../images/icons/favicon.ico">
@@ -73,7 +73,7 @@ $dt2=date("Y-m-d H:i:s");
 	<div class="divider sixteen columns"></div>
   <!--heading-->
   <div class="sixteen columns">
-    <h2>Here you can ask general questions about Reddit Awkward</h2>
+    <h2>Here you can ask general questions about Comment Tag</h2>
   </div>
   
   <div class="divider sixteen columns"></div>
@@ -87,8 +87,8 @@ $dt2=date("Y-m-d H:i:s");
 *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
 
 var disqus_config = function () {
-this.page.url = "https://redditawkward.com/rules/generalquestions.php";  // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = "reddit.awkward.generalquestions"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+this.page.url = "https://comment-tag.com/rules/generalquestions.php";  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = "comment-tag.generalquestions"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
 };
 
 (function() { // DON'T EDIT BELOW THIS LINE

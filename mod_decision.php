@@ -15,7 +15,7 @@ $dt2=date("Y-m-d H:i:s");
 <meta name="keywords" content="one page template, corporate, software, app, business, marketing, landing page, web marketing, internate marketing"/>
 <meta name="author" content="Tansh" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-<title>Reddit Awkward</title>
+<title>Comment Tag</title>
 
 <!--Fav and touch icons-->
 <link rel="shortcut icon" href="images/icons/favicon.ico">
@@ -45,7 +45,7 @@ $dt2=date("Y-m-d H:i:s");
     <!--sub_header starts-->
     <div id="sub_header">
       <div class="columns sixteen">
-        <h2>Reddit Awkward Moderator Decision</h2>
+        <h2>Comment Tag Moderator Decision</h2>
         <p class="textstyle2">Please decide...</p>
       </div>
     </div>

@@ -20,7 +20,7 @@ if ($_SESSION['redditor'] !== null) {
 <meta name="keywords" content="one page template, corporate, software, app, business, marketing, landing page, web marketing, internate marketing"/>
 <meta name="author" content="Tansh" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-<title>Reddit Awkward</title>
+<title>Comment Tag</title>
 
 <!--Fav and touch icons-->
 <link rel="shortcut icon" href="images/icons/favicon.ico">
@@ -51,7 +51,7 @@ if ($_SESSION['redditor'] !== null) {
     <div id="sub_header">
       <div class="columns sixteen">
         <h2>Introduction</h2>
-        <p class="textstyle2">Reddit and Reddit Awkward</p>
+        <p class="textstyle2">Reddit and Comment Tag</p>
       </div>
     </div>
     <!--sub_header ends--> 
@@ -74,7 +74,7 @@ if ($_SESSION['redditor'] !== null) {
 	<h3>2. There is an element of cowardice in the total anonymity that Reddit gives its users.</h3>
 	<h3>Have you ever read posts and wanted to give a reply that could not be mistaken for irony, or have you ever doubted whether something someone else wrote on Reddit was intended to be ironic?</h3>
 	<h3>3. There is an element of estrangement, which to be fair, is not unique to Reddit, but is a problem in all online communication because we are not face to face with each other. </h3>
-	<h3>Reddit Awkward is an attempt to remedy these few flaws to a very good thing. By way of giving you tools for your communication, we hope to help improve your experience on Reddit.</h3>
+	<h3>Comment Tag is an attempt to remedy these few flaws to a very good thing. By way of giving you tools for your communication, we hope to help improve your experience on Reddit.</h3>
 	<h3>Reach out. Do not be afraid to be awkward. Good day.</h3>
 </div>
   <div class="divider sixteen columns"></div>
@@ -89,8 +89,8 @@ if ($_SESSION['redditor'] !== null) {
 <div id="footer">
   <p>REDDIT AKWARD © 2016. All Rights Reserved.</p>
   <ul>
-    <li><a href="https://redditawkward.com/rules/">Terms of use </a></li>
-    <li><a href="https://redditawkward.com/rules/">Privacy policy</a></li>
+    <li><a href="https://comment-tag.com/rules/">Terms of use </a></li>
+    <li><a href="https://comment-tag.com/rules/">Privacy policy</a></li>
   </ul>
   <div class="clear"></div>
 </div>
@@ -108,11 +108,11 @@ if ($_SESSION['redditor'] !== null) {
 <?
 function getTagUse($tagShortHand, $redditor) {
 	$tagUse = new stdClass();
-	$sql = "SELECT * FROM prima_tag_use WHERE redditor='$redditor' AND tag='reddit.awkward{" . $tagShortHand . "}';";
+	$sql = "SELECT * FROM prima_tag_use WHERE redditor='$redditor' AND tag='comment-tag{" . $tagShortHand . "}';";
 	$result = mysqli_query($GLOBALS["___mysqli_ston"], $sql);
 	$count = mysqli_num_rows($result);
 	$tagUse->me = $count;
-	$sql = "SELECT * FROM prima_tag_use WHERE tag='reddit.awkward{" . $tagShortHand . "}';";
+	$sql = "SELECT * FROM prima_tag_use WHERE tag='comment-tag{" . $tagShortHand . "}';";
 	$result = mysqli_query($GLOBALS["___mysqli_ston"], $sql);
 	$count = mysqli_num_rows($result);
 	$tagUse->total = $count;

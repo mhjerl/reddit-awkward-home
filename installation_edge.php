@@ -6,7 +6,7 @@
 <meta name="keywords" content="one page template, corporate, software, app, business, marketing, landing page, web marketing, internate marketing"/>
 <meta name="author" content="Tansh" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-<title>Reddit Awkward</title>
+<title>Comment Tag</title>
 
 <!--Fav and touch icons-->
 <link rel="shortcut icon" href="images/icons/favicon.ico">
@@ -51,7 +51,7 @@
    <!--heading-->
 
 <div class="sixteen columns">
-	<h2>Installation Instructions: Reddit Awkward for Microsoft Edge</h2>
+	<h2>Installation Instructions: Comment Tag for Microsoft Edge</h2>
 	<h3>1. Download <a href="download/reddit_awkward-1.2.6-fx.zip">.zip file</a></h3>
 	<h3>2. Unpack it</h3>
 	<h3>3. In Edge Browser: Select Extensions in the Main Menu.</h3>

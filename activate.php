@@ -65,10 +65,10 @@ if (!$redditor && !isset($_GET['login'])) {
 	echo "<br><br>Hello " . $redditorCursory . "!";
 	echo "<br><br>This is your hash: " . $hash;
 	echo "<br><br>(Also sent to you reddit inbox)";
-	echo '<br><br>Use it when you log in at <a href="http://redditawkward.com">Reddit Awkward</a>';
+	echo '<br><br>Use it when you log in at <a href="http://comment-tag.com">Comment Tag</a>';
 	*/
 
-	$response = $reddit->sendMessage($redditor, "Your Authentication Key for Reddit Awkward.", "KEY: " . $hash . "\n\nThis is an automated message.\n\nCheers!\n\n[Reddit Awkward!](http://redditawkward.com/)");
+	$response = $reddit->sendMessage($redditor, "Your Authentication Key for Comment Tag.", "KEY: " . $hash . "\n\nThis is an automated message.\n\nCheers!\n\n[Comment Tag!](http://comment-tag.com/)");
 	$didRedditAuthentication = true;
 
 }
@@ -88,7 +88,7 @@ function generateRandomString($length = 10) {
 <meta name="keywords" content="one page template, corporate, software, app, business, marketing, landing page, web marketing, internate marketing"/>
 <meta name="author" content="Tansh" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-<title>Reddit Awkward</title>
+<title>Comment Tag</title>
 
 <!--Fav and touch icons-->
 <link rel="shortcut icon" href="images/icons/favicon.ico">
@@ -143,7 +143,7 @@ function generateRandomString($length = 10) {
 		</div>
   </div>
 <? 	} else if ($foundInDatabase || $didRedditAuthentication) { ?>
-		  <h2>You're done! Thank you. Welcome to Reddit Awkward from Else and Morten!</h2>
+		  <h2>You're done! Thank you. Welcome to Comment Tag from Else and Morten!</h2>
 			<div style="text-align: center; margin: auto;">
 				<h2>Welcome <?=$redditor?>!</h2>
 				<h3>Your Password is: <? echo $hash; ?></h3>

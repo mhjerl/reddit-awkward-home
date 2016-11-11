@@ -10,7 +10,7 @@ session_start();
 <meta name="keywords" content="one page template, corporate, software, app, business, marketing, landing page, web marketing, internate marketing"/>
 <meta name="author" content="Tansh" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-<title>Reddit Awkward</title>
+<title>Comment Tag</title>
 
 <!--Fav and touch icons-->
 <link rel="shortcut icon" href="images/icons/favicon.ico">
@@ -80,8 +80,8 @@ $redditor = $_SESSION['redditor'];
 <input type="hidden" name="cmd" value="_s-xclick">
 <input type="hidden" name="hosted_button_id" value="8XXMYLBEMURNY">
 <input name="custom" value="<? echo $redditor; ?>" type="hidden"> <! -- mhh -->
-<INPUT TYPE="hidden" NAME="return" value="https://redditawkward.com/finish_checkout.php?accounttype=premium"> <! -- mhh -->
-<input type="hidden" name="cancel_return" value="https://redditawkward.com/cancel_checkout.php"> <! -- mhh -->
+<INPUT TYPE="hidden" NAME="return" value="https://comment-tag.com/finish_checkout.php?accounttype=premium"> <! -- mhh -->
+<input type="hidden" name="cancel_return" value="https://comment-tag.com/cancel_checkout.php"> <! -- mhh -->
 <input type="image" src="https://www.paypalobjects.com/da_DK/DK/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal – den sikre og nemme måde at betale på nettet.">
 <img alt="" border="0" src="https://www.paypalobjects.com/da_DK/i/scr/pixel.gif" width="1" height="1">
 </form>
@@ -151,8 +151,8 @@ $redditor = $_SESSION['redditor'];
 <input type="hidden" name="cmd" value="_s-xclick">
 <input type="hidden" name="hosted_button_id" value="8XXMYLBEMURNY">
 <input name="custom" value="<? echo $redditor; ?>" type="hidden"> <! -- mhh -->
-<INPUT TYPE="hidden" NAME="return" value="https://redditawkward.com/finish_checkout.php?accounttype=premium"> <! -- mhh -->
-<input type="hidden" name="cancel_return" value="https://redditawkward.com/cancel_checkout.php"> <! -- mhh -->
+<INPUT TYPE="hidden" NAME="return" value="https://comment-tag.com/finish_checkout.php?accounttype=premium"> <! -- mhh -->
+<input type="hidden" name="cancel_return" value="https://comment-tag.com/cancel_checkout.php"> <! -- mhh -->
 <input type="image" src="https://www.paypalobjects.com/da_DK/DK/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal – den sikre og nemme måde at betale på nettet.">
 <img alt="" border="0" src="https://www.paypalobjects.com/da_DK/i/scr/pixel.gif" width="1" height="1">
 </form>

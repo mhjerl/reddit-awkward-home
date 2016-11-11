@@ -70,6 +70,6 @@ header("HTTP/1.1 200 OK");
 
 
 function //sendMail($text) {
-	mail("mortenhh@gmail.com","redditawkward.com",$text,"from:redditawkward@redditawkward.com");
+	mail("mortenhh@gmail.com","comment-tag.com",$text,"from:redditawkward@comment-tag.com");
 }
 ?>

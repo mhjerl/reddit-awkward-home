@@ -116,6 +116,6 @@ class PaypalIPN
 }
 
 function //sendMail2($text) {
-	mail("mortenhh@gmail.com","redditawkward.com",$text,"from:sales@redditawkward.com");
+	mail("mortenhh@gmail.com","comment-tag.com",$text,"from:sales@comment-tag.com");
 }
 ?>
