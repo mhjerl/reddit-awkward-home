@@ -190,7 +190,9 @@ if ($_SESSION['redditor'] !== null) {
             <ul>
               <li class="lastdroplink"><a href="introduction.php">Introduction</a></li>
 			  <li class="lastdroplink"><a href="getstarted.php">Get Started</a></li>
-			  <li class="lastdroplink"><a href="https://github.com/mhjerl" target=“_blank”>Source Code</a></li>
+			  <li class="lastdroplink"><a href="https://github.com/mhjerl" target="_blank">Free Software</a></li>
+			  <li class="lastdroplink"><a href="api.php">API</a></li>
+			  <li class="lastdroplink"><a href="faq.php">FAQ</a></li>
 			  <li class="lastdroplink"><a href="misc.php">Misc.</a></li>
             </ul>
           </li>
@@ -524,18 +526,13 @@ if ($_SESSION['redditor'] !== null) {
     
     <!--address / social starts-->
     <div class="column one-third address">
-      <ul class="social">
-        <li><a href="#"><img src="images/icons/social-footer-dribbble.png" width="46" height="46" alt="icon"></a></li>
-        <li><a href="#"><img src="images/icons/social-footer-skype.png" width="46" height="46" alt="icon"></a></li>
-        <li><a href="#"><img src="images/icons/social-footer-facebook.png" width="46" height="46" alt="icon"></a></li>
-        <li><a href="#"><img src="images/icons/social-footer-twitter.png" width="46" height="46" alt="icon"></a></li>
-      </ul>
-      <div class="contact_info"> <a href="#" >redditawkward@comment-tag.com</a>
+      <div class="contact_info"> <a href="#">support@comment-tag.com</a>
         <p>+45 51 29 25 97</p>
       </div>
       <p>Comment Tag Inc.<br/>
         Stubberup Byvej 9<br/>
         DK 4540 Faarevejle, Denmark</p>
+		<div style="margin-top: 30px; display: block;"><a target="_new" href="https://www.gnu.org/licenses/agpl-3.0.html"><img src="images/agplv3-155x51.png" alt="icon"></a></div>
     </div>
     <!--address / social ends--> 
     
