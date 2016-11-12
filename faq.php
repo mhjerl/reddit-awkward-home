@@ -8,7 +8,7 @@ A:Ja, det kan man godt sige, men det skal forstås rigtigt.
 1. 	Vi tager ikke reddit.com's bestyrelse eller direktion alvorligt.
 	Det er en beslutning vi har taget ud fra en følelsesmæssig og subjektiv men også erfaringsbaseret helhedsvurdering.
 	De følelsesmæssige aspekter består dels af erkendt paranoia og dels af erkendt fysisk væmmelse over den uretfærdighed som hver dag udfoldes på reddit.com.
-	Beslutningen om alligevel at lave en webservice "oven på" reddit.com hænger sammen med x) vores medfølelse med dem der bliver mobbet y) 
+	Beslutningen om alligevel at lave en webservice "oven på" reddit.com hænger sammen med x) vores medfølelse med dem der bliver mobbet y) vores håb for at reddit.com bliver endnu bedre
 	Det er en beslutning som nu er frigjort fra vores frustrationer og spekulationer og er blevet udmøntet i og fremover hænger tæt sammen med comment-tag.com's politik.
 	At vi ikke tager reddit.com's bestyrelse eller direktion alvorligt betyder:
 		a.	at vi ikke har tillid til dem.

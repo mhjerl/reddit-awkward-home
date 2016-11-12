@@ -31,7 +31,7 @@
 <div id="header_wrapper">
   <div class="container clearfix"> 
     
-<? include('parts/header.php'); ?>
+<?php include('parts/header.php'); ?>
     
     <!--sub_header starts-->
     <div id="sub_header">

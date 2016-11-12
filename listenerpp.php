@@ -1,4 +1,3 @@
-
 <?php
 require('PaypalIPN.php');
 include('config.php');
