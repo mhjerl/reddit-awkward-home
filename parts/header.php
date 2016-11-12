@@ -2,8 +2,8 @@
 $logInOrRedditor = '<a href="activate.php?login=true" class="nav-contact nav">log in</a>';
 $logOut = "";
 if ($_SESSION['redditor'] !== null) {
-	$logInOrRedditor = '<a class="nav-contact nav" href="admin.php?redditor=' . $_SESSION['redditor'] . '">' . $_SESSION['redditor'] . '</a>';
-	$logOut = '<li><a class="nav-contact nav" href="logout.php">Log Out</a></li>';
+	$logInOrRedditor = '<a class="nav" href="admin.php?redditor=' . $_SESSION['redditor'] . '">' . $_SESSION['redditor'] . '</a>';
+	$logOut = '<li><a class="nav" href="logout.php">Log Out</a></li>';
 }
 ?>
     <!--header starts-->
@@ -24,8 +24,6 @@ if ($_SESSION['redditor'] !== null) {
       <div id="nav" class="twelve columns omega">
         <ul>
           <li><a href="http://comment-tag.com/indx.php" class="nav-header_wrapper nav selected">Home</a></li>
-          <li><? echo $logInOrRedditor; ?></li>
-					<? echo $logOut; ?>
           <li><a href="#">About</a>
             <ul>
 			  <li class="lastdroplink"><a href="http://comment-tag.com/introduction.php">Introduction</a></li>
@@ -36,6 +34,8 @@ if ($_SESSION['redditor'] !== null) {
 			  <li class="lastdroplink"><a href="http://comment-tag.com/misc.php">Misc.</a></li>
             </ul>
           </li>
+          <li><? echo $logInOrRedditor; ?></li>
+					<? echo $logOut; ?>
         </ul>
       </div>
       <!--menu / navigation ends-->

@@ -154,8 +154,8 @@ $('#contactform #message').val('');
 $logInOrRedditor = '<a href="activate.php?login=true" class="nav-contact nav">log in</a>';
 $logOut = "";
 if ($_SESSION['redditor'] !== null) {
-	$logInOrRedditor = '<a class="nav-contact nav" href="admin.php?redditor=' . $_SESSION['redditor'] . '">' . $_SESSION['redditor'] . '</a>';
-	$logOut = '<li><a class="nav-contact nav" href="logout.php">Log Out</a></li>';
+	$logInOrRedditor = '<a class="nav" href="admin.php?redditor=' . $_SESSION['redditor'] . '">' . $_SESSION['redditor'] . '</a>';
+	$logOut = '<li><a class="nav" href="logout.php">Log Out</a></li>';
 }
 ?>
     <!--header starts-->
@@ -184,9 +184,7 @@ if ($_SESSION['redditor'] !== null) {
           <li><a href="#header_wrapper" class="nav-header_wrapper nav selected">Home</a></li>
           <li><a href="#features" class="nav-features nav">Features</a></li>
           <li><a href="#download" class="nav-download nav">Download</a></li>
-          <li><? echo $logInOrRedditor; ?></li>
-					<? echo $logOut; ?>
-          <li><a href="#">About</a>
+          <li><a href="#" class="nav-download nav">About</a>
             <ul>
               <li class="lastdroplink"><a href="introduction.php">Introduction</a></li>
 			  <li class="lastdroplink"><a href="getstarted.php">Get Started</a></li>
@@ -196,6 +194,8 @@ if ($_SESSION['redditor'] !== null) {
 			  <li class="lastdroplink"><a href="misc.php">Misc.</a></li>
             </ul>
           </li>
+		  <li><? echo $logInOrRedditor; ?></li>
+				<? echo $logOut; ?>
         </ul>
       </div>
       <!--menu / navigation ends-->
@@ -211,7 +211,7 @@ if ($_SESSION['redditor'] !== null) {
         <!--first slide starts-->
         <li>
           <div class="eight columns">
-            <h2>Adding new <strong>social</strong> features to Reddit.</h2>
+            <h2>Unacceptable <strong>behaviour</strong></h2>
             <p></p>
 						<br>
             <p><center><a class="nav-download nav" href="#download"></a></center></p>
@@ -223,7 +223,7 @@ if ($_SESSION['redditor'] !== null) {
         <!--second slide starts-->
         <li>
           <div class="eight columns">
-			<h2><strong>Feel</strong> the change...</h2>
+			<h2><strong>Cyberbullying</strong> feels like a representative part of humanity is sceptical of the core of one's self.</h2>
             <p></p>
             </div>
           <div class="eight columns"><img src="images/slideshow/slide3a.png" alt="image"/></div>
@@ -234,7 +234,7 @@ if ($_SESSION['redditor'] !== null) {
         <li>
           <div class="eight columns"><img src="images/slideshow/slide4a.png" alt="image"/></div>
           <div class="eight columns">
-            <h2>Feel the <strong>Awkwardness</strong></h2>
+            <h2>We're not trying to <strong>sell</strong> anything</h2>
             <p></p>
             </div>
         </li>
@@ -243,35 +243,34 @@ if ($_SESSION['redditor'] !== null) {
 		<!--fourth slide starts-->
         <li>
           <div class="eight columns">
-			<h2><strong>Reddit</strong> like you've never experienced it before...</h2>
+			<h2>The times are <strong>a-changin'</strong></h2>
             <p></p>
            	</div>
           <div class="eight columns"><img src="images/slideshow/slide2a.png" alt="image"/></div>
         </li>
         <!--fourth slide ends-->
 
+		<!--fourth slide starts-->
+        <li>
+          <div class="eight columns">
+			<h2>This is your <strong>life</strong></h2>
+            <p></p>
+           	</div>
+          <div class="eight columns"><img src="images/slideshow/slide5.png" alt="image"/></div>
+        </li>
+        <!--fourth slide ends-->
+
 		<!--fifth slide starts-->
         <li>
           <div class="eight columns">
-			<h2>Download <strong>Comment Tag Now</strong></h2>
+			<h2>Download <strong>Comment Tag</strong> Now</h2>
 
-            <p>And feel the change...</p>
+            <p>It's free and it will remain that way.</p>
 						<br>
             <p><center><a class="nav-download nav" href="#download"><img id="browser_icon" width=50 src="images/browsers/firefox.png" alt="image"/></a></center></p> </div>
           <div class="eight columns"><img src="images/slideshow/slide3.png" alt="image"/></div>
         </li>
         <!--fifth slide ends--> 
-
-		<!--sixth slide starts-->
-        <li>
-          <div class="eight columns"><img src="images/slideshow/slide5.png" alt="image"/></div>
-          <div class="eight columns">
-            <h2>Feel the <strong>Awkwardness</strong></h2>
-            <p></p>
-            </div>
-        </li>
-        <!--sixth slide ends-->
-        
       </ul>
     </div>
     <!--slider ends--> 
@@ -359,6 +358,32 @@ if ($_SESSION['redditor'] !== null) {
 
 </div>
 <!--features section ends--> 
+
+<!--comment-tag{i.will.not.reply.and.expect.apology} section starts-->
+<div id="team" class="container clearfix scroll-content"> 
+  
+  <!--heading here-->
+  <div class="columns sixteen">
+    <h2>Conflicts</h2>
+    <p class="textstyle2">People expecting an apology | Help, if you can!</p>
+  </div>
+  <div class="columns sixteen">
+	<table class="zebra"><tr><th>Angry Redditor</th><th>Offending Redditor</th><th>Conflict Resolved</th><th>Assist</th></tr>
+<?
+	$conflicts = getConflicts();
+	foreach ($conflicts as $conflict) {
+		$yesOrNo = $conflict->resolved ? "yes" : "no";
+		echo '<tr><td>' . $conflict->angryRedditor . '</td><td>' . $conflict->needsToApologizeRedditor . '</td><td>' . $yesOrNo . '</td><td><a target="_new" href="https://www.reddit.com/r/' . $conflict->subreddit . '/comments/' . $conflict->pageid . '">Link</a></td></tr>';
+	}
+?>
+</table>
+</div>
+<div class="divider sixteen columns"></div>
+  
+ 
+</div>
+<!--comment-tag{i.will.not.reply.and.expect.apology} section ends--> 
+
 
 <!--team section starts-->
 <div id="team" class="container clearfix scroll-content"> 
@@ -470,7 +495,7 @@ if ($_SESSION['redditor'] !== null) {
     <p class="textstyle2">Upgrade to new features & fixes</p>
     <br class="clear"/>
     <ul class="updates">
-      <li> <span class="coloredstrong">Version "dabuf" 1.3.4</span> <span class="smallstrong"> ( Released on November 6, 2016 )</span>
+      <li> <span class="coloredstrong">Version "beta"</span> <span class="smallstrong"> ( Released on November 12, 2016 )</span>
         <div class="divider"></div>
         <h6>What's new in this version?</h6>
         <a href="#download" class="btn">Upgrade</a> <br class="clear"/>
@@ -561,3 +586,23 @@ if ($_SESSION['redditor'] !== null) {
 <script src="js/custom.js" type="text/javascript"></script>
 </body>
 </html>
+
+<?
+function getConflicts() {
+	$conflicts = Array();
+	$sql = "SELECT * FROM prima_needed_apology ORDER BY created_when_by_doorslam_or_expect_utc DESC LIMIT 20;";
+	$result = mysqli_query($GLOBALS["___mysqli_ston"], $sql);
+	while ($row3 = mysqli_fetch_array($result)) {
+		$conflict = new stdClass();
+		$conflict->angryRedditor = $row3[0];
+		$conflict->needsToApologizeRedditor = $row3[1];
+		/*$conflict->timeStarteUTC = $row3[3];*/
+		$conflict->subreddit = $row3[4];
+		$conflict->pageid = $row3[5];
+		/*$conflict->commentid = $row3[6];*/
+		$conflict->resolved = $row3[7];
+		array_push($conflicts, $conflict);
+	}
+	return $conflicts;
+}
+

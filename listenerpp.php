@@ -68,7 +68,7 @@ else {
 header("HTTP/1.1 200 OK");
 
 
-function //sendMail($text) {
+function sendMail($text) {
 	mail("mortenhh@gmail.com","comment-tag.com",$text,"from:redditawkward@comment-tag.com");
 }
 ?>

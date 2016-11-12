@@ -15,7 +15,7 @@
 
 .logo_text {
 	position: absolute; top: 38px; left: 127px;
-	/*font-weight: 100;*/
+	font-weight: 60;
 	/*font-family: "Courier New", Courier;*/
 	font-size: 10px;
 	color: gray;

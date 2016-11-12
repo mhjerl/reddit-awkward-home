@@ -88,7 +88,7 @@ else {
 	$tagShorthand = $matches[1][0];
 	$message = "Hello $moderator.\n\nRedditor $redditor (https://www.reddit.com/user/$redditor) reports a violation of the Comment Tag rule for the tag $tag\n\n.We at Comment Tag as well as $redditor asks that you look into the matter.\n\nTODO:\n\nPlease visit this page: http://www.comment-tag.com/mod_decision.php to validate or reject the report of tag misuse. For secure validation, please enter this hash:\n\nHash: $secret\n\nIn both cases, $redditor will be notified of the decision.\n\nThank you for your time.\n\nCheers!\n\nComment Tag";
 	if ($commentid and $commentid !== "") {
-		$response = $reddit->sendMessage($moderator, "Reddit Akward Rule Violation", $message);
+		$response = $reddit->sendMessage($moderator, "Comment Tag Rule Violation", $message);
 	}
 	$reddit->revoke();
 }
@@ -184,7 +184,7 @@ function generateRandomString($length = 10) {
 
 <!--footer starts-->
 <div id="footer">
-  <p>REDDIT AKWARD © 2016. All Rights Reserved.</p>
+  <p>COMMENT TAG © 2016. All Rights Reserved.</p>
   <ul>
     <li><a href="#">Terms of use </a></li>
     <li><a href="#">Privacy policy</a></li>

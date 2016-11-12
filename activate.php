@@ -68,7 +68,11 @@ if (!$redditor && !isset($_GET['login'])) {
 	echo '<br><br>Use it when you log in at <a href="http://comment-tag.com">Comment Tag</a>';
 	*/
 
-	$response = $reddit->sendMessage($redditor, "Your Authentication Key for Comment Tag.", "KEY: " . $hash . "\n\nThis is an automated message.\n\nCheers!\n\n[Comment Tag!](http://comment-tag.com/)");
+
+
+
+
+	//$response = $reddit->sendMessage($redditor, "Your Authentication Key for Comment Tag.", "KEY: " . $hash . "\n\nThis is an automated message.\n\nCheers!\n\n[Comment Tag!](http://comment-tag.com/)");
 	$didRedditAuthentication = true;
 
 }
@@ -197,7 +201,7 @@ function generateRandomString($length = 10) {
 
 <!--footer starts-->
 <div id="footer">
-  <p>REDDIT AKWARD © 2016. All Rights Reserved.</p>
+  <p>COMMENT TAG © 2016. All Rights Reserved.</p>
   <ul>
     <li><a href="#">Terms of use </a></li>
     <li><a href="#">Privacy policy</a></li>

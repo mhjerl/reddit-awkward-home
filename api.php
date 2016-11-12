@@ -78,7 +78,7 @@ session_destroy();
 <!--footer starts-->
 <div id="footer">
 
-  <p>REDDIT AKWARD © 2016. All Rights Reserved.</p>
+  <p>COMMENT TAG © 2016. All Rights Reserved.</p>
   <ul>
     <li><a href="#">Terms of use </a></li>
     <li><a href="#">Privacy policy</a></li>
