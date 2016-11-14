@@ -55,7 +55,7 @@ var bName = getBrowserName();
 $("#browser_icon").attr("src","images/browsers/" + bName + ".png");
 $('.image-slider').flexslider({
     	animation: "fade",
-		slideshowSpeed: 3000,
+		slideshowSpeed: 6000,
 		animationDuration: 3000,
     	controlNav: true,
     	keyboardNav: true,
@@ -162,12 +162,12 @@ if ($_SESSION['redditor'] !== null) {
     <div id="header">
       
       <!--logo starts-->
-      <!-- <div class="four columns logo alpha"> <a href="indx.php">
+      <!-- <div class="four columns logo alpha"> <a href="index.php">
         <h1><img src="images/Logomakr_2ACvqw.png" height="62" alt="logo"></h1>
         </a></div> -->
 
 		<div class="four columns logo alpha">
-			<a href="indx.php">
+			<a href="index.php">
 				<div class="logo_beta_elements">
 					<h1><img class="logo_image" src="images/Logomakr_2zPQam.png" alt="logo"></h1>
 					<span class="logo_text">BETA</span>
@@ -234,7 +234,7 @@ if ($_SESSION['redditor'] !== null) {
         <li>
           <div class="eight columns"><img src="images/slideshow/slide4a.png" alt="image"/></div>
           <div class="eight columns">
-            <h2>We're not trying to <strong>sell</strong> anything</h2>
+            <h2>Adding new <strong>social</strong> features to Reddit.</h2>
             <p></p>
             </div>
         </li>
@@ -253,7 +253,7 @@ if ($_SESSION['redditor'] !== null) {
 		<!--fourth slide starts-->
         <li>
           <div class="eight columns">
-			<h2>This is your <strong>life</strong></h2>
+			<h2><strong>Feel</strong> the change...</h2>
             <p></p>
            	</div>
           <div class="eight columns"><img src="images/slideshow/slide5.png" alt="image"/></div>
@@ -439,13 +439,13 @@ if ($_SESSION['redditor'] !== null) {
       <!--center aligned button-->
       <div class="button_wrapper">
 				<div class="browsers">
-            <a href="https://chrome.google.com/webstore/detail/" data-browser="chrome">
+            <a href="https://chrome.google.com/webstore/detail/comment-tag/ehoebjlmhegfcjapelffllkajmfckoce" data-browser="chrome">
                 <img title="Install in Chrome" src="images/browsers/Chrome.png">
             </a>
             <a href="installation_edge.php" data-browser="edge">
                 <img title="Install in Edge" src="images/browsers/Edge.png">
             </a>
-            <a href="https://addons.mozilla.org/en-US/firefox/addon/" data-browser="firefox">
+            <a href="download/comment_tag-0.0.8-fx.xpi" data-browser="firefox">
                 <img title="Install in Firefox" src="images/browsers/Firefox.png">
             </a>
             <!-- <a href="https://addons.opera.com/en-gb/extensions/details/" data-browser="opera">

@@ -54,7 +54,7 @@
 	<div style="text-align: center; margin: auto;">
 		<h2>Payment unsuccessful.</h2>
 		<h2>Sorry to see you go.</h2>
-		<div class="button_wrapper"><a href="indx.php" class="btn_yellow"><span>Continue</span></a></div>
+		<div class="button_wrapper"><a href="index.php" class="btn_yellow"><span>Continue</span></a></div>
 		<br>
 	</div>
 </div>

@@ -55,7 +55,7 @@
 		<h2>Payment successful.</h2>
 		<h2>Thank you.</h2>
 		<h2>Your account has been upgraded to <? echo $_GET['accounttype']; ?></h2>
-		<div class="button_wrapper"><a href="indx.php" class="btn_yellow"><span>Continue</span></a></div>
+		<div class="button_wrapper"><a href="index.php" class="btn_yellow"><span>Continue</span></a></div>
 		<br>
 	</div>
 </div>

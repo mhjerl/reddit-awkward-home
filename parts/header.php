@@ -11,7 +11,7 @@ if ($_SESSION['redditor'] !== null) {
       
       <!--logo starts-->
 		<div class="four columns logo alpha">
-			<a href="indx.php">
+			<a href="http://comment-tag.com/index.php">
 				<div class="logo_beta_elements">
 					<h1><img class="logo_image" src="images/Logomakr_2zPQam.png" alt="logo"></h1>
 					<span class="logo_text">BETA</span>
@@ -23,7 +23,7 @@ if ($_SESSION['redditor'] !== null) {
       <!--menu / navigation starts-->
       <div id="nav" class="twelve columns omega">
         <ul>
-          <li><a href="http://comment-tag.com/indx.php" class="nav-header_wrapper nav selected">Home</a></li>
+          <li><a href="http://comment-tag.com/index.php" class="nav-header_wrapper nav selected">Home</a></li>
           <li><a href="#">About</a>
             <ul>
 			  <li class="lastdroplink"><a href="http://comment-tag.com/introduction.php">Introduction</a></li>

@@ -59,7 +59,7 @@ session_destroy();
 <div class="sixteen columns">
 	<div style="text-align: center; margin: auto;">
 		<h2>Done.</h2>
-		<div class="button_wrapper"><a href="indx.php" class="btn_yellow"><span>Continue</span></a></div>
+		<div class="button_wrapper"><a href="index.php" class="btn_yellow"><span>Continue</span></a></div>
 		<br>
 	</div>
 </div>

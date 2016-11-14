@@ -142,7 +142,7 @@ function generateRandomString($length = 10) {
 		<div style="text-align: center; margin: auto;">
 			<h2>Your account is already activated. You are already logged in.</h2>
 			<div class="button_wrapper"><a href="logout.php" class="btn_yellow"><span>Log Out</span></a></div>
-			<div class="button_wrapper"><a href="indx.php" class="btn_yellow"><span>Continue</span></a></div>
+			<div class="button_wrapper"><a href="index.php" class="btn_yellow"><span>Continue</span></a></div>
 			<br>
 		</div>
   </div>
@@ -155,7 +155,7 @@ function generateRandomString($length = 10) {
 				<h3>Please activate the popup in the right side of the browser menu and use it here along with your reddit username!</h3>
 				<h3>Remember to save your password for later use.</h3>
 				<br>
-				<div class="button_wrapper"><a href="indx.php" class="btn_yellow"><span>Continue</span></a></div>
+				<div class="button_wrapper"><a href="index.php" class="btn_yellow"><span>Continue</span></a></div>
 				<br>
 			</div>
 	<? 
@@ -165,7 +165,7 @@ function generateRandomString($length = 10) {
 			<div style="text-align: center; margin: auto;">
 				<h2>Well remembered! You are now logged in.</h2>
 				<br>
-				<div class="button_wrapper"><a href="indx.php" class="btn_yellow"><span>Continue</span></a></div>
+				<div class="button_wrapper"><a href="index.php" class="btn_yellow"><span>Continue</span></a></div>
 				<br>
 			</div>
 		<? } else { ?>

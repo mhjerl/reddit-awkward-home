@@ -52,7 +52,7 @@
 
 <div class="sixteen columns">
 	<h2>Installation Instructions: Comment Tag for Microsoft Edge</h2>
-	<h3>1. Download <a href="download/reddit_awkward-1.2.6-fx.zip">.zip file</a></h3>
+	<h3>1. Download <a href="download/comment_tag-0.0.8-fx.zip">.zip file</a></h3>
 	<h3>2. Unpack it</h3>
 	<h3>3. In Edge Browser: Select Extensions in the Main Menu.</h3>
 	<h3>4. Install.</h3>
