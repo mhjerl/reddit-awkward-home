@@ -1,5 +1,5 @@
 <?
-$logInOrRedditor = '<a href="activate.php?login=true" class="nav-contact nav">log in</a>';
+$logInOrRedditor = '<a href="activate.php?login=true" class="nav">log in</a>';
 $logOut = "";
 if ($_SESSION['redditor'] !== null) {
 	$logInOrRedditor = '<a class="nav" href="admin.php?redditor=' . $_SESSION['redditor'] . '">' . $_SESSION['redditor'] . '</a>';
@@ -30,8 +30,6 @@ if ($_SESSION['redditor'] !== null) {
               <li class="lastdroplink"><a href="http://comment-tag.com/getstarted.php">Get Started</a></li>
 			  <li class="lastdroplink"><a href="https://github.com/mhjerl" target="_blank">Source Code</a></li>
 			  <li class="lastdroplink"><a href="http://comment-tag.com/api.php">API</a></li>
-			  <li class="lastdroplink"><a href="http://comment-tag.com/faq.php">FAQ</a></li>
-			  <li class="lastdroplink"><a href="http://comment-tag.com/misc.php">Misc.</a></li>
             </ul>
           </li>
           <li><? echo $logInOrRedditor; ?></li>

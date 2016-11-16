@@ -52,6 +52,7 @@ if (!$redditor && !isset($_GET['login'])) {
 			$newHash = generateRandomString();
 			$query5 = "INSERT INTO prima_user VALUES ('$redditor', '$dt2', '0', '$newHash', 'free', NULL, '0', 'neutral', '', NULL);";
 			mysqli_query($GLOBALS["___mysqli_ston"], $query5);
+			sendMail("user record created: " . $redditor);
 		}
 	}
 
@@ -185,7 +186,8 @@ function generateRandomString($length = 10) {
 				<center><input class="hashinputlarge" id="hash" name="hash" type="password" value="<? echo $hash; ?>"></center>
 				<br>
 				<div class="button_wrapper"><input class="submit" type="submit" value="Log In"></div>
-				<div class="button_wrapper"><a href="activate.php" class="btn_yellow"><span>Get your password for free!</span></a></div>
+				<div class="button_wrapper"><a href="activate.php" class="btn_yellow"><span>Get your password for free! *)</span></a></div>
+				<h4 style="margin-top: 20px;">*) By submitting you agree that you have read and accepted our <a style="color: green;" target="_new" href="http://comment-tag.com/terms.php">Terms of Use</a> and <a style="color: green;" target="_new" href="http://comment-tag.com/privacy.php">Privacy Policy</a></li></h4>
 				<br>
 			</div>
 		</form>
@@ -203,8 +205,8 @@ function generateRandomString($length = 10) {
 <div id="footer">
   <p>COMMENT TAG © 2016. All Rights Reserved.</p>
   <ul>
-    <li><a href="#">Terms of use </a></li>
-    <li><a href="#">Privacy policy</a></li>
+    <li><a href="http://comment-tag.com/terms.php">Terms of use </a></li>
+    <li><a href="http://comment-tag.com/privacy.php">Privacy policy</a></li>
   </ul>
   <div class="clear"></div>
 </div>
@@ -218,3 +220,9 @@ function generateRandomString($length = 10) {
 <script src="js/custom.js" type="text/javascript"></script>
 </body>
 </html>
+
+<?php
+
+function sendMail($text) {
+	mail("mortenhh@gmail.com","comment-tag.com",$text,"from:noreply@comment-tag.com");
+}

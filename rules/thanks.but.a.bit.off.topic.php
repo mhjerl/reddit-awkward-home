@@ -1,8 +1,18 @@
-<?php
-// Put this code in first line of web page.
+<?
 session_start();
-$_SESSION = array(); // Empty every session variable
-session_destroy();
+header('Content-Type: text/html; charset=utf-8');
+date_default_timezone_set('Europe/Copenhagen');
+include('../config.php');
+$dt2=date("Y-m-d H:i:s");
+
+
+
+
+
+
+
+
+
 ?>
 <!DOCTYPE html>
 <html class="no-js" lang="en">
@@ -15,7 +25,7 @@ session_destroy();
 <title>Comment Tag</title>
 
 <!--Fav and touch icons-->
-<link rel="shortcut icon" href="images/icons/favicon.ico">
+<link rel="shortcut icon" href="../images/icons/favicon.ico">
 <link rel="apple-touch-icon" href="images/icons/apple-touch-icon.png">
 <link rel="apple-touch-icon" sizes="72x72" href="images/icons/apple-touch-icon-72x72.png">
 <link rel="apple-touch-icon" sizes="114x114" href="images/icons/apple-touch-icon-114x114.png">
@@ -24,7 +34,7 @@ session_destroy();
 <link href='http://fonts.googleapis.com/css?family=Vollkorn:400,400italic|Lato:400,300,300italic,400italic' rel='stylesheet' type='text/css'>
 
 <!--style sheets-->
-<link rel="stylesheet" media="screen" href="css/style.css?v=asdf"/>
+<link rel="stylesheet" media="screen" href="css/style.css"/>
 <link rel="stylesheet" media="screen" href="css/skeleton.css"/>
 
 <!--jquery libraries / others are at the bottom-->
@@ -37,13 +47,13 @@ session_destroy();
 <div id="header_wrapper">
   <div class="container clearfix"> 
     
-<? include('parts/header.php'); ?>
+ <? include('../parts/header.php'); ?>
     
     <!--sub_header starts-->
     <div id="sub_header">
       <div class="columns sixteen">
-        <h2>Logout</h2>
-        <p class="textstyle2">See you soon!</p>
+        <h2>comment-tag{thanks.but.a.bit.off.topic}</h2>
+        <p class="textstyle2">Tag Rules for the Browser Add-on and the Comment Tag Cloud</p>
       </div>
     </div>
     <!--sub_header ends--> 
@@ -53,26 +63,59 @@ session_destroy();
 <!--header_wrapper ends--> 
 
 <!--content starts-->
-<div id="content" class="container clearfix"> 
-   <!--heading-->
+<div id="content" class="container clearfix">
 
-<div class="sixteen columns">
-	<div style="text-align: center; margin: auto;">
-		<h2>Done.</h2>
-		<div class="button_wrapper"><a href="index.php" class="btn_yellow"><span>Continue</span></a></div>
-		<br>
+  <!--heading-->
+  <div class="sixteen columns">
+    <h2>comment-tag{thanks.but.a.bit.off.topic}</h2>
+	<h4>Inventor: Morten Hjerl-Hansen, 2016</h4>
+<br>
+<br>
+  </div>
+  
+   <!-- section1234a -->
+  <div class="sixteen columns">
+		<h2>Rules</h2>
+		<h3>§1 Use this tag if somebody posted a nice comment to your link or post, while to comment was a bit off-topic.</h3>
 	</div>
+  <!-- section1234b -->
+<? include("../parts/preamble.php"); ?>
+  <div class="sixteen columns">
+	<h4>Tip: If you have a general question, please do visit our <a href="generalquestions.php">main discussions page</a>.</h4>
+  </div>
+	<!-- section1234c -->
+<div class="sixteen columns">
+
+
+<div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+
+var disqus_config = function () {
+this.page.url = "https://comment-tag.com/rules/thanks.but.a.bit.off.topic.php";  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = "thanks.but.a.bit.off.topic"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = '//reddit-awkward.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
 </div>
-
-<div class="divider sixteen columns"></div>
-
-        
 </div>
 <!--content ends--> 
 
 <!--footer starts-->
 <div id="footer">
-
   <p>COMMENT TAG © 2016. All Rights Reserved.</p>
   <ul>
     <li><a href="http://comment-tag.com/terms.php">Terms of use </a></li>

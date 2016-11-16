@@ -36,8 +36,8 @@
     <!--sub_header starts-->
     <div id="sub_header">
       <div class="columns sixteen">
-        <h2>Upgrade account</h2>
-        <p class="textstyle2">Get Started</p>
+        <h2>Privacy</h2>
+        <p class="textstyle2">For your safety</p>
       </div>
     </div>
     <!--sub_header ends--> 
@@ -51,13 +51,14 @@
    <!--heading-->
 
 <div class="sixteen columns">
-	<div style="text-align: center; margin: auto;">
-		<h2>Payment successful.</h2>
-		<h2>Thank you.</h2>
-		<h2>Your account has been upgraded to <? echo $_GET['accounttype']; ?></h2>
-		<div class="button_wrapper"><a href="index.php" class="btn_yellow"><span>Continue</span></a></div>
-		<br>
-	</div>
+	<h2>Terms of use</h2>
+<h3>A. I will not use these tags ironically.</h3>
+
+<h3>B. I will not invent my own tags and use the text string "comment-tag{".</h3>
+
+<h3>C. I will use these tags in a way which promotes intellectualism and alternative conduct, i.e. "awkwardness".</h3>
+
+<h3>D. I will use these tags in compliance with the specific rules in the rule section.</h3>
 </div>
 
 <div class="divider sixteen columns"></div>

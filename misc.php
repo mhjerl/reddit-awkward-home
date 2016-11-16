@@ -230,8 +230,8 @@ s.setAttribute('data-timestamp', +new Date());
 <div id="footer">
   <p>COMMENT TAG © 2016. All Rights Reserved.</p>
   <ul>
-    <li><a href="#">Terms of use </a></li>
-    <li><a href="#">Privacy policy</a></li>
+    <li><a href="http://comment-tag.com/terms.php">Terms of use </a></li>
+    <li><a href="http://comment-tag.com/privacy.php">Privacy policy</a></li>
   </ul>
   <div class="clear"></div>
 </div>

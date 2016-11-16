@@ -36,8 +36,8 @@
     <!--sub_header starts-->
     <div id="sub_header">
       <div class="columns sixteen">
-        <h2>Upgrade account</h2>
-        <p class="textstyle2">Get Started</p>
+        <h2>Privacy</h2>
+        <p class="textstyle2">For your safety</p>
       </div>
     </div>
     <!--sub_header ends--> 
@@ -51,13 +51,16 @@
    <!--heading-->
 
 <div class="sixteen columns">
-	<div style="text-align: center; margin: auto;">
-		<h2>Payment successful.</h2>
-		<h2>Thank you.</h2>
-		<h2>Your account has been upgraded to <? echo $_GET['accounttype']; ?></h2>
-		<div class="button_wrapper"><a href="index.php" class="btn_yellow"><span>Continue</span></a></div>
-		<br>
-	</div>
+	<h2>Privacy</h2>
+	<h3>Information we collect and store within our system</h3>
+	<h4>Your reddit user name</h4>
+	<h4>The pages you visit</h4>
+	<h4>Your awkward karma</h4>
+	<h4>Your use of Comment Tag tags and rules</h4>
+	<h4>Your Common Social karma</h4>
+	<h3>How we use this information</h3>
+	<h4>To give you the best service</h4>
+	<br>
 </div>
 
 <div class="divider sixteen columns"></div>

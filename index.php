@@ -151,7 +151,7 @@ $('#contactform #message').val('');
 <div id="header_wrapper" class="scroll-content">
   <div class="container clearfix">
 <?
-$logInOrRedditor = '<a href="activate.php?login=true" class="nav-contact nav">log in</a>';
+$logInOrRedditor = '<a href="activate.php?login=true" class="nav">log in</a>';
 $logOut = "";
 if ($_SESSION['redditor'] !== null) {
 	$logInOrRedditor = '<a class="nav" href="admin.php?redditor=' . $_SESSION['redditor'] . '">' . $_SESSION['redditor'] . '</a>';
@@ -184,14 +184,12 @@ if ($_SESSION['redditor'] !== null) {
           <li><a href="#header_wrapper" class="nav-header_wrapper nav selected">Home</a></li>
           <li><a href="#features" class="nav-features nav">Features</a></li>
           <li><a href="#download" class="nav-download nav">Download</a></li>
-          <li><a href="#" class="nav-download nav">About</a>
+          <li><a href="#" class="nav">About</a>
             <ul>
               <li class="lastdroplink"><a href="introduction.php">Introduction</a></li>
 			  <li class="lastdroplink"><a href="getstarted.php">Get Started</a></li>
 			  <li class="lastdroplink"><a href="https://github.com/mhjerl" target="_blank">Free Software</a></li>
 			  <li class="lastdroplink"><a href="api.php">API</a></li>
-			  <li class="lastdroplink"><a href="faq.php">FAQ</a></li>
-			  <li class="lastdroplink"><a href="misc.php">Misc.</a></li>
             </ul>
           </li>
 		  <li><? echo $logInOrRedditor; ?></li>
@@ -495,10 +493,10 @@ if ($_SESSION['redditor'] !== null) {
     <p class="textstyle2">Upgrade to new features & fixes</p>
     <br class="clear"/>
     <ul class="updates">
-      <li> <span class="coloredstrong">Version "beta"</span> <span class="smallstrong"> ( Released on November 12, 2016 )</span>
+      <li> <span class="coloredstrong">Version "beta"</span> <span class="smallstrong"> ( Released on November 13, 2016 )</span>
         <div class="divider"></div>
         <h6>What's new in this version?</h6>
-        <a href="#download" class="btn">Upgrade</a> <br class="clear"/>
+        <!-- <a href="#download" class="btn">Upgrade</a> <br class="clear"/> -->
         . Finished coding tags and rules</li>
     </ul>
   </div>
@@ -551,12 +549,13 @@ if ($_SESSION['redditor'] !== null) {
     
     <!--address / social starts-->
     <div class="column one-third address">
-      <div class="contact_info"> <a href="#">support@comment-tag.com</a>
+      <div class="contact_info"> <!-- <a href="#">support@comment-tag.com</a> -->
         <p>+45 51 29 25 97</p>
       </div>
       <p>Comment Tag Inc.<br/>
         Stubberup Byvej 9<br/>
         DK 4540 Faarevejle, Denmark</p>
+		<div style="margin-top: 30px; display: block;"><a target="_new" href="https://www.stopbullying.gov"><img src="images/sblogo.png" alt="icon"></a></div>
 		<div style="margin-top: 30px; display: block;"><a target="_new" href="https://www.gnu.org/licenses/agpl-3.0.html"><img src="images/agplv3-155x51.png" alt="icon"></a></div>
     </div>
     <!--address / social ends--> 
@@ -567,8 +566,8 @@ if ($_SESSION['redditor'] !== null) {
   <div id="footer">
     <p>COMMENT TAG © 2016. All Rights Reserved.</p>
     <ul>
-      <li><a href="#">Terms of use</a></li>
-      <li><a href="#">Privacy policy</a></li>
+      <li><a href="http://comment-tag.com/terms.php">Terms of use </a></li>
+      <li><a href="http://comment-tag.com/privacy.php">Privacy policy</a></li>
     </ul>
     <div class="clear"></div>
   </div>

@@ -27,7 +27,11 @@ $awkwardKarmaNeeded = array(
     "awkward" => 0,
     "watch.me.playing.soccer.with.myself.in.this.video" => 0,
 	"no.i.mean.it" => 0,
-	"that.pissed.me.off.but.please.dont.mind" => 0
+	"that.pissed.me.off.but.please.dont.mind" => 0,
+	"thanks.but.a.bit.off.topic" => 0,
+	"your.post.inspired.me" => 0,
+	"your.link.inspired.me" => 0,
+	"a.warning.from.one.intellectual.to.another" => 0
 );
 
 $awkwardKarmaRewards = array(
@@ -58,7 +62,11 @@ $awkwardKarmaRewards = array(
     "awkward" => 0,
     "watch.me.playing.soccer.with.myself.in.this.video" => 0,
 	"no.i.mean.it" => 0,
-	"that.pissed.me.off.but.please.dont.mind" => 0
+	"that.pissed.me.off.but.please.dont.mind" => 0,
+	"thanks.but.a.bit.off.topic" => 0,
+	"your.post.inspired.me" => 0,
+	"your.link.inspired.me" => 0,
+	"a.warning.from.one.intellectual.to.another" => 0
 );
 
 $tagCategories = array(
@@ -86,12 +94,16 @@ $tagCategories = array(
 	"youre.welcome" => "Praise",
     "i.am.glad.you.said.that.to.me" => "Praise",
 	"no.i.mean.it" => "Praise",
+	"your.post.inspired.me" => "Praise",
+	"your.link.inspired.me" => "Praise",
 
     "i.dont.think.the.original.post.has.been.addressed.yet" => "Meta",
     "i.dont.think.the.original.post.has.been.taken.seriously.yet" => "Meta",
     "i.dont.think.the.original.post.has.been.treated.respectfully" => "Meta",
     "i.consider.this.comment.definitive.and.consider.any.reply.inappropriate" => "Meta",
     "youre.being.overly.ironic.and.are.violating.the.rules" => "Meta",
+	"thanks.but.a.bit.off.topic" => "Meta",
+	"a.warning.from.one.intellectual.to.another" => "Meta",
 
     "interesting.will.write.more.in.a.few.days.time" => "Patience",
 
@@ -119,7 +131,11 @@ $relationalKarmaNeeded = array(
     "er.hi.what.kind.of.strange.presentation.is.that" => 0,
     "awkward" => 0,
 	"no.i.mean.it" => 0,
-	"that.pissed.me.off.but.please.dont.mind" => 0
+	"that.pissed.me.off.but.please.dont.mind" => 0,
+	"thanks.but.a.bit.off.topic" => 0,
+	"your.post.inspired.me" => 0,
+	"your.link.inspired.me" => 0,
+	"a.warning.from.one.intellectual.to.another" => 0
 );
 /*
 Allowed values:
@@ -157,5 +173,9 @@ $mustBeStandAloneTags = array(
     "awkward" => "takenCareOfElsewhere",
     "watch.me.playing.soccer.with.myself.in.this.video" => "noStandAloneRule",
 	"no.i.mean.it" => "mustStandAlone",
-	"that.pissed.me.off.but.please.dont.mind" => "takenCareOfElsewhere"
+	"that.pissed.me.off.but.please.dont.mind" => "takenCareOfElsewhere",
+	"thanks.but.a.bit.off.topic" => "noStandAloneRule",
+	"your.post.inspired.me" => "noStandAloneRule",
+	"your.link.inspired.me" => "noStandAloneRule",
+	"a.warning.from.one.intellectual.to.another" => "mayNotStandAlone"
 );

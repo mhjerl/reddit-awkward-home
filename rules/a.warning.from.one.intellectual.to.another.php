@@ -52,7 +52,7 @@ $dt2=date("Y-m-d H:i:s");
     <!--sub_header starts-->
     <div id="sub_header">
       <div class="columns sixteen">
-        <h2>comment-tag{no.problem}</h2>
+        <h2>comment-tag{a.warning.from.one.intellectual.to.another}</h2>
         <p class="textstyle2">Tag Rules for the Browser Add-on and the Comment Tag Cloud</p>
       </div>
     </div>
@@ -67,7 +67,7 @@ $dt2=date("Y-m-d H:i:s");
 
   <!--heading-->
   <div class="sixteen columns">
-    <h2>comment-tag{no.problem}</h2>
+    <h2>comment-tag{a.warning.from.one.intellectual.to.another}</h2>
 	<h4>Inventor: Morten Hjerl-Hansen, 2016</h4>
 <br>
 <br>
@@ -77,7 +77,7 @@ $dt2=date("Y-m-d H:i:s");
   <div class="sixteen columns">
 		<h2>Rules</h2>
 
-		<h3>§1 ...</h3>
+		<h3>§1 The intellectuals must warn each other. Like wizards do in Tolkiens books. Not because we are authorities, not because we have self-contained, stable viewpoints but because we haven't and because we know it. The warning is the only moral way to express disagreement and disgust among intellectuals. It's the only legitimate supplement or alternative to an argument. Warnings of this kind have no place in everyday-life. Nor in family-life or friend-life. We must learn to distinguish and act differently in these situations. Warnings goes from one intellectual to another.</h3>
 	</div>
   <!-- section1234b -->
 <? include("../parts/preamble.php"); ?>
@@ -96,8 +96,8 @@ $dt2=date("Y-m-d H:i:s");
 *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
 
 var disqus_config = function () {
-this.page.url = "https://comment-tag.com/rules/no.problem.php";  // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = "comment-tag.no.problem"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+this.page.url = "https://comment-tag.com/rules/a.warning.from.one.intellectual.to.another.php";  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = "a.warning.from.one.intellectual.to.another"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
 };
 
 (function() { // DON'T EDIT BELOW THIS LINE
