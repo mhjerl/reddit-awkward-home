@@ -76,8 +76,8 @@ $dt2=date("Y-m-d H:i:s");
    <!-- section1234a -->
   <div class="sixteen columns">
 		<h2>Rules</h2>
-
-		<h3>§1 ...</h3>
+		<h3>§1 This tag is used in direct reply to the main post or link.</h3>
+		<h3>§2 There is no stand-alone-rule for it, but it is recommended that you state a reason.</h3>
 	</div>
   <!-- section1234b -->
 <? include("../parts/preamble.php"); ?>

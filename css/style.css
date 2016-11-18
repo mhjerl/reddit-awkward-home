@@ -1,5 +1,14 @@
 /* mhh start */
 
+.fixed_header {
+	position: fixed;
+    height: 25px;
+    width: 100%;
+    z-index: 9999;
+	background-color: yellow !important;
+	padding-top: 5px;
+	padding-left: 25px;
+}
 
 .logo_beta_elements {
 	position: relative; left: 0; top: 11px;
@@ -626,13 +635,25 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 	width: 100%;
 	height: auto;
 }
+
+#headerMhhCursory {
+	background: url(../images/nav-bg.png) no-repeat center bottom;
+	width:940px;
+	height: 90px; /*In case if you need more height than 90px for header, due to your logo height, visit help document*/
+	z-index: 9999;
+	position:fixed;
+	top: 30px; /* (0) mhh */
+	left: 50%;
+	margin-left: -470px;
+}
+
 #header {
 	background: url(../images/nav-bg.png) no-repeat center bottom;
 	width:940px;
 	height: 90px; /*In case if you need more height than 90px for header, due to your logo height, visit help document*/
 	z-index: 9999;
 	position:fixed;
-	top: 0;
+	top: 0px; /* (0) mhh */
 	left: 50%;
 	margin-left: -470px;
 }

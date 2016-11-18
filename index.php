@@ -146,7 +146,7 @@ $('#contactform #message').val('');
 
 </head>
 <body>
-
+<div class="fixed_header">Notice: Starting 1 January 2017 this extension will be priced at $9.99 for all new users. Cheers ;-), Else and Morten, Comment Tag.</div>
 <!--header_wrapper starts-->
 <div id="header_wrapper" class="scroll-content">
   <div class="container clearfix">
@@ -158,9 +158,10 @@ if ($_SESSION['redditor'] !== null) {
 	$logOut = '<li><a class="nav" href="logout.php">Log Out</a></li>';
 }
 ?>
+
     <!--header starts-->
-    <div id="header">
-      
+    <div id="headerMhhCursory">
+
       <!--logo starts-->
       <!-- <div class="four columns logo alpha"> <a href="index.php">
         <h1><img src="images/Logomakr_2ACvqw.png" height="62" alt="logo"></h1>
@@ -203,13 +204,13 @@ if ($_SESSION['redditor'] !== null) {
     <!--header ends--> 
     
     <!--slider starts-->
-    <div class="flexslider image-slider heightcontrolbymhh">
+    <div style="margin-top: 50px;" class="flexslider image-slider heightcontrolbymhh">
       <ul class="slides">
         
         <!--first slide starts-->
         <li>
           <div class="eight columns">
-            <h2>Unacceptable <strong>behaviour</strong></h2>
+            <h2>It's all about <strong>love</strong></h2>
             <p></p>
 						<br>
             <p><center><a class="nav-download nav" href="#download"></a></center></p>
@@ -221,7 +222,7 @@ if ($_SESSION['redditor'] !== null) {
         <!--second slide starts-->
         <li>
           <div class="eight columns">
-			<h2><strong>Cyberbullying</strong> feels like a representative part of humanity is sceptical of the core of one's self.</h2>
+			<h2>Adding a new <strong>social layer</strong> to reddit...</h2>
             <p></p>
             </div>
           <div class="eight columns"><img src="images/slideshow/slide3a.png" alt="image"/></div>
@@ -232,7 +233,7 @@ if ($_SESSION['redditor'] !== null) {
         <li>
           <div class="eight columns"><img src="images/slideshow/slide4a.png" alt="image"/></div>
           <div class="eight columns">
-            <h2>Adding new <strong>social</strong> features to Reddit.</h2>
+            <h2>Allowing you to <strong>categorize</strong> what you're doing when you write comments...</h2>
             <p></p>
             </div>
         </li>
@@ -241,7 +242,7 @@ if ($_SESSION['redditor'] !== null) {
 		<!--fourth slide starts-->
         <li>
           <div class="eight columns">
-			<h2>The times are <strong>a-changin'</strong></h2>
+			<h2>...using <strong>interactive tags</strong>...</h2>
             <p></p>
            	</div>
           <div class="eight columns"><img src="images/slideshow/slide2a.png" alt="image"/></div>
@@ -261,9 +262,9 @@ if ($_SESSION['redditor'] !== null) {
 		<!--fifth slide starts-->
         <li>
           <div class="eight columns">
-			<h2>Download <strong>Comment Tag</strong> Now</h2>
+			<h2>Download <strong>Comment Tag</strong></h2>
 
-            <p>It's free and it will remain that way.</p>
+            <p></p>
 						<br>
             <p><center><a class="nav-download nav" href="#download"><img id="browser_icon" width=50 src="images/browsers/firefox.png" alt="image"/></a></center></p> </div>
           <div class="eight columns"><img src="images/slideshow/slide3.png" alt="image"/></div>
@@ -370,7 +371,7 @@ if ($_SESSION['redditor'] !== null) {
 <?
 	$conflicts = getConflicts();
 	foreach ($conflicts as $conflict) {
-		$yesOrNo = $conflict->resolved ? "yes" : "no";
+		$yesOrNo = ($conflict->resolved === "true" ) ? "yes" : "no";
 		echo '<tr><td>' . $conflict->angryRedditor . '</td><td>' . $conflict->needsToApologizeRedditor . '</td><td>' . $yesOrNo . '</td><td><a target="_new" href="https://www.reddit.com/r/' . $conflict->subreddit . '/comments/' . $conflict->pageid . '">Link</a></td></tr>';
 	}
 ?>
@@ -401,7 +402,7 @@ if ($_SESSION['redditor'] !== null) {
       <li><a href="#"><img src="images/icons/team-social-url.png" width="16" height="16" alt="icon">https://comment-tag.com</a></li>
       <li><a href="#"><img src="images/icons/team-social-linkedin.png" width="16" height="16" alt="icon">Linkedin</a></li>
     </ul>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <p></p>
   </div>
   <!--member one ends--> 
   
@@ -443,7 +444,7 @@ if ($_SESSION['redditor'] !== null) {
             <a href="installation_edge.php" data-browser="edge">
                 <img title="Install in Edge" src="images/browsers/Edge.png">
             </a>
-            <a href="download/comment_tag-0.0.8-fx.xpi" data-browser="firefox">
+            <a href="download/comment_tag-0.4.5-fx.xpi" data-browser="firefox">
                 <img title="Install in Firefox" src="images/browsers/Firefox.png">
             </a>
             <!-- <a href="https://addons.opera.com/en-gb/extensions/details/" data-browser="opera">
