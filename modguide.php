@@ -1,19 +1,3 @@
-<?
-session_start();
-header('Content-Type: text/html; charset=utf-8');
-date_default_timezone_set('Europe/Copenhagen');
-include('../config.php');
-$dt2=date("Y-m-d H:i:s");
-
-
-
-
-
-
-
-
-
-?>
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 <head>
@@ -25,7 +9,7 @@ $dt2=date("Y-m-d H:i:s");
 <title>Comment Tag</title>
 
 <!--Fav and touch icons-->
-<link rel="shortcut icon" href="../images/icons/favicon.ico">
+<link rel="shortcut icon" href="images/icons/favicon.ico">
 <link rel="apple-touch-icon" href="images/icons/apple-touch-icon.png">
 <link rel="apple-touch-icon" sizes="72x72" href="images/icons/apple-touch-icon-72x72.png">
 <link rel="apple-touch-icon" sizes="114x114" href="images/icons/apple-touch-icon-114x114.png">
@@ -34,7 +18,7 @@ $dt2=date("Y-m-d H:i:s");
 <link href='http://fonts.googleapis.com/css?family=Vollkorn:400,400italic|Lato:400,300,300italic,400italic' rel='stylesheet' type='text/css'>
 
 <!--style sheets-->
-<link rel="stylesheet" media="screen" href="css/style.css"/>
+<link rel="stylesheet" media="screen" href="css/style.css?v=asdf"/>
 <link rel="stylesheet" media="screen" href="css/skeleton.css"/>
 
 <!--jquery libraries / others are at the bottom-->
@@ -47,43 +31,37 @@ $dt2=date("Y-m-d H:i:s");
 <div id="header_wrapper">
   <div class="container clearfix"> 
     
- <? include('../parts/header.php'); ?>
-    
+<? include('parts/header.php'); ?>
+
     <!--sub_header starts-->
     <div id="sub_header">
       <div class="columns sixteen">
-        <h2>comment-tag{thanks.but.a.bit.off.topic}</h2>
-        <p class="textstyle2">Tag Rules for the Browser Add-on and the Comment Tag Cloud</p>
+        <h2>Mod Guide</h2>
+        <p class="textstyle2">How to use Comment Tag as a reddit Moderator</p>
       </div>
     </div>
     <!--sub_header ends--> 
     
   </div>
 </div>
-<!--header_wrapper ends--> 
+<!--header_wrapper ends-->
 
 <!--content starts-->
-<div id="content" class="container clearfix">
+<div id="content" class="container clearfix"> 
+   <!--heading-->
 
-  <!--heading-->
-  <div class="sixteen columns">
-    <h2>comment-tag{thanks.but.a.bit.off.topic}</h2>
-	<!-- section1234aa --><br>
-<br>
-  </div>
-  
-   <!-- section1234a -->
-  <div class="sixteen columns">
-		<h2>Rules</h2>
-		<h3>§1 Use this tag if somebody posted a nice comment to your link or post, while the comment was a bit off-topic.</h3>
-	</div>
-  <!-- section1234b -->
-<? include("../parts/preamble.php"); ?>
-  <div class="sixteen columns">
-	<h4>Tip: If you have a general question, please do visit our <a href="generalquestions.php">main discussions page</a>.</h4>
-  </div>
-	<!-- section1234c -->
 <div class="sixteen columns">
+	<h2>Hi reddit Moderator</h2>
+<h3>Welcome to Comment Tag! This system is designed to improve reddit by allowing the redditor to categorize what they do with their words in reddit conversation. Why?</h3>
+ <? include('parts/benefits.php'); ?>
+<h3>About 90% of the rule violations are taken care of by our system. In the last 10% human intervention is required. This is where you come in.</h3>
+<h3>When a redditor reports a Comment Tag rule violation by clicking the special link underneath a comment the mods of the subreddit are notified. You will receive three links. One link to the reddit conversation, one link to the Comment Tag rule and one link where you decide whether or the violation is justified. It's pretty simple.</h3>
+<h3>Thanks for working for free to improve reddit.</h3>
+<h3>Cheers.</h3>
+<h3>Else and Morten, Comment Tag</h3>
+</div>
+
+<div class="divider sixteen columns"></div>
 
 
 <div id="disqus_thread"></div>
@@ -94,8 +72,8 @@ $dt2=date("Y-m-d H:i:s");
 *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
 
 var disqus_config = function () {
-this.page.url = "https://comment-tag.com/rules/thanks.but.a.bit.off.topic.php";  // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = "thanks.but.a.bit.off.topic"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+this.page.url = "https://comment-tag.com/modguide.php";  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = "modguide"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
 };
 
 (function() { // DON'T EDIT BELOW THIS LINE
@@ -109,12 +87,13 @@ s.setAttribute('data-timestamp', +new Date());
 
 
 
-</div>
+</div>        
 </div>
 <!--content ends--> 
 
 <!--footer starts-->
 <div id="footer">
+
   <p>COMMENT TAG © 2016. All Rights Reserved.</p>
   <ul>
     <li><a href="http://comment-tag.com/terms.php">Terms of use </a></li>

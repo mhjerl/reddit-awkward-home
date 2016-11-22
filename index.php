@@ -3,6 +3,7 @@ session_start();
 header('Content-Type: text/html; charset=utf-8');
 date_default_timezone_set('Europe/Copenhagen');
 include('config.php');
+include('tagoverview.php');
 $dt2=date("Y-m-d H:i:s");
 
 
@@ -146,7 +147,7 @@ $('#contactform #message').val('');
 
 </head>
 <body>
-<div class="fixed_header">Notice: Starting 1 January 2017 this extension will be priced at $9.99 for all new users. Cheers ;-), Else and Morten, Comment Tag.</div>
+<div class="fixed_header">Notice: Starting from 1 December 2016 this extension will be priced at $9.99/yr for all new users. Cheers ;-), Else and Morten, Comment Tag.</div>
 <!--header_wrapper starts-->
 <div id="header_wrapper" class="scroll-content">
   <div class="container clearfix">
@@ -191,6 +192,7 @@ if ($_SESSION['redditor'] !== null) {
 			  <li class="lastdroplink"><a href="getstarted.php">Get Started</a></li>
 			  <li class="lastdroplink"><a href="https://github.com/mhjerl" target="_blank">Free Software</a></li>
 			  <li class="lastdroplink"><a href="api.php">API</a></li>
+			  <li class="lastdroplink"><a href="modguide.php">Mod Guide</a></li>
             </ul>
           </li>
 		  <li><? echo $logInOrRedditor; ?></li>
@@ -358,6 +360,47 @@ if ($_SESSION['redditor'] !== null) {
 </div>
 <!--features section ends--> 
 
+
+<!-- tags section begins -->
+<div id="team" class="container clearfix scroll-content">
+
+  <!--single column-->
+
+  <!--heading-->
+  <div class="columns sixteen">
+    <h2>Tags</h2>
+    <p class="textstyle2">Rules and use</p>
+  </div>
+
+<?
+	$tagCategoryRememberedALongLongTime = "";
+	$firstTimeAround = true;
+	foreach ($tagCategories as $tagShortHand=>$tagCategory) {
+		$tagUse = getTagUse($tagShortHand, $redditor);
+		if ($tagCategory !== $tagCategoryRememberedALongLongTime) {
+			$tagCategoryRememberedALongLongTime = $tagCategory;
+			if (!$firstTimeAround) {
+				echo '</table></div><div class="divider sixteen columns"></div>';
+			}
+			else {
+				$firstTimeAround = false;
+			}
+			echo '<div class="sixteen columns"><br><br><br><h3>' . $tagCategory . '</h3><table class="zebra"><tr><th>Tag</th><th>Your Tag Use</th><th>Overall Tag Use</th></tr>';
+			echo '<tr><td><div style="width: 630px;"><a href="rules/' . $tagShortHand . '.php">comment-tag{' . $tagShortHand . '}</a></div></td><td><div style=" text-align: center; width: 100px;">' . $tagUse->me . '</div></td><td><div style=" text-align: center; width: 150px;">' . $tagUse->total . '</div></td></tr>';
+		}
+		else {
+			echo '<tr><td><div style="width: 630px;"><a href="rules/' . $tagShortHand . '.php">comment-tag{' . $tagShortHand . '}</a></div></td><td><div style=" text-align: center; width: 100px;">' . $tagUse->me . '</div></td><td><div style=" text-align: center; width: 150px;">' . $tagUse->total . '</div></td></tr>';
+		}
+	}
+?>
+</table></div><div class="divider sixteen columns"></div>
+
+</div>
+</div>
+<!-- tags section ends -->
+
+
+
 <!--comment-tag{i.will.not.reply.and.expect.apology} section starts-->
 <div id="team" class="container clearfix scroll-content"> 
   
@@ -378,10 +421,10 @@ if ($_SESSION['redditor'] !== null) {
 </table>
 </div>
 <div class="divider sixteen columns"></div>
-  
- 
 </div>
-<!--comment-tag{i.will.not.reply.and.expect.apology} section ends--> 
+<!--comment-tag{i.will.not.reply.and.expect.apology} section ends-->
+
+
 
 
 <!--team section starts-->
@@ -441,10 +484,10 @@ if ($_SESSION['redditor'] !== null) {
             <a href="https://chrome.google.com/webstore/detail/comment-tag/ehoebjlmhegfcjapelffllkajmfckoce" data-browser="chrome">
                 <img title="Install in Chrome" src="images/browsers/Chrome.png">
             </a>
-            <a href="installation_edge.php" data-browser="edge">
+            <!-- <a href="installation_edge.php" data-browser="edge">
                 <img title="Install in Edge" src="images/browsers/Edge.png">
-            </a>
-            <a href="download/comment_tag-0.4.5-fx.xpi" data-browser="firefox">
+            </a> -->
+            <a href="download/comment_tag-0.4.9-fx.xpi" data-browser="firefox">
                 <img title="Install in Firefox" src="images/browsers/Firefox.png">
             </a>
             <!-- <a href="https://addons.opera.com/en-gb/extensions/details/" data-browser="opera">
@@ -604,5 +647,22 @@ function getConflicts() {
 		array_push($conflicts, $conflict);
 	}
 	return $conflicts;
+}
+
+// copied from getstarted.php:
+function getTagUse($tagShortHand, $redditor) {
+	$tagUse = new stdClass();
+	$sql = "SELECT * FROM prima_tag_use WHERE redditor='$redditor' AND tag='comment-tag{" . $tagShortHand . "}';";
+	$result = mysqli_query($GLOBALS["___mysqli_ston"], $sql);
+	$count = mysqli_num_rows($result);
+	$tagUse->me = $count;
+	$sql = "SELECT * FROM prima_tag_use WHERE tag='comment-tag{" . $tagShortHand . "}';";
+	$result = mysqli_query($GLOBALS["___mysqli_ston"], $sql);
+	$count = mysqli_num_rows($result);
+	$tagUse->total = $count;
+		if (!$redditor or $redditor === "") {
+		$tagUse->me = "Please log in";
+	}
+	return $tagUse;
 }
 

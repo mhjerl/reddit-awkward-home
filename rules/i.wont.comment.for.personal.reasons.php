@@ -52,7 +52,7 @@ $dt2=date("Y-m-d H:i:s");
     <!--sub_header starts-->
     <div id="sub_header">
       <div class="columns sixteen">
-        <h2>comment-tag{thanks.but.a.bit.off.topic}</h2>
+        <h2>comment-tag{i.wont.comment.for.personal.reasons}</h2>
         <p class="textstyle2">Tag Rules for the Browser Add-on and the Comment Tag Cloud</p>
       </div>
     </div>
@@ -67,7 +67,7 @@ $dt2=date("Y-m-d H:i:s");
 
   <!--heading-->
   <div class="sixteen columns">
-    <h2>comment-tag{thanks.but.a.bit.off.topic}</h2>
+    <h2>comment-tag{i.wont.comment.for.personal.reasons}</h2>
 	<!-- section1234aa --><br>
 <br>
   </div>
@@ -75,7 +75,12 @@ $dt2=date("Y-m-d H:i:s");
    <!-- section1234a -->
   <div class="sixteen columns">
 		<h2>Rules</h2>
-		<h3>§1 Use this tag if somebody posted a nice comment to your link or post, while the comment was a bit off-topic.</h3>
+		<h3>§1 The thread in which you use this tag must contain at least 15 comments.</h3>
+		<h3>§2 The tag must only be used if there are no references in any of these comments to either fiction, poetry or drama.</h3>
+		<h3>§3 This tag must be accompanied by a quote from an established author of a work of either fiction, poetry or drama.</h3>
+		<h3>§4 This quote must express hope and warmth despite the paradoxes of being, individual suffering and the current political situation.</h3>
+		<h3>§5 No words by yourself must accompany this tag.</h3>
+		<h3>§6 The tag must only be used in direct reply to the original post or link.</h3>
 	</div>
   <!-- section1234b -->
 <? include("../parts/preamble.php"); ?>
@@ -94,8 +99,8 @@ $dt2=date("Y-m-d H:i:s");
 *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
 
 var disqus_config = function () {
-this.page.url = "https://comment-tag.com/rules/thanks.but.a.bit.off.topic.php";  // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = "thanks.but.a.bit.off.topic"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+this.page.url = "https://comment-tag.com/rules/i.wont.comment.for.personal.reasons.php";  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = "i.wont.comment.for.personal.reasons"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
 };
 
 (function() { // DON'T EDIT BELOW THIS LINE

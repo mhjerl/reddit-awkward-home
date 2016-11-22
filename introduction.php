@@ -104,21 +104,3 @@ if ($_SESSION['redditor'] !== null) {
 <script src="js/custom.js" type="text/javascript"></script>
 </body>
 </html>
-
-<?
-function getTagUse($tagShortHand, $redditor) {
-	$tagUse = new stdClass();
-	$sql = "SELECT * FROM prima_tag_use WHERE redditor='$redditor' AND tag='comment-tag{" . $tagShortHand . "}';";
-	$result = mysqli_query($GLOBALS["___mysqli_ston"], $sql);
-	$count = mysqli_num_rows($result);
-	$tagUse->me = $count;
-	$sql = "SELECT * FROM prima_tag_use WHERE tag='comment-tag{" . $tagShortHand . "}';";
-	$result = mysqli_query($GLOBALS["___mysqli_ston"], $sql);
-	$count = mysqli_num_rows($result);
-	$tagUse->total = $count;
-		if (!$redditor or $redditor === "") {
-		$tagUse->me = "Please log in";
-	}
-	return $tagUse;
-}
-

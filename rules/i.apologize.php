@@ -68,8 +68,7 @@ $dt2=date("Y-m-d H:i:s");
   <!--heading-->
   <div class="sixteen columns">
     <h2>comment-tag{i.apologize}</h2>
-	<h4>Inventor: Morten Hjerl-Hansen, 2016</h4>
-<br>
+	<!-- section1234aa --><br>
 <br>
   </div>
   

@@ -50,7 +50,7 @@ if (!$redditor && !isset($_GET['login'])) {
 	if ($num_rows2 === 0) {
 		if ($redditor) {
 			$newHash = generateRandomString();
-			$query5 = "INSERT INTO prima_user VALUES ('$redditor', '$dt2', '0', '$newHash', 'free', NULL, '0', 'neutral', '', NULL);";
+			$query5 = "INSERT INTO prima_user VALUES ('$redditor', '$dt2', '0', '$newHash', 'free', NULL, '0', 'neutral', NULL, '', NULL);";
 			mysqli_query($GLOBALS["___mysqli_ston"], $query5);
 			sendMail("user record created: " . $redditor);
 		}

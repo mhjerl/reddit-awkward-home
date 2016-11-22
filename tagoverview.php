@@ -26,12 +26,13 @@ $awkwardKarmaNeeded = array(
     "youre.being.overly.ironic.and.are.violating.the.rules" => 0,
     "awkward" => 0,
     "watch.me.playing.soccer.with.myself.in.this.video" => 0,
-	"no.i.mean.it" => 0,
 	"that.pissed.me.off.but.please.dont.mind" => 0,
 	"thanks.but.a.bit.off.topic" => 0,
 	"your.post.inspired.me" => 0,
 	"your.link.inspired.me" => 0,
-	"a.warning.from.one.intellectual.to.another" => 0
+	"a.warning.from.one.intellectual.to.another" => 0,
+	"i.wont.comment.for.personal.reasons" => 0,
+	"a.warm.welcome.to.my.world.without.a.naive.invitation.to.be.my.friend"
 );
 
 $awkwardKarmaRewards = array(
@@ -61,12 +62,13 @@ $awkwardKarmaRewards = array(
     "youre.being.overly.ironic.and.are.violating.the.rules" => 0,
     "awkward" => 0,
     "watch.me.playing.soccer.with.myself.in.this.video" => 0,
-	"no.i.mean.it" => 0,
 	"that.pissed.me.off.but.please.dont.mind" => 0,
 	"thanks.but.a.bit.off.topic" => 0,
 	"your.post.inspired.me" => 0,
 	"your.link.inspired.me" => 0,
-	"a.warning.from.one.intellectual.to.another" => 0
+	"a.warning.from.one.intellectual.to.another" => 0,
+	"i.wont.comment.for.personal.reasons" => 0,
+	"a.warm.welcome.to.my.world.without.a.naive.invitation.to.be.my.friend" => 0
 );
 
 $tagCategories = array(
@@ -87,13 +89,12 @@ $tagCategories = array(
     "explanation.why.i.was.angry" => "Apology",
     "dont.mind.its.ok.lets.move.on" => "Apology",
     "i.was.being.careless" => "Apology",
-	 "its.fine.i.consider.the.case.closed" => "Apology" ,
+	"its.fine.i.consider.the.case.closed" => "Apology" ,
 
     "your.comment.inspired.me" => "Praise",
 	"thanks" => "Praise",
 	"youre.welcome" => "Praise",
     "i.am.glad.you.said.that.to.me" => "Praise",
-	"no.i.mean.it" => "Praise",
 	"your.post.inspired.me" => "Praise",
 	"your.link.inspired.me" => "Praise",
 
@@ -107,9 +108,13 @@ $tagCategories = array(
 
     "interesting.will.write.more.in.a.few.days.time" => "Patience",
 
+	"i.wont.comment.for.personal.reasons" => "Personal",
+
     "watch.me.playing.soccer.with.myself.in.this.video" => "Funny",
     "i.am.one.of.the.strangest.people.youll.ever.meet" => "Funny",
-    "er.hi.what.kind.of.strange.presentation.is.that" => "Funny"
+    "er.hi.what.kind.of.strange.presentation.is.that" => "Funny",
+
+	"a.warm.welcome.to.my.world.without.a.naive.invitation.to.be.my.friend" => "Courage"
 );
 
 $relationalKarmaNeeded = array(
@@ -130,12 +135,13 @@ $relationalKarmaNeeded = array(
     "i.am.one.of.the.strangest.people.youll.ever.meet" => 0,
     "er.hi.what.kind.of.strange.presentation.is.that" => 0,
     "awkward" => 0,
-	"no.i.mean.it" => 0,
 	"that.pissed.me.off.but.please.dont.mind" => 0,
 	"thanks.but.a.bit.off.topic" => 0,
 	"your.post.inspired.me" => 0,
 	"your.link.inspired.me" => 0,
-	"a.warning.from.one.intellectual.to.another" => 0
+	"a.warning.from.one.intellectual.to.another" => 0,
+	"i.wont.comment.for.personal.reasons" => 0,
+	"a.warm.welcome.to.my.world.without.a.naive.invitation.to.be.my.friend" => 0
 );
 /*
 Allowed values:
@@ -172,10 +178,11 @@ $mustBeStandAloneTags = array(
     "youre.being.overly.ironic.and.are.violating.the.rules" => "noStandAloneRule",
     "awkward" => "takenCareOfElsewhere",
     "watch.me.playing.soccer.with.myself.in.this.video" => "noStandAloneRule",
-	"no.i.mean.it" => "mustStandAlone",
 	"that.pissed.me.off.but.please.dont.mind" => "takenCareOfElsewhere",
 	"thanks.but.a.bit.off.topic" => "noStandAloneRule",
 	"your.post.inspired.me" => "noStandAloneRule",
 	"your.link.inspired.me" => "noStandAloneRule",
-	"a.warning.from.one.intellectual.to.another" => "mayNotStandAlone"
+	"a.warning.from.one.intellectual.to.another" => "mayNotStandAlone",
+	"i.wont.comment.for.personal.reasons" => "mayNotStandAlone",
+	"a.warm.welcome.to.my.world.without.a.naive.invitation.to.be.my.friend" => "mayNotStandAlone"
 );

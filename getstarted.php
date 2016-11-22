@@ -90,10 +90,10 @@ if ($_SESSION['redditor'] !== null) {
   <!--single column-->
 
   <!--heading-->
-  <div class="sixteen columns">
+  <div class="columns sixteen">
     <h2>Tags</h2>
+    <p class="textstyle2">Rules and use</p>
   </div>
-  <div class="divider sixteen columns"></div>
 
 <?
 	$tagCategoryRememberedALongLongTime = "";
