@@ -32,7 +32,7 @@ $awkwardKarmaNeeded = array(
 	"your.link.inspired.me" => 0,
 	"a.warning.from.one.intellectual.to.another" => 0,
 	"i.wont.comment.for.personal.reasons" => 0,
-	"a.warm.welcome.to.my.world.without.a.naive.invitation.to.be.my.friend"
+	"a.warm.welcome.to.my.world.without.a.naive.invitation.to.be.my.friend" => 0
 );
 
 $awkwardKarmaRewards = array(
@@ -186,3 +186,41 @@ $mustBeStandAloneTags = array(
 	"i.wont.comment.for.personal.reasons" => "mayNotStandAlone",
 	"a.warm.welcome.to.my.world.without.a.naive.invitation.to.be.my.friend" => "mayNotStandAlone"
 );
+
+$intuitiveTagNames = array(
+	"waits.for.anyone" => "Waits for anyone...",
+    "waits.for.your.reply.only" => "Waits for your reply only...",
+    "i.find.this.unworthy.for.discussion" => "I find this unworthy for discussion",
+    "i.find.the.subject.unworthy.for.discussion" => "I find the subject unworthy for discussion",
+    "i.will.not.reply.and.expect.apology" => "I will not reply and expect an apology",
+    "i.apologize" => "I apologize",
+    "no.problem" => "No problem",
+    "your.comment.inspired.me" => "Your comment inspired me...",
+	"thanks" => "Thanks!",
+	"youre.welcome" => "You're welcome",
+    "i.dont.think.the.original.post.has.been.addressed.yet" => "I don't think the original post has been addressed yet",
+    "i.dont.think.the.original.post.has.been.taken.seriously.yet" => "I don't think the original post has been taken seriously yet",
+    "i.dont.think.the.original.post.has.been.treated.respectfully" => "I don't think the original post has been treated respectfully",
+    "guarded.apology" => "Guarded apology",
+    "explanation.why.i.was.angry" => "Explanation why I was angry",
+    "dont.mind.its.ok.lets.move.on" => "Don't mind. It's ok. Let's move on...",
+    "i.was.being.careless" => "I was being careless",
+    "i.am.glad.you.said.that.to.me" => "I'm glad you said that to me",
+    "its.fine.i.consider.the.case.closed" => "It's fine. I consider the case closed" ,
+    "i.consider.this.comment.definitive.and.consider.any.reply.inappropriate" => "I consider this comment definitive and consider any reply inappropriate",
+    "interesting.will.write.more.in.a.few.days.time" => "Interesting. Will write more in a few days time",
+    "i.am.one.of.the.strangest.people.youll.ever.meet" => "I am one of the strangest people you'll ever meet",
+    "er.hi.what.kind.of.strange.presentation.is.that" => "Er. What kind of strange presentation is that...",
+    "youre.being.overly.ironic.and.are.violating.the.rules" => "You're being overly ironic and are violating the rules",
+    "awkward" => "The famous awkward tag",
+    "watch.me.playing.soccer.with.myself.in.this.video" => "Watch me playing soccer with myself in this video",
+	"that.pissed.me.off.but.please.dont.mind" => "That pissed me off, but please don't mind",
+	"thanks.but.a.bit.off.topic" => "Thanks. But a bit off-topic...",
+	"your.post.inspired.me" => "Your post inspired me",
+	"your.link.inspired.me" => "Your link inspired me",
+	"a.warning.from.one.intellectual.to.another" => "A warning from one intellectual to another",
+	"i.wont.comment.for.personal.reasons" => "I won't comment for personal reasons",
+	"a.warm.welcome.to.my.world.without.a.naive.invitation.to.be.my.friend" => "A warm welcome to my world, without a naive invitation to be my friend"
+);
+
+?>

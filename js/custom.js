@@ -83,7 +83,7 @@ $('#builderwoman').on('click', function(event) {
 });*/
 
 // scroll to top on page refresh 
-$(this).scrollTop(0);
+// $(this).scrollTop(0); // mhh: removed this.
 
 //scroll to navigation
 var current_nav = 'header_wrapper';

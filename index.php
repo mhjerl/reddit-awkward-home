@@ -147,7 +147,6 @@ $('#contactform #message').val('');
 
 </head>
 <body>
-<div class="fixed_header">Notice: Starting from 1 December 2016 this extension will be priced at $9.99/yr for all new users. Cheers ;-), Else and Morten, Comment Tag.</div>
 <!--header_wrapper starts-->
 <div id="header_wrapper" class="scroll-content">
   <div class="container clearfix">
@@ -161,7 +160,7 @@ if ($_SESSION['redditor'] !== null) {
 ?>
 
     <!--header starts-->
-    <div id="headerMhhCursory">
+    <div id="header">
 
       <!--logo starts-->
       <!-- <div class="four columns logo alpha"> <a href="index.php">
@@ -212,7 +211,7 @@ if ($_SESSION['redditor'] !== null) {
         <!--first slide starts-->
         <li>
           <div class="eight columns">
-            <h2>It's all about <strong>love</strong></h2>
+            <h2>EARN <strong>A MEASLY BUCK</strong> FOR EVERY REDDIT COMMENT YOU TAG</h2>
             <p></p>
 						<br>
             <p><center><a class="nav-download nav" href="#download"></a></center></p>
@@ -224,7 +223,7 @@ if ($_SESSION['redditor'] !== null) {
         <!--second slide starts-->
         <li>
           <div class="eight columns">
-			<h2>Adding a new <strong>social layer</strong> to reddit...</h2>
+			<h2>(BEING NICE ON THE WEB MEANS WORK)</h2>
             <p></p>
             </div>
           <div class="eight columns"><img src="images/slideshow/slide3a.png" alt="image"/></div>
@@ -235,7 +234,7 @@ if ($_SESSION['redditor'] !== null) {
         <li>
           <div class="eight columns"><img src="images/slideshow/slide4a.png" alt="image"/></div>
           <div class="eight columns">
-            <h2>Allowing you to <strong>categorize</strong> what you're doing when you write comments...</h2>
+            <h2>OUR SURVEILLANCE SYSTEM WILL PICK UP YOUR TAG</h2>
             <p></p>
             </div>
         </li>
@@ -244,7 +243,7 @@ if ($_SESSION['redditor'] !== null) {
 		<!--fourth slide starts-->
         <li>
           <div class="eight columns">
-			<h2>...using <strong>interactive tags</strong>...</h2>
+			<h2>GET PAID WITH PAYPAL</h2>
             <p></p>
            	</div>
           <div class="eight columns"><img src="images/slideshow/slide2a.png" alt="image"/></div>
@@ -254,7 +253,7 @@ if ($_SESSION['redditor'] !== null) {
 		<!--fourth slide starts-->
         <li>
           <div class="eight columns">
-			<h2><strong>Feel</strong> the change...</h2>
+			<h2>...OR BECOME A SPONSOR</h2>
             <p></p>
            	</div>
           <div class="eight columns"><img src="images/slideshow/slide5.png" alt="image"/></div>
@@ -361,6 +360,50 @@ if ($_SESSION['redditor'] !== null) {
 <!--features section ends--> 
 
 
+
+
+
+
+
+
+
+<a id="special_mentions" class="anchor_fixed_header"></a>
+<!--special mentions section starts-->
+<div class="container clearfix scroll-content"> 
+
+  <!--heading here-->
+  <div class="columns sixteen">
+    <h2>Special Mentions</h2>
+    <p class="textstyle2">We at Comment Tag believe that everyone is an intellectual. These are some of the people who made us feel this belief is true.</p>
+  </div>
+  <div class="columns sixteen">
+	<table class="zebra"><tr><th>Redditor</th><th>Link</th><th>Notes</th></tr>
+<?
+	$specialMentions = getSpecialMentions();
+	foreach ($specialMentions as $specialMention) {
+		echo '<tr><td>' . $specialMention->redditor . '</td><td><a target="_new" href="' . $specialMention->link . '">Link</a></td><td>' . $specialMention->notes . '</td></tr>';
+	}
+?>
+</table>
+</div>
+<div class="divider sixteen columns"></div>
+</div>
+<!--special mentions section ends-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!-- tags section begins -->
 <div id="team" class="container clearfix scroll-content">
 
@@ -386,10 +429,10 @@ if ($_SESSION['redditor'] !== null) {
 				$firstTimeAround = false;
 			}
 			echo '<div class="sixteen columns"><br><br><br><h3>' . $tagCategory . '</h3><table class="zebra"><tr><th>Tag</th><th>Your Tag Use</th><th>Overall Tag Use</th></tr>';
-			echo '<tr><td><div style="width: 630px;"><a href="rules/' . $tagShortHand . '.php">comment-tag{' . $tagShortHand . '}</a></div></td><td><div style=" text-align: center; width: 100px;">' . $tagUse->me . '</div></td><td><div style=" text-align: center; width: 150px;">' . $tagUse->total . '</div></td></tr>';
+			echo '<tr><td><div style="width: 630px;"><a href="rules/' . $tagShortHand . '.php">' . $intuitiveTagNames[$tagShortHand] . '</a></div></td><td><div style=" text-align: center; width: 100px;">' . $tagUse->me . '</div></td><td><div style=" text-align: center; width: 150px;">' . $tagUse->total . '</div></td></tr>';
 		}
 		else {
-			echo '<tr><td><div style="width: 630px;"><a href="rules/' . $tagShortHand . '.php">comment-tag{' . $tagShortHand . '}</a></div></td><td><div style=" text-align: center; width: 100px;">' . $tagUse->me . '</div></td><td><div style=" text-align: center; width: 150px;">' . $tagUse->total . '</div></td></tr>';
+			echo '<tr><td><div style="width: 630px;"><a href="rules/' . $tagShortHand . '.php">' . $intuitiveTagNames[$tagShortHand] . '</a></div></td><td><div style=" text-align: center; width: 100px;">' . $tagUse->me . '</div></td><td><div style=" text-align: center; width: 150px;">' . $tagUse->total . '</div></td></tr>';
 		}
 	}
 ?>
@@ -440,11 +483,6 @@ if ($_SESSION['redditor'] !== null) {
 	<div class="eight columns"> <img src="images/people/else.jpg" width="110" alt="image" class="image_left">
     <h5>Else Andersen</h5>
     <p class="textstyle3">Consultant</p>
-    <ul class="team_info">
-      <li><a href="#"><img src="images/icons/team-social-mail.png" width="16" height="16" alt="icon">Send mail</a></li>
-      <li><a href="#"><img src="images/icons/team-social-url.png" width="16" height="16" alt="icon">https://comment-tag.com</a></li>
-      <li><a href="#"><img src="images/icons/team-social-linkedin.png" width="16" height="16" alt="icon">Linkedin</a></li>
-    </ul>
     <p></p>
   </div>
   <!--member one ends--> 
@@ -453,11 +491,6 @@ if ($_SESSION['redditor'] !== null) {
   <div class="eight columns"> <img src="images/people/morten.jpeg" width="110" alt="image" class="image_left">
     <h5>Morten Hjerl-Hansen</h5>
     <p class="textstyle3">Programmer</p>
-    <ul class="team_info">
-      <li><a href="#"><img src="images/icons/team-social-mail.png" width="16" height="16" alt="icon">Send mail</a></li>
-      <li><a href="#"><img src="images/icons/team-social-url.png" width="16" height="16" alt="icon">https://comment-tag.com</a></li>
-      <li><a href="#"><img src="images/icons/team-social-linkedin.png" width="16" height="16" alt="icon">Linkedin</a></li>
-    </ul>
     <p>Hello and welcome. I live in Denmark with my family in the hills in the countryside. I like to read (novels and poetry) and ski (cross-country).</p>
   </div>
   <!--member two ends--> 
@@ -487,7 +520,7 @@ if ($_SESSION['redditor'] !== null) {
             <!-- <a href="installation_edge.php" data-browser="edge">
                 <img title="Install in Edge" src="images/browsers/Edge.png">
             </a> -->
-            <a href="download/comment_tag-0.4.9-fx.xpi" data-browser="firefox">
+            <a href="download/comment_tag-1.0.4-fx.xpi" data-browser="firefox">
                 <img title="Install in Firefox" src="images/browsers/Firefox.png">
             </a>
             <!-- <a href="https://addons.opera.com/en-gb/extensions/details/" data-browser="opera">
@@ -631,6 +664,24 @@ if ($_SESSION['redditor'] !== null) {
 </html>
 
 <?
+
+function getSpecialMentions() {
+	$specialMentions = Array();
+	$sql = "SELECT * FROM prima_special_mention WHERE display='true' ORDER BY created_when DESC LIMIT 20;";
+	$result = mysqli_query($GLOBALS["___mysqli_ston"], $sql);
+	while ($row3 = mysqli_fetch_array($result)) {
+		$specialMention = new stdClass();
+		$specialMention->redditor = $row3[0];
+		$specialMention->link = $row3[1];
+		$specialMention->created_when = $row3[2];
+		$specialMention->approved_by_redditor = $row3[3];
+		$specialMention->notes = $row3[4];
+		array_push($specialMentions, $specialMention);
+	}
+	return $specialMentions;
+}
+
+
 function getConflicts() {
 	$conflicts = Array();
 	$sql = "SELECT * FROM prima_needed_apology ORDER BY created_when_by_doorslam_or_expect_utc DESC LIMIT 20;";
@@ -665,4 +716,5 @@ function getTagUse($tagShortHand, $redditor) {
 	}
 	return $tagUse;
 }
+
 

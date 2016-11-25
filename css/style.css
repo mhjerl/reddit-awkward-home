@@ -1,5 +1,12 @@
 /* mhh start */
 
+a.anchor_fixed_header {
+    display: block;
+    position: relative;
+    top: -110px;
+    visibility: hidden;
+}
+
 .fixed_header {
 	position: fixed;
     height: 25px;

@@ -163,7 +163,7 @@ foreach ($friends as $friend) {
 	$row = mysqli_fetch_row($result);
 	$imageType2 = $row[0];
 	$imageCustom2 = $row[1];
-	echo "<br><br><h4>" . $friend['friend'] . ": " . $friend['total'] . " Social Karma</h4>";
+	echo "<br><br><h4>" . $friend['friend'] . ": " . $friend['total'] . " Social Karma in Common</h4>";
 	$url = '<img class="friend_image_resize_fit_center" src="images/avatars/astronaut.png"/>';
 	if ($imageType2 == "man") $url = '<img class="friend_image_resize_fit_center" src="images/avatars/builderman.png"/>';
 	else if ($imageType2 == "woman") $url = '<img class="friend_image_resize_fit_center" src="images/avatars/builderwoman.png"/>';

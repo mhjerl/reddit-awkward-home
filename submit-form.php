@@ -21,7 +21,7 @@ $mail->setFrom($_POST[email], $_POST[name]);
 //Set an alternative reply-to address
 $mail->addReplyTo($_POST[email], $_POST[name]);
 //Set who the message is to be sent to
-$mail->addAddress('mortenhh gmail.com', 'Morten Hjerl-Hansen');
+$mail->addAddress('mortenhh@gmail.com', 'Morten Hjerl-Hansen');
 //Set the subject line
 $mail->Subject = $_POST[subject];
 //Read an HTML message body from an external file, convert referenced images to embedded,
