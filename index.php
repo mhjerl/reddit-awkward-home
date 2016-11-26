@@ -211,8 +211,8 @@ if ($_SESSION['redditor'] !== null) {
         <!--first slide starts-->
         <li>
           <div class="eight columns">
-            <h2>EARN <strong>A MEASLY BUCK</strong> FOR EVERY REDDIT COMMENT YOU TAG</h2>
-            <p></p>
+            <h2>EARN <strong>FIVE BUCKS</strong> FOR EVERY REDDIT COMMENT YOU TAG WITH ONE OF OUR TAGS *)</h2>
+            <p>*) See terms</p>
 						<br>
             <p><center><a class="nav-download nav" href="#download"></a></center></p>
 					</div>
@@ -223,10 +223,10 @@ if ($_SESSION['redditor'] !== null) {
         <!--second slide starts-->
         <li>
           <div class="eight columns">
-			<h2>(BEING NICE ON THE WEB MEANS WORK)</h2>
+			<h2>PICK A TAG IN THE DROP-DOWN BOX</h2>
             <p></p>
             </div>
-          <div class="eight columns"><img src="images/slideshow/slide3a.png" alt="image"/></div>
+          <div class="eight columns"><img src="images/slideshow/slide3.png" alt="image"/></div>
         </li>
         <!--second slide ends--> 
         
@@ -234,7 +234,7 @@ if ($_SESSION['redditor'] !== null) {
         <li>
           <div class="eight columns"><img src="images/slideshow/slide4a.png" alt="image"/></div>
           <div class="eight columns">
-            <h2>OUR SURVEILLANCE SYSTEM WILL PICK UP YOUR TAG</h2>
+            <h2>WRITE WHATEVER YOU WANT TO SAY TO THE WORLD</h2>
             <p></p>
             </div>
         </li>
@@ -263,12 +263,12 @@ if ($_SESSION['redditor'] !== null) {
 		<!--fifth slide starts-->
         <li>
           <div class="eight columns">
-			<h2>Download <strong>Comment Tag</strong></h2>
+			<h2>INSTALL <strong>COMMENT TAG</strong> NOW</h2>
 
             <p></p>
 						<br>
             <p><center><a class="nav-download nav" href="#download"><img id="browser_icon" width=50 src="images/browsers/firefox.png" alt="image"/></a></center></p> </div>
-          <div class="eight columns"><img src="images/slideshow/slide3.png" alt="image"/></div>
+          <div class="eight columns"><img src="images/slideshow/slide3a.png" alt="image"/></div>
         </li>
         <!--fifth slide ends--> 
       </ul>
@@ -363,47 +363,6 @@ if ($_SESSION['redditor'] !== null) {
 
 
 
-
-
-
-
-<a id="special_mentions" class="anchor_fixed_header"></a>
-<!--special mentions section starts-->
-<div class="container clearfix scroll-content"> 
-
-  <!--heading here-->
-  <div class="columns sixteen">
-    <h2>Special Mentions</h2>
-    <p class="textstyle2">We at Comment Tag believe that everyone is an intellectual. These are some of the people who made us feel this belief is true.</p>
-  </div>
-  <div class="columns sixteen">
-	<table class="zebra"><tr><th>Redditor</th><th>Link</th><th>Notes</th></tr>
-<?
-	$specialMentions = getSpecialMentions();
-	foreach ($specialMentions as $specialMention) {
-		echo '<tr><td>' . $specialMention->redditor . '</td><td><a target="_new" href="' . $specialMention->link . '">Link</a></td><td>' . $specialMention->notes . '</td></tr>';
-	}
-?>
-</table>
-</div>
-<div class="divider sixteen columns"></div>
-</div>
-<!--special mentions section ends-->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!-- tags section begins -->
 <div id="team" class="container clearfix scroll-content">
 
@@ -412,7 +371,7 @@ if ($_SESSION['redditor'] !== null) {
   <!--heading-->
   <div class="columns sixteen">
     <h2>Tags</h2>
-    <p class="textstyle2">Rules and use</p>
+    <p class="textstyle2">Rules and Use</p>
   </div>
 
 <?
@@ -498,6 +457,28 @@ if ($_SESSION['redditor'] !== null) {
 </div>
 <!--team section ends--> 
 
+
+
+
+
+<!--general flow section starts-->
+<div id="generalflow" class="container clearfix scroll-content">
+	<div class="columns sixteen">
+    	<h2>Instructions</h2>
+    	<p class="textstyle2"></p>
+  	</div>
+	<div class="columns sixteen">
+	<center>
+	<img src="images/generalflow.png">
+	</center>
+	</div>
+</div>
+<!--general flow section ends -->
+
+
+
+
+
 <!--download section starts-->
 <div class="row_color">
   <div id="download" class="container clearfix scroll-content">
@@ -505,7 +486,7 @@ if ($_SESSION['redditor'] !== null) {
       
       <!--grey logo-->
       <div class="logo_grey"><img src="images/Logomakr_2zPQam.png" alt="logo"></div>
-      <h2>Download.</h2>
+      <h2>Install</h2>
       <ul class="textlist">
         <li>Free</li>
         <li>| </li>
@@ -520,9 +501,9 @@ if ($_SESSION['redditor'] !== null) {
             <!-- <a href="installation_edge.php" data-browser="edge">
                 <img title="Install in Edge" src="images/browsers/Edge.png">
             </a> -->
-            <a href="download/comment_tag-1.0.4-fx.xpi" data-browser="firefox">
+            <!-- <a href="download/comment_tag-1.0.4-fx.xpi" data-browser="firefox">
                 <img title="Install in Firefox" src="images/browsers/Firefox.png">
-            </a>
+            </a> -->
             <!-- <a href="https://addons.opera.com/en-gb/extensions/details/" data-browser="opera">
                 <img title="Install in Opera" src="images/browsers/Opera.png">
             </a> -->
@@ -664,23 +645,6 @@ if ($_SESSION['redditor'] !== null) {
 </html>
 
 <?
-
-function getSpecialMentions() {
-	$specialMentions = Array();
-	$sql = "SELECT * FROM prima_special_mention WHERE display='true' ORDER BY created_when DESC LIMIT 20;";
-	$result = mysqli_query($GLOBALS["___mysqli_ston"], $sql);
-	while ($row3 = mysqli_fetch_array($result)) {
-		$specialMention = new stdClass();
-		$specialMention->redditor = $row3[0];
-		$specialMention->link = $row3[1];
-		$specialMention->created_when = $row3[2];
-		$specialMention->approved_by_redditor = $row3[3];
-		$specialMention->notes = $row3[4];
-		array_push($specialMentions, $specialMention);
-	}
-	return $specialMentions;
-}
-
 
 function getConflicts() {
 	$conflicts = Array();

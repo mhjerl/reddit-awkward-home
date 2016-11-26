@@ -54,16 +54,17 @@
 <h2>Redditors</h2>
 <h3>1) Please observe the Comment Tag rule for each tag you use. The rules are listed in the tables at comment-tag.com</h3>
 <h3>1.a) Please study the rule for the Comment Tag before you use it. Don't rely solely on the tags offered in the drop-down box under the comment box on reddit: The system is in beta and is not fully functional.</h3>
-<h3>2) You must only use one Comment Tag per day.</h3>
-<h3>3) You earn USD 1 for each correctly used Comment Tag.</h3>
+<h3>2) You must only use one Comment Tag per day (24 hours).</h3>
+<h3>3) You earn USD 5 for each correctly used Comment Tag.</h3>
 <h3>4) The maximum amount you can earn each month during the test period is USD 20.</h3>
 <h3>5) The first payment from Comment Tag will be available in your PayPal account between 2 January 2017 - 6 January 2017.</h3>
-<h3>6) Please be polite. Don't use Comment Tags randomly or in a rude or rash manner. If you do so your Comment Tag account will be closed instantly and your earnings will be cancelled and stopped.</h3>
+<h3>6) If you would like your payment before this, please contact us via the contact form at the bottom of the site.</h3>
+<h3>7) Don't use Comment Tags randomly or in a rude or rash manner. If you do so your Comment Tag account will be closed instantly and your earnings will be cancelled and stopped.</h3>
 </div>
 <div class="divider sixteen columns"></div>
 <div class="sixteen columns">
 <h2>Beta Testers</h2>
-<h3>1) The aim of the test period is to evaluate if comment-tag.com improves CLQ (Cyber Life Quality). CLQ is a concept made by us.</h3>
+<h3>1) The aim of the test period is to evaluate if comment-tag.com improves CLQ (Cyber Life Quality).</h3>
 <h3>2) The test period will run in December 2016.</h3>
 <h3>3) Testers will be paid according to the Redditor Terms (see above)</h3>
 <h3>4) The amount of testers for the test period is 3.</h3>
