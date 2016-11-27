@@ -375,6 +375,11 @@ if ($_SESSION['redditor'] !== null) {
   </div>
 
 <?
+	$redditor = null;
+
+	if ($_SESSION['redditor'] !== null) {
+		$redditor = $_SESSION['redditor'];
+	}
 	$tagCategoryRememberedALongLongTime = "";
 	$firstTimeAround = true;
 	foreach ($tagCategories as $tagShortHand=>$tagCategory) {

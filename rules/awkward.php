@@ -79,7 +79,7 @@ $dt2=date("Y-m-d H:i:s");
 		<h3>§1 Must not be used in response to a comment or post with a Comment Tag tag. (Penalty: -5 Awkward Karma)</h3>
 		<h3>§2 Must not be stand-alone (no other text in comment). (Penalty: -5 Awkward Karma)</h3>
 		<h3>§3 Must be precluded by a text with no less than 20 words. (Penalty: -20 Awkward Karma)</h3>
-		<h3>§4 Definition: "An awkward text, low-key, honest, cautious, reticent, modest, unobstrusive, with exactly one low-key, non-provocative question and one typo" (Please report misuse -> Penalty: -100 Awkward Karma)</h3>
+		<h3>§4 Definition: "An awkward text, low-key, honest, cautious, reticent, modest, unobtrusive, with exactly one low-key, non-provocative question and one typo" (Please report misuse -> Penalty: -100 Awkward Karma)</h3>
 	</div>
   <!-- section1234b -->
 <? include("../parts/preamble.php"); ?>
