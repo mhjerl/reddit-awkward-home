@@ -192,6 +192,7 @@ if ($_SESSION['redditor'] !== null) {
 			  <li class="lastdroplink"><a href="https://github.com/mhjerl" target="_blank">Free Software</a></li>
 			  <li class="lastdroplink"><a href="api.php">API</a></li>
 			  <li class="lastdroplink"><a href="modguide.php">Mod Guide</a></li>
+			  <li class="lastdroplink"><a href="credits.php">Credits</a></li>
             </ul>
           </li>
 		  <li><? echo $logInOrRedditor; ?></li>
@@ -211,7 +212,7 @@ if ($_SESSION['redditor'] !== null) {
         <!--first slide starts-->
         <li>
           <div class="eight columns">
-            <h2>EARN <strong>FIVE BUCKS</strong> FOR EVERY REDDIT COMMENT YOU TAG WITH ONE OF OUR TAGS *)</h2>
+            <h2>EARN <strong>USD 10</strong> FOR EVERY REDDIT COMMENT TAGGED *)</h2>
             <p>*) See terms</p>
 						<br>
             <p><center><a class="nav-download nav" href="#download"></a></center></p>
@@ -223,7 +224,7 @@ if ($_SESSION['redditor'] !== null) {
         <!--second slide starts-->
         <li>
           <div class="eight columns">
-			<h2>PICK A TAG IN THE DROP-DOWN BOX</h2>
+			<h2>JUST PICK A TAG IN THE DROP-DOWN BOX</h2>
             <p></p>
             </div>
           <div class="eight columns"><img src="images/slideshow/slide3.png" alt="image"/></div>
@@ -234,7 +235,7 @@ if ($_SESSION['redditor'] !== null) {
         <li>
           <div class="eight columns"><img src="images/slideshow/slide4a.png" alt="image"/></div>
           <div class="eight columns">
-            <h2>WRITE WHATEVER YOU WANT TO SAY TO THE WORLD</h2>
+            <h2>(AND WRITE WHATEVER YOU WANT TO SAY TO THE WORLD...)</h2>
             <p></p>
             </div>
         </li>
@@ -500,19 +501,19 @@ if ($_SESSION['redditor'] !== null) {
       <!--center aligned button-->
       <div class="button_wrapper">
 				<div class="browsers">
-            <a href="https://chrome.google.com/webstore/detail/comment-tag/ehoebjlmhegfcjapelffllkajmfckoce" data-browser="chrome">
+            <a target="_new" href="https://chrome.google.com/webstore/detail/comment-tag/ehoebjlmhegfcjapelffllkajmfckoce" data-browser="chrome">
                 <img title="Install in Chrome" src="images/browsers/Chrome.png">
             </a>
-            <!-- <a href="installation_edge.php" data-browser="edge">
+            <!-- <a target="_new" href="installation_edge.php" data-browser="edge">
                 <img title="Install in Edge" src="images/browsers/Edge.png">
             </a> -->
-            <!-- <a href="download/comment_tag-1.0.4-fx.xpi" data-browser="firefox">
+            <!-- <a target="_new" href="download/comment_tag-1.0.4-fx.xpi" data-browser="firefox">
                 <img title="Install in Firefox" src="images/browsers/Firefox.png">
             </a> -->
-            <!-- <a href="https://addons.opera.com/en-gb/extensions/details/" data-browser="opera">
+            <a target="_new" href="https://addons.opera.com/da/extensions/details/comment-tag" data-browser="opera">
                 <img title="Install in Opera" src="images/browsers/Opera.png">
-            </a> -->
-            <!-- <a href="#" data-browser="safari">
+            </a>
+            <!-- <a target="_new" href="#" data-browser="safari">
                 <img title="Install in Safari" src="images/browsers/Safari.png">
             </a> -->
 				</div>

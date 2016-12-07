@@ -31,6 +31,7 @@ if ($_SESSION['redditor'] !== null) {
 			  <li class="lastdroplink"><a href="https://github.com/mhjerl" target="_blank">Source Code</a></li>
 			  <li class="lastdroplink"><a href="http://comment-tag.com/api.php">API</a></li>
 			  <li class="lastdroplink"><a href="http://comment-tag.com/modguide.php">Mod Guide</a></li>
+			  <li class="lastdroplink"><a href="http://comment-tag.com/credits.php">Credits</a></li>
             </ul>
           </li>
           <li><? echo $logInOrRedditor; ?></li>

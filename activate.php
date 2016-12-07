@@ -52,7 +52,7 @@ if (!$redditor && !isset($_GET['login'])) {
 			$newHash = generateRandomString();
 			$query5 = "INSERT INTO prima_user VALUES ('$redditor', '$dt2', '0', '$newHash', 'free', NULL, '0', 'neutral', NULL, '', NULL);";
 			mysqli_query($GLOBALS["___mysqli_ston"], $query5);
-			sendMail("user record created: " . $redditor);
+			//sendMail("user record created: " . $redditor);
 		}
 	}
 
@@ -148,17 +148,18 @@ function generateRandomString($length = 10) {
 		</div>
   </div>
 <? 	} else if ($foundInDatabase || $didRedditAuthentication) { ?>
-		  <h2>You're done! Thank you. Welcome to Comment Tag from Else and Morten!</h2>
-			<div style="text-align: center; margin: auto;">
+		  <h2>You're done! Welcome to Comment Tag from Else and Morten!</h2>
+			<!-- <div style="text-align: center; margin: auto;"> -->
 				<h2>Welcome <?=$redditor?>!</h2>
-				<h3>Your Password is: <? echo $hash; ?></h3>
 				<h2 style="color=green;">You are now logged in.</h2>
-				<h3>Please activate the popup in the right side of the browser menu and use it here along with your reddit username!</h3>
+				<h3>Your Password is: <? echo $hash; ?></h3>
+				<h3>Please also log in in the popup in the right side of the browser menu and use this password here along with your reddit username!</h3>
 				<h3>Remember to save your password for later use.</h3>
+				<h3>Thanks.</h3>
 				<br>
 				<div class="button_wrapper"><a href="index.php" class="btn_yellow"><span>Continue</span></a></div>
 				<br>
-			</div>
+			<!-- </div> -->
 	<? 
 	} else if ($redditor) {
 		if ($correctHash) { ?>
