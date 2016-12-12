@@ -177,7 +177,7 @@ if ($_SESSION['redditor'] !== null) {
 		</div>
 
 
-      <!--logo ends--> 
+      <!--logo ends-->
       
       <!--menu / navigation starts-->
       <div id="nav" class="twelve columns omega">
@@ -647,6 +647,7 @@ if ($_SESSION['redditor'] !== null) {
 <!--other jqueries required--> 
 <script src="js/jquery.easing.1.3.js" type="text/javascript"></script> 
 <script src="js/custom.js" type="text/javascript"></script>
+
 </body>
 </html>
 
