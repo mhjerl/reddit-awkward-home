@@ -1,3 +1,7 @@
+<?php
+// Put this code in first line of web page.
+session_start();
+?>
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 <head>

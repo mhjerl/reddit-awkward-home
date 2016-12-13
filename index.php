@@ -185,10 +185,11 @@ if ($_SESSION['redditor'] !== null) {
           <li><a href="#header_wrapper" class="nav-header_wrapper nav selected">Home</a></li>
           <li><a href="#features" class="nav-features nav">Features</a></li>
           <li><a href="#download" class="nav-download nav">Download</a></li>
+		  <li><a href="getstarted.php">Get Started</a></li>
           <li><a href="#" class="nav">About</a>
             <ul>
               <li class="lastdroplink"><a href="introduction.php">Introduction</a></li>
-			  <li class="lastdroplink"><a href="getstarted.php">Get Started</a></li>
+			  
 			  <li class="lastdroplink"><a href="https://github.com/mhjerl" target="_blank">Free Software</a></li>
 			  <li class="lastdroplink"><a href="api.php">API</a></li>
 			  <li class="lastdroplink"><a href="modguide.php">Mod Guide</a></li>

@@ -24,10 +24,10 @@ if ($_SESSION['redditor'] !== null) {
       <div id="nav" class="twelve columns omega">
         <ul>
           <li><a href="http://comment-tag.com/index.php" class="nav-header_wrapper nav selected">Home</a></li>
+		  <li><a href="http://comment-tag.com/getstarted.php">Get Started</a></li>
           <li><a href="#">About</a>
             <ul>
 			  <li class="lastdroplink"><a href="http://comment-tag.com/introduction.php">Introduction</a></li>
-              <li class="lastdroplink"><a href="http://comment-tag.com/getstarted.php">Get Started</a></li>
 			  <li class="lastdroplink"><a href="https://github.com/mhjerl" target="_blank">Source Code</a></li>
 			  <li class="lastdroplink"><a href="http://comment-tag.com/api.php">API</a></li>
 			  <li class="lastdroplink"><a href="http://comment-tag.com/modguide.php">Mod Guide</a></li>
