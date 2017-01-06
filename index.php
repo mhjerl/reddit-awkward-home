@@ -395,10 +395,10 @@ if ($_SESSION['redditor'] !== null) {
 				$firstTimeAround = false;
 			}
 			echo '<div class="sixteen columns"><br><br><br><h3>' . $tagCategory . '</h3><table class="zebra"><tr><th>Tag</th><th>Your Tag Use</th><th>Overall Tag Use</th></tr>';
-			echo '<tr><td><div style="width: 630px;"><a href="rules/' . $tagShortHand . '.php">' . $intuitiveTagNames[$tagShortHand] . '</a></div></td><td><div style=" text-align: center; width: 100px;">' . $tagUse->me . '</div></td><td><div style=" text-align: center; width: 150px;">' . $tagUse->total . '</div></td></tr>';
+			echo '<tr><td><div style="width: 630px;"><a href="rules/' . $tagShortHand . '.php">' . $intuitiveTagNames[$tagShortHand] . '</a></div></td><td><div style=" text-align: center; width: 100px;">' . $tagUse->me . '</div></td><td><div style="text-align: center; width: 150px;">' . $tagUse->total . '</div></td></tr>';
 		}
 		else {
-			echo '<tr><td><div style="width: 630px;"><a href="rules/' . $tagShortHand . '.php">' . $intuitiveTagNames[$tagShortHand] . '</a></div></td><td><div style=" text-align: center; width: 100px;">' . $tagUse->me . '</div></td><td><div style=" text-align: center; width: 150px;">' . $tagUse->total . '</div></td></tr>';
+			echo '<tr><td><div style="width: 630px;"><a href="rules/' . $tagShortHand . '.php">' . $intuitiveTagNames[$tagShortHand] . '</a></div></td><td><div style=" text-align: center; width: 100px;">' . $tagUse->me . '</div></td><td><div style="text-align: center; width: 150px;">' . $tagUse->total . '</div></td></tr>';
 		}
 	}
 ?>
@@ -407,6 +407,36 @@ if ($_SESSION['redditor'] !== null) {
 </div>
 </div>
 <!-- tags section ends -->
+
+
+
+<!--certificates section starts-->
+<div id="team" class="container clearfix scroll-content"> 
+  
+  <!--heading here-->
+  <div class="columns sixteen">
+    <h2>Certificates</h2>
+    <p class="textstyle2">Sponsor these Commentators | Support these People!</p>
+  </div>
+  <div class="columns sixteen">
+	<table class="zebra"><tr><th>ID</th><th>Commentator</th><th>Detected: Date & Time</th><th>Acquisition Status</th><th>Acquired By</th></tr>
+<?
+	$certificates = getCertificates();
+	foreach ($certificates as $certificate) {
+		echo '<tr><td><div style="width: 170px;"><a target="_new" href="https://www.reddit.com/r/' . $certificate->subreddit . '/comments/' . $certificate->pageid . '/' . $certificate->pagename . '/' . $certificate->commentid . '">' . $certificate->id . '</a></div></td><td><div style="width: 170px;">' . $certificate->redditor . '</div></td><td><div style="width: 160px;">' . $certificate->detected_date . '</div></td><td><div style="width: 170px;">' . $certificate->status . '</div></td><td><div style="width: 170px;">' . $certificate->acquired_by . '</div></td></tr>';
+	}
+?>
+</table>
+</div>
+<div class="divider sixteen columns"></div>
+</div>
+<!--certificates section ends-->
+
+
+
+
+
+
 
 
 
@@ -424,7 +454,7 @@ if ($_SESSION['redditor'] !== null) {
 	$conflicts = getConflicts();
 	foreach ($conflicts as $conflict) {
 		$yesOrNo = ($conflict->resolved === "true" ) ? "yes" : "no";
-		echo '<tr><td>' . $conflict->angryRedditor . '</td><td>' . $conflict->needsToApologizeRedditor . '</td><td>' . $yesOrNo . '</td><td><a target="_new" href="https://www.reddit.com/r/' . $conflict->subreddit . '/comments/' . $conflict->pageid . '">Link</a></td></tr>';
+		echo '<tr><td><div style="width: 170px;">' . $conflict->angryRedditor . '</div></td><td><div style="width: 350px;">' . $conflict->needsToApologizeRedditor . '</div></td><td><div style="width: 170px;">' . $yesOrNo . '</div></td><td><div style="width: 170px;"><a target="_new" href="https://www.reddit.com/r/' . $conflict->subreddit . '/comments/' . $conflict->pageid . '">Link</a></div></td></tr>';
 	}
 ?>
 </table>
@@ -653,6 +683,27 @@ if ($_SESSION['redditor'] !== null) {
 </html>
 
 <?
+
+
+function getCertificates() {
+	$certificates = Array();
+	$sql = "SELECT cert_id, redditor, status, acquired_by, subreddit, pageid, pagename, commentid, detected_date FROM prima_certificate ORDER BY detected_date DESC LIMIT 20;";
+	$result = mysqli_query($GLOBALS["___mysqli_ston"], $sql);
+	while ($row3 = mysqli_fetch_array($result)) {
+		$certificate = new stdClass();
+		$certificate->id = $row3[0];
+		$certificate->redditor = $row3[1];
+		$certificate->status = $row3[2];
+		$certificate->acquired_by = $row3[3];
+		$certificate->subreddit = $row3[4];
+		$certificate->pageid = $row3[5];
+		$certificate->pagename = $row3[6];
+		$certificate->commentid = $row3[7];
+		$certificate->detected_date = $row3[8];
+		array_push($certificates, $certificate);
+	}
+	return $certificates;
+}
 
 function getConflicts() {
 	$conflicts = Array();

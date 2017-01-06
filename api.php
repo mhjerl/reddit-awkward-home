@@ -60,7 +60,6 @@ session_start();
 		<h3>GET: http://comment-tag.com/server/init.php</h3>
 		<h3>Parameters: (Required: All)</h3>
 		<h4>redditor: the redditor, i.e. the client who wants the compiled .json formatted data of the comment-page, notifications, friends etc.</h4>
-		<h4>hash: the password</h4>
 		<h4>subreddit: self-explanatory</h4>
 		<h4>commentpageid: the 4th part of the reddit comment page url</h4>
 		<h4>pagename: the 5th part of the reddit comment page url</h4>

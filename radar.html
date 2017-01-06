@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+<meta charset=utf-8 />
+<title>JS Bin</title>
+<style>
+/*orig size: 321x321*/
+#map{
+  background-image: url("images/Mercator_projection_SW.jpg");
+  background-repeat: no-repeat;
+}
+#radar{
+  position:relative;
+  width:500px;
+  height:500px;
+  /*background:#222 url(http://i.stack.imgur.com/vY6Tl.png); mhh*/
+  background: rgba(255,0,0,0.3) url(http://i.stack.imgur.com/vY6Tl.png);
+  border-radius:500px;
+  overflow:hidden;
+}
+#rad{
+  position:absolute;
+  width:500px;
+  height:500px;
+  background:url(http://i.stack.imgur.com/fbgUD.png);
+}
+.obj{
+  background:#cf5;
+  position:absolute;
+  border-radius:10px;
+  width:4px;
+  height:4px;
+  margin-top:-2px;
+  margin-left:-2px;
+  box-shadow:0 0 10px 5px rgba(100,255,0,0.5);
+  opacity:0.2;
+}
+
+</style>
+<script>
+$(function() {
+  
+    var $rad = $('#rad'),
+        $obj = $('.obj'),
+        deg = 0,
+        rad = 160.5; //   = 321/2
+  
+  $obj.each(function(){
+    var data = $(this).data(),
+        pos = {X:data.x, Y:data.y},
+        getAtan = Math.atan2(pos.X-rad, pos.Y-rad),
+        getDeg = ~~(-getAtan/(Math.PI/180) + 180);
+    $(this).css({left:pos.X, top:pos.Y}).attr('data-atDeg', getDeg);
+  });
+
+    (function rotate() {      
+      $rad.css({transform: 'rotate('+ deg +'deg)'});
+      $('[data-atDeg='+deg+']').stop().fadeTo(0,1).fadeTo(1700,0.2);
+
+        // LOOP
+        setTimeout(function() {
+            deg = ++deg%360;
+            rotate();
+        }, 25);
+    })();
+});
+
+
+
+
+
+/*
+
+latitude    = 55.6667; // (φ)
+longitude   = 12.5833;   // (λ)
+
+mapWidth    = 200;
+mapHeight   = 100;
+
+// get x value
+x = (longitude+180)*(mapWidth/360)
+
+// convert from degrees to radians
+latRad = latitude*PI/180;
+
+// get y value
+mercN = log(tan((PI/4)+(latRad/2)));
+y     = (mapHeight/2)-(mapWidth*mercN/(2*PI));
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</head>
+<body>
+  
+  
+<div id="map">
+  <div id="radar">
+    <div id="rad"></div>
+    <div class="obj" data-x="120" data-y="65"></div>
+    <div class="obj" data-x="140" data-y="185"></div>
+    <div class="obj" data-x="220" data-y="35"></div>
+    <div class="obj" data-x="120" data-y="235"></div>
+  </div>
+</div>
+  
+  
+</body>
+</html>
